@@ -52,16 +52,25 @@
         }
 
         .product {
-            background-color: lightgrey;
-            width: 47%;
+            border-radius: 25px;
+            border: 2px solid lightgrey;
+            background-color: rgb(128, 128, 128, 15%);
+            width: 45%;
             text-align: center;
             float: left;
-            margin: .5rem;
+            margin: 1rem;
             padding: 1rem;
         }
 
             .product img {
                 width: 90%;
+                border-radius: 19px;
+            }
+            
+            .product:hover {
+                border: 2px solid grey;
+                background-color: rgb(128, 128, 128, 35%);
+                transform: scale(1.1);
             }
 
         footer {
