@@ -25,7 +25,10 @@
                         <a class="nav-link" href="frontEndMain.html">Front End Home</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="frontEndCatalog.html">Catalog</a>
+                        <a class="nav-link" href="frontEndCatalog.php">Catalog</a>
+                    </li>
+                     <li class="nav-item active">
+                        <a class="nav-link" href="frontEndCatalog.php">Shipping Map</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="frontEndMain.html">Cart</a>
