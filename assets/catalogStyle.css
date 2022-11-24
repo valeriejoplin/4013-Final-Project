@@ -27,7 +27,7 @@
 
     .filters button {
         float: right;
-        width: 70px;
+        width: 100%;
         margin: 10px;
     }
 
