@@ -170,7 +170,7 @@ if ($result->num_rows > 0) {
                                 
                 <p>Qty Avalible: <?=$row["qtyAvalible"]?></p>
                         <button type="button">Buy Now</button>
-            <form action="./fontEndCart.php" method="post">
+            <form action="./frontEndCart.php" method="post">
             <input type="number" name="quantity" value="1" min="1" max="<?=$row["qtyAvalible"]?>" placeholder="Quantity" required>
             <input type="hidden" name="productID" value="<?=$product['id']?>">
             <input type="submit" value="Add To Cart">
