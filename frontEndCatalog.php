@@ -42,7 +42,7 @@
         <div class="filters">
             <div class="dropdown">
                 <label for="brands">Brand:</label>
-                        <?php
+                                        <?php
                         $servername = "localhost";
                         $username = "asoltiso_project";
                         $password = "Project1243";
