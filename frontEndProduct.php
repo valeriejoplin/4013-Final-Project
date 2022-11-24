@@ -33,10 +33,7 @@
                 </ul>
             </div>
         </nav>
-        <div class="content">
-            <div class="products">
-                <div class="product">
-                                    <?php
+                                            <?php
                         $servername = "localhost";
                         $username = "asoltiso_project";
                         $password = "Project1243";
@@ -58,6 +55,10 @@ if ($result->num_rows > 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {
 ?>
+        <div class="content">
+            <div class="products">
+                <div class="product">
+
                 <h1><?=$row["name"]?></h1>
                 <img src="assets/<?=$row["img"]?>.png" />
                 <p><?=$row["longDesc"]?> />
@@ -67,16 +68,10 @@ if ($result->num_rows > 0) {
                     <p>Rating</p>
                     <p>Text</p>
                 </div>
-                <?php
-  }
-} else {
-  echo "0 results";
-}
-$conn->close();
-?>
+
             </div>
             <div class="filters">
-                <p>Price</p>
+                                <h1><?=$row["price"]?></h1>
                 <p>Qty Avalible</p>
                 <p>Buy Now Button</p>
                 <p>Add to cart Button</p>
@@ -90,6 +85,13 @@ $conn->close();
                 </script>
             </div>
         </div>
+                        <?php
+  }
+} else {
+  echo "0 results";
+}
+$conn->close();
+?>
 
         <footer>
             <div class="icons">
