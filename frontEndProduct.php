@@ -63,7 +63,8 @@
 }
 
     .product img {
-        width: 90%;
+        height: 300px;
+        float: left;
         border-radius: 19px;
     }
 
