@@ -109,7 +109,7 @@
                             ?>
                 </select>
             </div>
-             <div class="dropdown">
+            <div class="dropdown">
                 <label for="items">Item:</label>
                 <select name="items" id="items">
                     <option value="">None</option>
