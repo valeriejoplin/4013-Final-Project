@@ -172,8 +172,8 @@ if ($result->num_rows > 0) {
             <div class="filters">
                                 
                 <p>Qty Avalible: <?=$row["qtyAvalible"]?></p>
-                <p>Buy Now Button</p>
-                <p>Add to cart Button</p>
+                        <button type="button">Buy Now</button>
+            <button type="button">Add to Cart</button>
             </div>
             <div class="adSpace">
                 <img class="ad" src="https://images.unsplash.com/photo-1558391743-ca83be23f286?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1976&q=80" />
