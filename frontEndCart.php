@@ -10,7 +10,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
-$iid = $_GET['id'];
+$iid = $_POST['product_id'];
 //echo $iid;
 $sql = "Select * From product Where productID =".$iid;
 //echo $sql;
