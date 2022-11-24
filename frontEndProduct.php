@@ -55,7 +55,6 @@
 }
     .product h1 {
         font-size: 36px;
-        height: 40px;
         padding: 1rem;
 }
     .product h2 {
