@@ -10,7 +10,7 @@
     //print_r($_SESSION['cart']);
 ?>
 
-<?php
+                                            <?php
                         $servername = "localhost";
                         $username = "asoltiso_project";
                         $password = "Project1243";
@@ -22,9 +22,9 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
-for($i = 0 ; $i < count($_SESSION['cart']) ; $i++) {
+$whereIN = implode(',', $_SESSION['cart']);
 //echo $iid;
-$sql = "Select * From product where productID = ".$_SESSION['cart'][$i];
+$sql = "Select * From product Where productID IN ($whereIN)";
 //echo $sql;
     $result = $conn->query($sql);
 
@@ -32,13 +32,11 @@ if ($result->num_rows > 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {
 ?>
-<h1><?=$row["name"]?></h1>
-  }
-<?php
+     <h1><?=$row["name"]?></h1>
+ <?php
   }
 } else {
   echo "0 results";
 }
 $conn->close();
-}
 ?>
