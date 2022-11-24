@@ -90,6 +90,7 @@
                         <img src="assets/<?=$row["img"]?>.png" />
                     </a>
 				        <h1><?=$row["name"]?></h1>
+				      	<h2><?=$row["price"]?></h1>
                               </div>
                             <?php
                               }
