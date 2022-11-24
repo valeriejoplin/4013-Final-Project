@@ -62,7 +62,7 @@ if ($result->num_rows > 0) {
                 <h1><?=$row["name"]?></h1>
                 <p><?=$row["shortDesc"]?> </p>
                 <img src="assets/<?=$row["img"]?>.png" </img>
-                <p><?=$row["longDesc"]?> />
+                <p><?=$row["longDesc"]?> </p>
                 </div>
                 <div class="reviews">
                     <h1>Cutomer Reviews</h1>
