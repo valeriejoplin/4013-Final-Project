@@ -20,7 +20,7 @@
     text-align: center;
 }
 
-.adSpace {
+    .adSpace {
     float: left;
     width: 10%;
     height: 630px;
@@ -51,9 +51,7 @@
     border-radius: 25px;
     border: 2px solid lightgrey;
     background-color: rgb(128, 128, 128, 15%);
-    width: 31%;
     text-align: center;
-    float: left;
     margin: .5rem;
     padding: 1rem;
 }
@@ -67,12 +65,6 @@
     .product img {
         width: 90%;
         border-radius: 19px;
-    }
-
-    .product:hover {
-        border: 2px solid grey;
-        background-color: rgb(128, 128, 128, 35%);
-        transform: scale(1.1);
     }
 
 footer {
