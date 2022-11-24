@@ -17,7 +17,7 @@
     $sql = "Select * From product Where productID =".$product_id;
     $stmt = $conn->query($sql);
     // Fetch the product from the database and return the result as an Array
-    $product = $stmt->fetch(PDO::FETCH_ASSOC);
+    $product =  $conn->query($sql);
     // Check if the product exists (array is not empty)
     if ($product && $quantity > 0) {
         // Product exists in database, now we can create/update the session variable for the cart
