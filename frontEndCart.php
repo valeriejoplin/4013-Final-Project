@@ -1,4 +1,16 @@
 <?php
+                        $servername = "localhost";
+                        $username = "asoltiso_project";
+                        $password = "Project1243";
+                        $dbname = "asoltiso_project";   
+
+    // Create connection
+    $conn = new mysqli($servername, $username, $password, $dbname);
+    // Check connection
+    if ($conn->connect_error) {
+      die("Connection failed: " . $conn->connect_error);
+}
+
     $product_id = (int)$_GET['product_id'];
     $quantity = (int)$_GET['quantity'];
     // Prepare the SQL statement, we basically are checking if the product exists in our databaser
