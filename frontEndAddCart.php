@@ -23,18 +23,18 @@
                             if ($conn->connect_error) {
                               die("Connection failed: " . $conn->connect_error);
                             }
-							
-                            $sql = "SELECT * FROM product Where productID =".$product;
-                            //echo $sql;
+							<?php for($i = 0 ; $i < count($_SESSION['cart']) ; $i++) {
+								$sql = "Select * From product where productID = ".$_SESSION['cart'][$i];
+                                //echo $sql;
                             $result = $conn->query($sql);
 
                             if ($result->num_rows > 0) {
                               // output data of each row
                               while($row = $result->fetch_assoc()) {
-                            ?>
-                              <?php for($i = 0 ; $i < count($_SESSION['cart']) ; $i++) {
-                                 echo '<h1>'.$row["name"].'</h1>';
-                                 }  ?>
+								
+                                <h1>'.$row["name"].'</h1>;
+                            }
+							?>
 				      	
                               </div>
                             <?php
