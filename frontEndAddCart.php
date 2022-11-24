@@ -5,3 +5,16 @@
     array_push($_SESSION['cart'],$product);   
     print_r($_SESSION['cart']);
 ?>
+
+<table class="table">     <!-- HTML Part (optional) -->
+    <tr>
+      <th>Name</th>
+      <th>City</th>
+    </tr>
+                                                        
+    <tr>
+     <?php for($i = 0 ; $i < count($_SESSION['cart']) ; $i++) {
+     echo '<td>'.$_SESSION['cart'][$i].'</td>';
+     }  ?>
+    </tr>
+</table>
