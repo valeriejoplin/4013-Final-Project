@@ -1,6 +1,6 @@
 <?php
-    $product_id = (int)$_POST['product_id'];
-    $quantity = (int)$_POST['quantity'];
+    $product_id = (int)_GET['product_id'];
+    $quantity = (int)$_GET['quantity'];
     // Prepare the SQL statement, we basically are checking if the product exists in our databaser
     $stmt = $pdo->prepare('SELECT * FROM product WHERE productID = ?');
     $stmt->execute([$_POST['product_id']]);
