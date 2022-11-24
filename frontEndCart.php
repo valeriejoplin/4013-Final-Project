@@ -74,7 +74,6 @@ if (isset($_POST['product_id'], $_POST['quantity']) && is_numeric($_POST['produc
         </table>
         <div class="subtotal">
             <span class="text">Subtotal</span>
-            <span class="price">&dollar;<?=$subtotal?></span>
         </div>
         <div class="buttons">
             <input type="submit" value="Update" name="update">
