@@ -6,5 +6,3 @@
 		
         array_push($_SESSION['cart'], $_GET['product_id']);
         ?>
-
-		<a> href="frontEndCart.php">View Cart</a>
