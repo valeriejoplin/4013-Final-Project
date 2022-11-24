@@ -41,8 +41,9 @@ if ($result->num_rows > 0) {
 
  ?>
 
- <?php
-else {
+<?php
+  }
+} else {
   echo "0 results";
 }
 $conn->close();
