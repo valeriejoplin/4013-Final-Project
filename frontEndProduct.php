@@ -121,7 +121,7 @@ footer {
                         <a class="nav-link" href="frontEndCatalog.php">Shipping Map</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="frontEndMain.html">Cart</a>
+                        <a class="nav-link" href="frontEndCart.html">Cart</a>
                     </li>
                 </ul>
             </div>
