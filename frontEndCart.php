@@ -25,7 +25,6 @@
     // Prevent form resubmission...
     //header('location: index.php?page=cart');
     //exit;
-}
 ?>
 
 <div class="cart content-wrapper">
