@@ -1,7 +1,8 @@
 <?php
 
 session_start();
-
-var_dump($_SESSION['cart']);
+if(isset($_SESSION['userName'])) {
+  echo "Your session is running " . $_SESSION['userName'];
+}
 
 ?>
