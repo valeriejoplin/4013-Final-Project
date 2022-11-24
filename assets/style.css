@@ -45,6 +45,10 @@
     margin: .5rem;
     padding: 1rem;
 }
+    .product h1 {
+        font-size: 16px;
+}
+
     .product img {
         width: 90%;
         border-radius: 19px;
