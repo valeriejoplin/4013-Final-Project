@@ -58,12 +58,12 @@
     overflow: hidden;
 }
     .product h1 {
-        font-size: 24px;
+        font-size: 36px;
         height: 40px;
         padding: 5px;
 }
     .product h2 {
-        font-size: 16px;
+        font-size: 24px;
         height: 40px;
         padding: 5px;
 }
