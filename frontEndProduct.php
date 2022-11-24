@@ -68,6 +68,8 @@
         padding: 5px;
 }
     .product h3 {
+                width: 55%;
+                float: left;
         padding: 1rem;
         text-align: left;
     }
