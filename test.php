@@ -67,34 +67,35 @@
                         $servername = "localhost";
                         $username = "asoltiso_project";
                         $password = "Project1243";
-                        $dbname = "asoltiso_project";
+                        $dbname = "asoltiso_project";   
+						
 
-                        // Create connection
-                        $conn = new mysqli($servername, $username, $password, $dbname);
-                        // Check connection
-                        if ($conn->connect_error) {
-                          die("Connection failed: " . $conn->connect_error);
-                        }
+                            // Create connection
+                            $conn = new mysqli($servername, $username, $password, $dbname);
+                            // Check connection
+                            if ($conn->connect_error) {
+                              die("Connection failed: " . $conn->connect_error);
+                            }
 
-                        $sql = "SELECT * FROM product";
-                        //echo $sql;
-                        $result = $conn->query($sql);
+                            $sql = "SELECT * FROM product";
+                            //echo $sql;
+                            $result = $conn->query($sql);
 
-                        if ($result->num_rows > 0) {
-                          // output data of each row
-                          while($row = $result->fetch_assoc()) {
-                        ?>
-                          <div class="product">
-                            <h3><?=$row["ProductID"]?></h3>
-                                <a href="./frontEndProduct.html"> <img src="assets/favicon.png" />
-                                 </a </div>
-                        <?php
-                          }
-                        } else {
-                          echo "0 results";
-                        }
-                        $conn->close();
-                        ?>
+                            if ($result->num_rows > 0) {
+                              // output data of each row
+                              while($row = $result->fetch_assoc()) {
+                            ?>
+                              <tr>
+                                <td><?=$row["productID"]?></td>
+                                
+                              </tr>
+                            <?php
+                              }
+                            } else {
+                              echo "0 results";
+                            }
+                            $conn->close();
+                            ?>
             </div>
             <div class="adSpace">
                 <img class="ad" src="https://images.unsplash.com/photo-1558391743-ca83be23f286?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1976&q=80" />
