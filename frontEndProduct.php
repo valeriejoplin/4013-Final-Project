@@ -58,7 +58,11 @@
     overflow: hidden;
 }
     .product h1 {
-        margin-top: 1rem;
+        font-size: 16px;
+        height: 40px;
+        padding: 5px;
+}
+    .product h2 {
         font-size: 16px;
         height: 40px;
         padding: 5px;
@@ -68,8 +72,10 @@
         height: 300px;
         float: left;
         border-radius: 19px;
-        width: 45%;
-
+        width: 300px;
+    }
+    .product p1 {
+        margin
     }
 
 footer {
@@ -140,7 +146,7 @@ if ($result->num_rows > 0) {
                 <div class="product">
 
                 <h1><?=$row["name"]?></h1>
-                <p><?=$row["shortDesc"]?> </p>
+                <h2><?=$row["shortDesc"]?> </h2>
                 <img src="assets/<?=$row["img"]?>.png" </img>
                 <p><?=$row["longDesc"]?> </p>
                 </div>
