@@ -68,6 +68,7 @@
         padding: 5px;
 }
     .product h3 {
+        padding: 1rem;
         text-align: left;
     }
 
