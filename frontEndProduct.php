@@ -58,7 +58,7 @@
     overflow: hidden;
 }
     .product h1 {
-        font-size: 16px;
+        font-size: 24px;
         height: 40px;
         padding: 5px;
 }
@@ -67,6 +67,9 @@
         height: 40px;
         padding: 5px;
 }
+    .product h3 {
+        text-align: left;
+    }
 
     .product img {
         height: 300px;
@@ -80,7 +83,7 @@
         float: left;
         padding: 1rem;
         text-align: left;
-
+        text-indent: 50px;
     }
 
 footer {
