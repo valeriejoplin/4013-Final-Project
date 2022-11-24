@@ -159,7 +159,7 @@ if ($result->num_rows > 0) {
                 <h1><?=$row["name"]?></h1>
                 <h2><?=$row["shortDesc"]?> </h2>
                 <img src="assets/<?=$row["img"]?>.png" </img>
-                <h3>Number(<?=$row["price"]?>).toLocaleString('en');</h3>
+                <h3>$<?=$row["price"]?></h3>
                 <p><?=$row["longDesc"]?> </p>
                 </div>
                 <div class="reviews">
