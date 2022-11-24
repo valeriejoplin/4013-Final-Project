@@ -11,8 +11,7 @@
 
 <table class="table">     <!-- HTML Part (optional) -->
     <tr>
-      <th>Name</th>
-      <th>City</th>
+      <th>Product ID</th>
     </tr>
                                                         
     <tr>
