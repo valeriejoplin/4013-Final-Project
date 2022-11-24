@@ -72,10 +72,11 @@
         height: 300px;
         float: left;
         border-radius: 19px;
-        width: 300px;
+        width: 45%;
     }
     .product p1 {
-        margin
+        width: 55%;
+        float: left;
     }
 
 footer {
