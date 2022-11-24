@@ -85,7 +85,7 @@
                           while($row = $result->fetch_assoc()) {
                         ?>
                           <div class="product">
-                            <h3><?=$row["InstructorID"]?></h3>
+                            <h3><?=$row["ProductID"]?></h3>
                                 <a href="./frontEndProduct.html"> <img src="assets/favicon.png" />
                                  </a </div>
                         <?php
