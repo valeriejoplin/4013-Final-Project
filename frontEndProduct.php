@@ -170,7 +170,11 @@ if ($result->num_rows > 0) {
                                 
                 <p>Qty Avalible: <?=$row["qtyAvalible"]?></p>
                         <button type="button">Buy Now</button>
-            <button type="button">Add to Cart</button>
+            <form action="index.php?page=cart" method="post">
+            <input type="number" name="quantity" value="1" min="1" max="<?=$row["qtyAvalible"]?>" placeholder="Quantity" required>
+            <input type="hidden" name="productID" value="<?=$product['id']?>">
+            <input type="submit" value="Add To Cart">
+        </form>
             </div>
             <div class="adSpace">
                 <img class="ad" src="https://images.unsplash.com/photo-1558391743-ca83be23f286?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1976&q=80" />
