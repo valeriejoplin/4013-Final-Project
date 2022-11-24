@@ -54,7 +54,7 @@
     text-align: center;
     margin: .5rem;
     padding: 1rem;
-    height: fit-content;
+    height: fit;
 }
     .product h1 {
         margin-top: 1rem;
