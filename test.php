@@ -85,8 +85,10 @@
                               // output data of each row
                               while($row = $result->fetch_assoc()) {
                             ?>
-                              <tr>
-                                <td><?=$row["productID"]?></td>
+                              <div class=product>
+							    <td><?=$row["productID"]?></td>
+                              </div>
+                               
                                 
                               </tr>
                             <?php
