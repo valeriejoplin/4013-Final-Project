@@ -38,15 +38,43 @@
                 </ul>
             </div>
         </nav>
+
         <div class="filters">
             <div class="dropdown">
                 <label for="brands">Brand:</label>
+                        <?php
+                        $servername = "localhost";
+                        $username = "asoltiso_project";
+                        $password = "Project1243";
+                        $dbname = "asoltiso_project";   
+
+                        // Create connection
+                        $conn = new mysqli($servername, $username, $password, $dbname);
+                        // Check connection
+                        if ($conn->connect_error) {
+                          die("Connection failed: " . $conn->connect_error);
+                        }
+                        $iid = $_GET['id'];
+                        //echo $iid;
+                        $sql = "Select * From brand";
+                        //echo $sql;
+                            $result = $conn->query($sql);
+
+                        if ($result->num_rows > 0) {
+                          // output data of each row
+                          while($row = $result->fetch_assoc()) {
+                        ?>
                 <select name="brands" id="brands">
                     <option value="">None</option>
-                    <option value="gucci">Gucci</option>
-                    <option value="prada">Prada</option>
-                    <option value="fendi">Fendi</option>
+                    <option value="<?=$row["brandID"]?>"><?=$row["brand"]?></option>
                 </select>
+                         <?php
+                              }
+                            } else {
+                              echo "0 results";
+                            }
+                            $conn->close();
+                            ?>
             </div>
             <div class="dropdown">
                 <label for="categories">Category:</label>

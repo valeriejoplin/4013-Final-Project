@@ -155,7 +155,7 @@ if ($result->num_rows > 0) {
                 <h1><?=$row["name"]?></h1>
 
                 <img src="assets/<?=$row["img"]?>.png" </img>
-                 <h2><?=$row["shortDesc"]?> </h2>
+                <h2><?=$row["shortDesc"]?> </h2>
                 <h3>$<?=$row["price"]?></h3>
                 <p><?=$row["longDesc"]?> </p>
                 </div>
