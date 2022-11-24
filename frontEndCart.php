@@ -3,7 +3,7 @@
     $quantity = (int)$_GET['quantity'];
     // Prepare the SQL statement, we basically are checking if the product exists in our databaser
     $stmt = $pdo->prepare('SELECT * FROM product WHERE productID = ?');
-    $stmt->execute([$_POST['product_id']]);
+    $stmt->execute([$_GET['product_id']]);
     // Fetch the product from the database and return the result as an Array
     $product = $stmt->fetch(PDO::FETCH_ASSOC);
     // Check if the product exists (array is not empty)
