@@ -86,11 +86,8 @@
                               while($row = $result->fetch_assoc()) {
                             ?>
                               <div class=product>
-							    <td><?=$row["productID"]?></td>
+							    <h1><?=$row["productID"]?></h1>
                               </div>
-                               
-                                
-                              </tr>
                             <?php
                               }
                             } else {
