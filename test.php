@@ -88,7 +88,7 @@
                               <div class=product>
 							    <h1><?=$row["name"]?></h1>
 				      <a href="./frontEndProduct.html">
-                        <img src="assets/favicon.png" />
+                        <img src="assets/<?=$row["name"]?>.png" />
                     </a>
                               </div>
                             <?php
