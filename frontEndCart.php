@@ -39,13 +39,7 @@
         }
     }
  ?>
-                         
-<?php
-else {
-  echo "0 results";
-}
-$conn->close();
-?>
+                        
 
 <h1>Shopping Cart</h1>
     <form action="index.php?page=cart" method="post">
