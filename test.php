@@ -89,7 +89,6 @@
 				      <a href="./frontEndProduct.html">
                         <img src="assets/<?=$row["img"]?>.png" />
                     </a>
-				      <h2><?=$row["price"]?></h2>
 				      <h1><?=$row["name"]?></h1>
 				      	
                               </div>
