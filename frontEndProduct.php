@@ -75,9 +75,10 @@
         width: 45%;
         height: auto;
     }
-    .product p1 {
+    .product p {
         width: 55%;
         float: left;
+        padding: 1 rem;
     }
 
 footer {
