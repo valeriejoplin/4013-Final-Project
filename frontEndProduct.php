@@ -78,7 +78,8 @@
     .product p {
         width: 55%;
         float: left;
-        padding: 1 rem;
+        padding: 1rem;
+        align: left;
 
     }
 
