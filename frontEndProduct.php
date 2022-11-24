@@ -56,7 +56,7 @@
     .product h1 {
         font-size: 36px;
         height: 40px;
-        padding: 5px;
+        padding: 1rem;
 }
     .product h2 {
         width: 55%;
@@ -69,7 +69,6 @@
                 width: 55%;
                 float: left;
         padding: 1rem;
-        text-align: left;
     }
 
     .product img {
