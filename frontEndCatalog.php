@@ -42,7 +42,10 @@
         <div class="filters">
             <div class="dropdown">
                 <label for="brands">Brand:</label>
-                                        <?php
+                                       
+                <select name="brands" id="brands">
+                    <option value="">None</option>
+                     <?php
                         $servername = "localhost";
                         $username = "asoltiso_project";
                         $password = "Project1243";
@@ -62,17 +65,15 @@
                           // output data of each row
                           while($row = $result->fetch_assoc()) {
                         ?>
-                <select name="brands" id="brands">
-                    <option value="">None</option>
                     <option value="<?=$row["brandID"]?>"><?=$row["brand"]?></option>
-                </select>
-                         <?php
+                    <?php
                               }
                             } else {
                               echo "0 results";
                             }
                             $conn->close();
                             ?>
+                </select>
             </div>
             <div class="dropdown">
                 <label for="categories">Category:</label>
