@@ -35,6 +35,7 @@
     width: 15%;
     float: left;
     padding-top: 80px;
+    text-align: center;
 }
 
 .dropdown {
