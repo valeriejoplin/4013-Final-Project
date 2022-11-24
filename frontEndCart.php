@@ -1,1 +1,1 @@
-<p>Hello<p>
+<p>$_POST['productID']</p>
