@@ -3,8 +3,8 @@
         if(isset($_SESSION['cart'])){
         return $_SESSION['cart'] = array();
         }
-        $id = $_GET['product_id'];
-        array_push($_SESSION['cart'], id);
+		
+        array_push($_SESSION['cart'], $_GET['product_id']);
         ?>
 
 		<a> href="frontEndCart.php">View Cart</a>
