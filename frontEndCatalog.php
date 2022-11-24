@@ -99,7 +99,7 @@
                           // output data of each row
                           while($row = $result->fetch_assoc()) {
                         ?>
-                    <option value="<?=$row["categoryID"]?>"><?=$row["categroy"]?></option>
+                    <option value="<?=$row["categoryID"]?>"><?=$row["category"]?></option>
                     <?php
                               }
                             } else {
