@@ -60,6 +60,7 @@ if ($result->num_rows > 0) {
                 <div class="product">
 
                 <h1><?=$row["name"]?></h1>
+                <p><?=$row["shortDesc"]?> />
                 <img src="assets/<?=$row["img"]?>.png" />
                 <p><?=$row["longDesc"]?> />
                 </div>
