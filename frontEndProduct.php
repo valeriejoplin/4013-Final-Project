@@ -171,7 +171,7 @@ if ($result->num_rows > 0) {
             </div>
             <div class="filters">
                                 
-                <p>Qty Avalible</p>
+                <p>Qty Avalible: <?=$row["qtyAvalible"]?></p>
                 <p>Buy Now Button</p>
                 <p>Add to cart Button</p>
             </div>
