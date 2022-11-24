@@ -59,9 +59,11 @@
         padding: 5px;
 }
     .product h2 {
+        width: 55%;
+                float: left;
         font-size: 24px;
         height: 40px;
-        padding: 5px;
+        padding: 1rem;
 }
     .product h3 {
                 width: 55%;
@@ -153,8 +155,9 @@ if ($result->num_rows > 0) {
                 <div class="product">
 
                 <h1><?=$row["name"]?></h1>
-                <h2><?=$row["shortDesc"]?> </h2>
+
                 <img src="assets/<?=$row["img"]?>.png" </img>
+                 <h2><?=$row["shortDesc"]?> </h2>
                 <h3>$<?=$row["price"]?></h3>
                 <p><?=$row["longDesc"]?> </p>
                 </div>
