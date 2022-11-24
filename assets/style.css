@@ -46,8 +46,7 @@
     padding: 1rem;
 }
     .product h1 {
-        display:table-cell; 
-        vertical-align:middle;
+        margin-top: 1rem;
         font-size: 16px;
         height: 30px;
         padding: 5px;
