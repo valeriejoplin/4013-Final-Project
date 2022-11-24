@@ -55,6 +55,7 @@
     margin: .5rem;
     padding: 1rem;
     height: fit;
+    overflow: hidden;
 }
     .product h1 {
         margin-top: 1rem;
@@ -67,6 +68,8 @@
         height: 300px;
         float: left;
         border-radius: 19px;
+        width: 45%;
+
     }
 
 footer {
