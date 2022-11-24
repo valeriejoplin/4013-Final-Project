@@ -19,9 +19,8 @@
       <th>Quantity</th>
     </tr>
                                                         
-    <tr>
+
      <?php for($i = 0 ; $i < count($_SESSION['cart']) ; $i++) {
-     echo '$_SESSION['cart'][$i].';
+     echo '<tr>'.$_SESSION['cart'][$i].'</tr>';
      }  ?>
-    </tr>
 </table>
