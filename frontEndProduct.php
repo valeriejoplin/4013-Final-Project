@@ -79,7 +79,7 @@
         width: 55%;
         float: left;
         padding: 1rem;
-        align: left;
+        text-align: left;
 
     }
 
@@ -153,7 +153,7 @@ if ($result->num_rows > 0) {
                 <h1><?=$row["name"]?></h1>
                 <h2><?=$row["shortDesc"]?> </h2>
                 <img src="assets/<?=$row["img"]?>.png" </img>
-                <p><?=$row["price"]?></p>
+                <h3><?=$row["price"]?></h3>
                 <p><?=$row["longDesc"]?> </p>
                 </div>
                 <div class="reviews">
