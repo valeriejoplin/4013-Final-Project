@@ -1,1 +1,3 @@
-<p>$_POST['productID']</p>
+<?php
+	<p>$_POST['productID']</p>
+?>
