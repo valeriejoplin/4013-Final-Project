@@ -10,6 +10,9 @@
 </head>
 <body>
     <div class="container">
+        <?php
+        session_start();
+        ?>
         <h1>MIS 4013 Group Project</h1>
         <button onclick="location.href='frontEndMain.html'" type="button">FrontEnd</button>
         <button onclick="location.href='backEndMain.html'" type="button">Back End</button>
