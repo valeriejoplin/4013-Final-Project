@@ -37,11 +37,6 @@
     padding-top: 80px;
 }
 
-    .filters button {
-        float: right;
-        margin: 10px;
-    }
-
 .dropdown {
     margin-top: 10px;
     float: right;
