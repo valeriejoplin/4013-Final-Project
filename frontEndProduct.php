@@ -73,6 +73,7 @@
         float: left;
         border-radius: 19px;
         width: 45%;
+        height: auto;
     }
     .product p1 {
         width: 55%;
