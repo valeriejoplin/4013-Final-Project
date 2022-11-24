@@ -21,7 +21,7 @@
                                                         
     
      <?php for($i = 0 ; $i < count($_SESSION['cart']) ; $i++) {
-     echo '<tr><td>'.$_SESSION['cart']['product'][$i].'</td</tr>';
+     echo '<tr><td>'.$_SESSION['cart'][$i].'</td</tr>';
      }  ?>
     
 </table>
