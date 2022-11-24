@@ -109,6 +109,40 @@
                             ?>
                 </select>
             </div>
+             <div class="dropdown">
+                <label for="items">Item:</label>
+                <select name="items" id="items">
+                    <option value="">None</option>
+                    <?php
+                        $servername = "localhost";
+                        $username = "asoltiso_project";
+                        $password = "Project1243";
+                        $dbname = "asoltiso_project";   
+
+                        // Create connection
+                        $conn = new mysqli($servername, $username, $password, $dbname);
+                        // Check connection
+                        if ($conn->connect_error) {
+                          die("Connection failed: " . $conn->connect_error);
+                        }
+                        $sql = "Select * From item";
+                        //echo $sql;
+                            $result = $conn->query($sql);
+
+                        if ($result->num_rows > 0) {
+                          // output data of each row
+                          while($row = $result->fetch_assoc()) {
+                        ?>
+                    <option value="<?=$row["itemID"]?>"><?=$row["item"]?></option>
+                    <?php
+                              }
+                            } else {
+                              echo "0 results";
+                            }
+                            $conn->close();
+                            ?>
+                </select>
+            </div>
             <button type="button">Filter</button>
         </div>
         <div class="content">
