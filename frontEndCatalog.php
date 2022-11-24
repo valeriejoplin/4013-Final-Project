@@ -30,7 +30,7 @@
                         <a class="nav-link" href="frontEndMain.html">Front End Home</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="frontEndCatalog.html">Catalog</a>
+                        <a class="nav-link" href="frontEndCatalog.php">Catalog</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="frontEndMain.html">Cart</a>
@@ -86,7 +86,7 @@
                               while($row = $result->fetch_assoc()) {
                             ?>
                               <div class=product>
-				      <a href="./frontEndProduct.html">
+				      <a href="./frontEndProduct.php?id=<?=$row["productID"]?>">
                         <img src="assets/<?=$row["img"]?>.png" />
                     </a>
 				      <h1><?=$row["name"]?></h1>
