@@ -54,8 +54,6 @@
                         if ($conn->connect_error) {
                           die("Connection failed: " . $conn->connect_error);
                         }
-                        $iid = $_GET['id'];
-                        //echo $iid;
                         $sql = "Select * From brand";
                         //echo $sql;
                             $result = $conn->query($sql);
