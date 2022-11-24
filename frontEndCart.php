@@ -1,3 +1,3 @@
-$id=$_GET['prodct_id'];
+$id=$_GET['product_id'];
 
 <p>$id</p>
