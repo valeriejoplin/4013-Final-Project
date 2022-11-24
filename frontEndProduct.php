@@ -153,6 +153,7 @@ if ($result->num_rows > 0) {
                 <h1><?=$row["name"]?></h1>
                 <h2><?=$row["shortDesc"]?> </h2>
                 <img src="assets/<?=$row["img"]?>.png" </img>
+                <p><?=$row["price"]?></p>
                 <p><?=$row["longDesc"]?> </p>
                 </div>
                 <div class="reviews">
@@ -163,7 +164,7 @@ if ($result->num_rows > 0) {
 
             </div>
             <div class="filters">
-                                <h1><?=$row["price"]?></h1>
+                                
                 <p>Qty Avalible</p>
                 <p>Buy Now Button</p>
                 <p>Add to cart Button</p>
