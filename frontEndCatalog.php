@@ -80,7 +80,7 @@
                 <select name="categories" id="categories">
                     <option value="">None</option>
                     <?php
-                        $servername = "localhost";
+                        $servername = "165.227.18.177";
                         $username = "asoltiso_project";
                         $password = "Project1243";
                         $dbname = "asoltiso_project";   
@@ -114,7 +114,7 @@
                 <select name="items" id="items">
                     <option value="">None</option>
                     <?php
-                        $servername = "localhost";
+                        $servername = "165.227.18.177";
                         $username = "asoltiso_project";
                         $password = "Project1243";
                         $dbname = "asoltiso_project";   
@@ -150,7 +150,7 @@
                 <h1>Products</h1>
                 
 				    <?php
-                        $servername = "localhost";
+                        $servername = "165.227.18.177";
                         $username = "asoltiso_project";
                         $password = "Project1243";
                         $dbname = "asoltiso_project";   
