@@ -46,7 +46,7 @@
                 <select name="brands" id="brands">
                     <option value="">None</option>
                      <?php
-                        $servername = "localhost";
+                        $servername = "165.227.18.177";
                         $username = "asoltiso_project";
                         $password = "Project1243";
                         $dbname = "asoltiso_project";   
