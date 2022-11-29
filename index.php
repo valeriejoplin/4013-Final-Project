@@ -51,7 +51,9 @@
             <li>Andrew Soltis</li>
             <li>Sana Yari Hajatalou</li>
         </ul>
-        <p>Due before December 16th at 10am</p>
+        <p>Due before December 16th at 10am
+            Presentation on December 7th
+        </p>
     </div>
 </body>
 </html>
