@@ -8,6 +8,20 @@
     <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
     <title>MIS 4013 Final Project</title>
 </head>
+ <style>
+.button {
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
 <body>
     <div class="container">
 
