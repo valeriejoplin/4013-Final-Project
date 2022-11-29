@@ -21,11 +21,9 @@
   margin: 4px 2px;
   cursor: pointer;
 }
-.body{
-    vertical-align:center;
-}
+
 </style>
-<body>
+<body style="vertical-align:center;>
     <div class="container">
 
         <h1>MIS 4013 Group Project</h1>
