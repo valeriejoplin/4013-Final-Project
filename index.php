@@ -23,7 +23,7 @@
 }
 
 </style>
-<body style="vertical-align:center;>
+<body style="vertical-align:right;>
     <div class="container">
 
         <h1>MIS 4013 Group Project</h1>
