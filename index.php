@@ -26,7 +26,7 @@
   width: 60%;
   border: 1.5px solid black;
   padding: 10px;
-  top: 20px;
+  top: 35px;
   position: relative;
 }
 </style>
