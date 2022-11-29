@@ -45,7 +45,7 @@
         <button onclick="location.href='frontEndMain.html'" class="button" type="button">FrontEnd</button>
         <button onclick="location.href='backEndMain.html'" class="button" type="button">Back End</button>
         <h3>Created By:</h3>
-        <ul class=names>
+        <ul class="names">
             <li>Valerie Joplin</li>
             <li>Trevor Riley</li>
             <li>Andrew Soltis</li>
