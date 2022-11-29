@@ -11,8 +11,8 @@
  <style>
 .button{
   background-color: #F3E5D3;
-  border: none;
-  color: white;
+  border: 10px;
+  color: black;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
