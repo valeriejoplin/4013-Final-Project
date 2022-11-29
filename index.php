@@ -28,6 +28,7 @@
   padding: 10px;
   top: 35px;
   position: relative;
+  background-color:white;
 }
 .body{
     background-color:#EEEAE4;
