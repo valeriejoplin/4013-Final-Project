@@ -21,9 +21,14 @@
   margin: 4px 2px;
   cursor: pointer;
 }
-
+.container{
+  margin: auto;
+  width: 60%;
+  border: 1.5px solid black;
+  padding: 10px;
+}
 </style>
-<body style="vertical-align:right;>
+<body>
     <div class="container">
 
         <h1>MIS 4013 Group Project</h1>
