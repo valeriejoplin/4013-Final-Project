@@ -35,6 +35,7 @@
     background-color:#EEEAE4;
  }
  .names{
+     text-align:left;
      position:relative;
      left:100px;
  }
