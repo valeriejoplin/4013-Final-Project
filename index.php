@@ -9,7 +9,7 @@
     <title>MIS 4013 Final Project</title>
 </head>
  <style>
-.button [type=onclick] {
+.button onclick {
   background-color: green;
   border: none;
   color: white;
