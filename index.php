@@ -35,7 +35,8 @@
     background-color:#EEEAE4;
  }
  .names{
-     text-align:center;
+     position:relative;
+     left:100px;
  }
 </style>
 <body class="body">
