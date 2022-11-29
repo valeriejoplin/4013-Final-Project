@@ -29,6 +29,7 @@
   top: 35px;
   position: relative;
   background-color:white;
+  text-align:center;
 }
 .body{
     background-color:#EEEAE4;
