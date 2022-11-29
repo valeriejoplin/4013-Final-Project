@@ -37,7 +37,7 @@
  .names{
      text-align:left;
      position:relative;
-     left:100px;
+     left:300px;
  }
 </style>
 <body class="body">
