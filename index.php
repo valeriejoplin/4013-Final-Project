@@ -9,7 +9,7 @@
     <title>MIS 4013 Final Project</title>
 </head>
  <style>
-.button onclick {
+.button{
   background-color: green;
   border: none;
   color: white;
@@ -26,8 +26,8 @@
     <div class="container">
 
         <h1>MIS 4013 Group Project</h1>
-        <button onclick="location.href='frontEndMain.html'" type="button">FrontEnd</button>
-        <button onclick="location.href='backEndMain.html'" type="button">Back End</button>
+        <button onclick="location.href='frontEndMain.html'" class="button" type="button">FrontEnd</button>
+        <button onclick="location.href='backEndMain.html'" class="button" type="button">Back End</button>
         <h3>Created By:</h3>
         <ul>
             <li>Valerie Joplin</li>
