@@ -22,7 +22,7 @@
   cursor: pointer;
 }
 .body{
-   text-align:center;  
+    vertical-align:center;
 }
 </style>
 <body>
