@@ -29,8 +29,11 @@
   top: 35px;
   position: relative;
 }
+.body{
+    background-color:#EEEAE4;
+ }
 </style>
-<body>
+<body class="body">
     <div class="container">
 
         <h1>MIS 4013 Group Project</h1>
