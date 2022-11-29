@@ -21,6 +21,9 @@
   margin: 4px 2px;
   cursor: pointer;
 }
+.body{
+   text-align:center;  
+}
 </style>
 <body>
     <div class="container">
