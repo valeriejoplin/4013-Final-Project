@@ -41,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                            <label for="editfootball<?=$row["city_ID"]?>Name" class="form-label">Price</label>
                           <input type="text" class="form-control" id="editfootball<?=$row["city_ID"]?>Name" aria-describedby="editfootball<?=$row["productID"]?>Help" name="iprice">
                           <label for="editfootball<?=$row["city_ID"]?>Name" class="form-label">Short Desc</label>
-                          <input type="text" class="form-control" id="editfootball<?=$row["city_ID"]?>Name" aria-describedby="editfootball<?=$row["productID""]?>Help" name="ishortdesc">
+                          <input type="text" class="form-control" id="editfootball<?=$row["city_ID"]?>Name" aria-describedby="editfootball<?=$row["productID"]?>Help" name="ishortdesc">
                           <label for="editfootball<?=$row["city_ID"]?>Name" class="form-label">Long Desc</label>
                           <input type="text" class="form-control" id="editfootball<?=$row["city_ID"]?>Name" aria-describedby="editfootball<?=$row["productID"]?>Help" name="ilongdesc">
                           <label for="editfootball<?=$row["city_ID"]?>Name" class="form-label">QTY Available</label>
