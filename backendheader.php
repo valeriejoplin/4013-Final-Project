@@ -1,4 +1,16 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<?php
+                        $servername = "165.227.18.177";
+                        $username = "asoltiso_project";
+                        $password = "Project1243";
+                        $dbname = "asoltiso_project";   
+
+                        $conn = new mysqli($servername, $username, $password, $dbname);
+                        if ($conn->connect_error) {
+                          die("Connection failed: " . $conn->connect_error);
+                        }
+                        ?>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
