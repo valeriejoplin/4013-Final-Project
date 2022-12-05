@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     case 'Add':
         $sqlAdd = "insert into Product (name,price,shortDesc,longDesc) value (?, ?)";
         $stmtAdd = $conn->prepare($sqlAdd);
-        $stmtAdd->bind_param("is",$_POST['icityID'], $_POST['iteamname']);
+        $stmtAdd->bind_param("is",$_POST['productID'], $_POST['iteamname'], $_POST['iprice']);
         $stmtAdd->execute();   
       echo '<div class="alert alert-success" role="alert">New Item added.</div>';
       break;
@@ -36,11 +36,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="modal-body">
               <form method="post" action="">
                 <div class="mb-3">
-                  <label for="editfootball<?=$row["city_ID"]?>Name" class="form-label">Team Name</label>
+                  <label for="editfootball<?=$row["city_ID"]?>Name" class="form-label">Product Name</label>
                           <input type="text" class="form-control" id="editfootball<?=$row["city_ID"]?>Name" aria-describedby="editfootball<?=$row["city_ID"]?>Help" name="iteamname">
-                          <div id="editfootball<?=$row["city_ID"]?>Help" class="form-text">Enter the basketball team name.</div>
-                           <label for="editfootball<?=$row["city_ID"]?>Name" class="form-label">City_ID</label>
-                          <input type="text" class="form-control" id="editfootball<?=$row["city_ID"]?>Name" aria-describedby="editfootball<?=$row["city_ID"]?>Help" name="icityID">
+                          <div id="editfootball<?=$row["city_ID"]?>Help" class="form-text">Enter the price of the Product</div>
+                           <label for="editfootball<?=$row["city_ID"]?>Name" class="form-label">Price</label>
+                          <input type="text" class="form-control" id="editfootball<?=$row["city_ID"]?>Name" aria-describedby="editfootball<?=$row["city_ID"]?>Help" name="iprice">
                         </div>
                 <input type="hidden" name="saveType" value="Add">
                 <button type="submit" class="btn btn-primary">Submit</button>
