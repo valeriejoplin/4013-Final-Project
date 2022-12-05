@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="mb-3">
                   <label for="editfootball<?=$row["city_ID"]?>Name" class="form-label">Product Name</label>
                           <input type="text" class="form-control" id="editfootball<?=$row["city_ID"]?>Name" aria-describedby="editfootball<?=$row["city_ID"]?>Help" name="iteamname">
-                          <div id="editfootball<?=$row["city_ID"]?>Help" class="form-text">Enter the price of the Product</div>
+                          
                            <label for="editfootball<?=$row["city_ID"]?>Name" class="form-label">Price</label>
                           <input type="text" class="form-control" id="editfootball<?=$row["city_ID"]?>Name" aria-describedby="editfootball<?=$row["city_ID"]?>Help" name="iprice">
                         </div>
