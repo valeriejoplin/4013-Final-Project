@@ -42,9 +42,4 @@ Will put our photos & information here
     <td>Sana Yari Hajatalou</td>
     <td>Trevor Riley</td>
   </tr>
-  
-  <tr>
-    <td><img src="" width="300" ></td>
-    <td><img src="" width="300"></td>
-  </tr>
 </table>
