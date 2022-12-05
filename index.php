@@ -8,20 +8,54 @@
     <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
     <title>MIS 4013 Final Project</title>
 </head>
-<body>
+ <style>
+.button{
+  background-color: #F3E5D3;
+  border: 10px;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.container{
+  margin: auto;
+  width: 60%;
+  border: 1.5px solid black;
+  padding: 10px;
+  top: 35px;
+  position: relative;
+  background-color:white;
+  text-align:center;
+}
+.body{
+    background-color:#EEEAE4;
+ }
+ .names{
+     text-align:left;
+     position:relative;
+     left:300px;
+ }
+</style>
+<body class="body">
     <div class="container">
 
         <h1>MIS 4013 Group Project</h1>
-        <button onclick="location.href='frontEndMain.html'" type="button">FrontEnd</button>
-        <button onclick="location.href='backEndMain.html'" type="button">Back End</button>
+        <button onclick="location.href='frontEndMain.html'" class="button" type="button">FrontEnd</button>
+        <button onclick="location.href='backEndMain.html'" class="button" type="button">Back End</button>
         <h3>Created By:</h3>
-        <ul>
+        <ul class="names">
             <li>Valerie Joplin</li>
             <li>Trevor Riley</li>
             <li>Andrew Soltis</li>
             <li>Sana Yari Hajatalou</li>
         </ul>
-        <p>Due before December 16th at 10am</p>
+        <p>Due before December 16th at 10am /
+            Presentation on December 7th
+        </p>
     </div>
 </body>
 </html>

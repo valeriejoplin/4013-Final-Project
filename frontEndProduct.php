@@ -127,7 +127,7 @@ footer {
             </div>
         </nav>
                                             <?php
-                        $servername = "localhost";
+                        $servername = "165.227.18.177";
                         $username = "asoltiso_project";
                         $password = "Project1243";
                         $dbname = "asoltiso_project";   
