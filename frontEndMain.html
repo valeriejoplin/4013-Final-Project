@@ -112,7 +112,21 @@ input[type=submit]{
         </p>
 
     </div>
+<script type="text/javascript">
+window.addEventListener("load", function(){
+    setTimeout(
+        function open(event){
+            document.querySelector(".popup").style.display = "block";
+        },
+        2000 
+    )
+});
 
+
+document.querySelector("#close").addEventListener("click", function(){
+    document.querySelector(".popup").style.display = "none";
+});
+    </script>
         <p>Form For Entering Email/PhoneNumber</p>
         <p>Could find java script library to validate phone number/email</p>
     </div>
