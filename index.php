@@ -44,18 +44,15 @@
     <div class="container">
 
         <h1>MIS 4013 Group Project</h1>
-        <button onclick="location.href='frontEndMain.html'" class="button" type="button">FrontEnd</button>
+        <button onclick="location.href='frontEndMain.html'" class="button" type="button">Front End</button>
         <button onclick="location.href='backEndMain.html'" class="button" type="button">Back End</button>
         <h3>Created By:</h3>
         <ul class="names">
             <li>Valerie Joplin</li>
-            <li>Trevor Riley</li>
             <li>Andrew Soltis</li>
             <li>Sana Yari Hajatalou</li>
+            <li>Trevor Riley</li>
         </ul>
-        <p>Due before December 16th at 10am /
-            Presentation on December 7th
-        </p>
     </div>
 </body>
 </html>
