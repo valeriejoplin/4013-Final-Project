@@ -36,7 +36,7 @@
 Will put our photos & information here
 <table>
   <tr>
-    <td><img src="" width="300"></td>
+    <td><img src="" width="300"> Additional information</td>
     <td><img src="" width="300"></td>
   </tr>
   
