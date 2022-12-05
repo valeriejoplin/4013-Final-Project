@@ -25,7 +25,7 @@
                         <a class="nav-link" href="frontEndMain.html">Front End Home</a>
                     </li>
 			 <li class="nav-item active">
-                        <a class="nav-link" href="frontEndAbout.html">About</a>
+                        <a class="nav-link" href="frontEndAbout.php">About</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="frontEndCatalog.php">Catalog</a>
