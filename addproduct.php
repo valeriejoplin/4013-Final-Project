@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     case 'Add':
         $sqlAdd = "insert into Product (name,price,shortDesc,longDesc,qtyavalible) value (?, ?,?,?)";
         $stmtAdd = $conn->prepare($sqlAdd);
-        $stmtAdd->bind_param("is",$_POST['productID'], $_POST['iteamname'], $_POST['iprice'], $_POST['ishortdesc'], $_POST['ilongdesc'],$_POST['iqty']);
+        $stmtAdd->bind_param("sissi", $_POST['iteamname'], $_POST['iprice'], $_POST['ishortdesc'], $_POST['ilongdesc'],$_POST['iqty']);
         $stmtAdd->execute();   
       echo '<div class="alert alert-success" role="alert">New Item added.</div>';
       break;
