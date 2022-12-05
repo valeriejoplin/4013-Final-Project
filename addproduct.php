@@ -7,14 +7,19 @@
       </button>
 
 
+
+
+<?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   switch ($_POST['saveType']) {
     case 'Add':
-        $sqlAdd = "insert into Product (city_ID,football_name) value (?, ?)";
+        $sqlAdd = "insert into Product (name,price,shortDesc,longDesc) value (?, ?)";
         $stmtAdd = $conn->prepare($sqlAdd);
         $stmtAdd->bind_param("is",$_POST['icityID'], $_POST['iteamname']);
         $stmtAdd->execute();   
-      echo '<div class="alert alert-success" role="alert">New Team added.</div>';
+      echo '<div class="alert alert-success" role="alert">New Item added.</div>';
       break;
 
   }
+
+  ?>
