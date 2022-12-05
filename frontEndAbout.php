@@ -32,14 +32,8 @@
                 </ul>
             </div>
         </nav>
-<h1 style=text-align:center;> About Us </h1>
+ <div style="text-align:center;">
+<h1> About Us </h1>
  <p> VAST fashion was founded in 2022 by four college students who have a passion for web design and fashion! Generic information about company and our founding members. </p>
 Will put our photos & information here
-<table>
-  <tr>
-    <td>Valerie Joplin</td>
-    <td><Andrew Soltis></td>
-    <td>Sana Yari Hajatalou</td>
-    <td>Trevor Riley</td>
-  </tr>
-</table>
+        </div>
