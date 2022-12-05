@@ -37,8 +37,10 @@
 Will put our photos & information here
 <table>
   <tr>
-    <td><img src="" width="300"></td>
-    <td><img src="" width="300"></td>
+    <td>Valerie Joplin</td>
+    <td><Andrew Soltis></td>
+    <td>Sana Yari Hajatalou</td>
+    <td>Trevor Riley</td>
   </tr>
   
   <tr>
