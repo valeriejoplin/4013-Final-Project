@@ -13,9 +13,9 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   switch ($_POST['saveType']) {
     case 'Add':
-        $sqlAdd = "insert into Product (name,price,shortDesc,longDesc) value (?, ?)";
+        $sqlAdd = "insert into Product (name,price,shortDesc,longDesc,qtyavalible) value (?, ?,?,?)";
         $stmtAdd = $conn->prepare($sqlAdd);
-        $stmtAdd->bind_param("is",$_POST['productID'], $_POST['iteamname'], $_POST['iprice'], $_POST['ishortdesc']);
+        $stmtAdd->bind_param("is",$_POST['productID'], $_POST['iteamname'], $_POST['iprice'], $_POST['ishortdesc'], $_POST['ilongdesc'],$_POST['iqty']);
         $stmtAdd->execute();   
       echo '<div class="alert alert-success" role="alert">New Item added.</div>';
       break;
@@ -30,18 +30,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="addcityLabel">Add Football Team</h1>
+              <h1 class="modal-title fs-5" id="addcityLabel">Add New Product</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <form method="post" action="">
                 <div class="mb-3">
                   <label for="editfootball<?=$row["city_ID"]?>Name" class="form-label">Product Name</label>
-                          <input type="text" class="form-control" id="editfootball<?=$row["city_ID"]?>Name" aria-describedby="editfootball<?=$row["city_ID"]?>Help" name="iteamname">
+                          <input type="text" class="form-control" id="editfootball<?=$row["city_ID"]?>Name" aria-describedby="editfootball<?=$row["productID"]?>Help" name="iteamname">
                            <label for="editfootball<?=$row["city_ID"]?>Name" class="form-label">Price</label>
-                          <input type="text" class="form-control" id="editfootball<?=$row["city_ID"]?>Name" aria-describedby="editfootball<?=$row["city_ID"]?>Help" name="iprice">
+                          <input type="text" class="form-control" id="editfootball<?=$row["city_ID"]?>Name" aria-describedby="editfootball<?=$row["productID"]?>Help" name="iprice">
                           <label for="editfootball<?=$row["city_ID"]?>Name" class="form-label">Short Desc</label>
-                          <input type="text" class="form-control" id="editfootball<?=$row["city_ID"]?>Name" aria-describedby="editfootball<?=$row["city_ID"]?>Help" name="ishortdesc">
+                          <input type="text" class="form-control" id="editfootball<?=$row["city_ID"]?>Name" aria-describedby="editfootball<?=$row["productID""]?>Help" name="ishortdesc">
+                          <label for="editfootball<?=$row["city_ID"]?>Name" class="form-label">Long Desc</label>
+                          <input type="text" class="form-control" id="editfootball<?=$row["city_ID"]?>Name" aria-describedby="editfootball<?=$row["productID"]?>Help" name="ilongdesc">
+                          <label for="editfootball<?=$row["city_ID"]?>Name" class="form-label">QTY Available</label>
+                          <input type="text" class="form-control" id="editfootball<?=$row["city_ID"]?>Name" aria-describedby="editfootball<?=$row["productID"]?>Help" name="iqty">
+
                           </div>
                 <input type="hidden" name="saveType" value="Add">
                 <button type="submit" class="btn btn-primary">Submit</button>
