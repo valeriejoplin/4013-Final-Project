@@ -53,6 +53,9 @@
         .table h3{
               font-family: "Times New Roman", Times, serif;
          }
+         .designers{
+               font-family: "Times New Roman", Times, serif;
+         }
         </style>
  <div class="about">
 <h1> About Us </h1>
@@ -60,7 +63,7 @@
         </div>
     <div class="table">
         <h3> Meet the designers </h3>
-        <table>
+        <table class="designers">
   <tr>
     <th>Valerie Joplin</th>
     <th>Andrew Soltis</th>
