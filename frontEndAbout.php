@@ -40,6 +40,7 @@
            height:100px;
          }
        .about{
+             font-family: "Times New Roman", Times, serif;
            text-align:center;
             border: 1.5px solid black;
            background-color:RGB 217, 136, 128 
