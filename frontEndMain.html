@@ -270,9 +270,14 @@ document.querySelector("#close").addEventListener("click", function(){
     document.querySelector(".popup").style.display = "none";
 });
     </script>
+function submitFunction()
+{
+  alert('Thank you! You have been added to our email list.');
+  return false;
+}
 <div class="promo">
 	<h4> Sign up for special offers and promotional emails </h4>
-	<form action="#">
+	<form id="promoform" onsubmit="submitFunction()">
   <label for="fname">First name:</label><br>
   <input type="text" id="fname" name="fname"><br>
   <label for="lname">Last name:</label><br>
