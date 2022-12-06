@@ -49,5 +49,4 @@
  <div class="about">
 <h1> About Us </h1>
  <p> VAST fashion was founded in 2022 by four college students who have a passion for web design and fashion! Generic information about company and our founding members. </p>
-Will put our photos & information here
         </div>
