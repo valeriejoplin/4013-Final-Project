@@ -11,6 +11,12 @@
     <title>Catalog</title>
 
 </head>
+<style>
+	.logo{
+		width: 100px;
+		height:100px;
+	}
+	</style>
 <body>
     <div class="container">
     <h1>VAST Fashion</h1>
