@@ -49,6 +49,9 @@
             height:300px;
             width: 250px;
         }
+         .container{
+                          font-family: "Times New Roman", Times, serif;
+         }
         .table h3{
               font-family: "Times New Roman", Times, serif;
          }
