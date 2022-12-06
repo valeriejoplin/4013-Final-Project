@@ -36,7 +36,7 @@
        .about{
            text-align:center;
            height:100px;
-           width:200px;
+           width:500px;
          }
         </style>
  <div class="about">
