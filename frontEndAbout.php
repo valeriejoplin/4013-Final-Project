@@ -36,8 +36,8 @@
         </nav>
      <style>
        .logo{
-           width:20px;
-           height:20px;
+           width:50px;
+           height:50px;
          }
        .about{
            text-align:center;
