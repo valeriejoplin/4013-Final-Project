@@ -47,7 +47,7 @@
          }
         .Val{
             height:300px;
-            width:300px;
+            width: 250px;
         }
         </style>
  <div class="about">
