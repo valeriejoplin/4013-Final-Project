@@ -10,7 +10,10 @@
     array_push($_SESSION['cart'],$product, $quantity);   
     //print_r($_SESSION['cart']);
 ?>
-
+<style>
+.table{
+	text-align:center;
+	}
                                           
 
 <table class="table">     <!-- HTML Part (optional) -->
