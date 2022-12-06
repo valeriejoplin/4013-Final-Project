@@ -41,8 +41,9 @@
          }
        .about{
            text-align:center;
-           height:100px;
-           width:500px;
+            border: 1.5px solid black;
+           background-color: #D98880
+           color: #F2F5F5;
          }
         </style>
  <div class="about">
