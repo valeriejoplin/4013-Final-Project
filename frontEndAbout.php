@@ -45,10 +45,14 @@
            background-color:RGB 217, 136, 128 
            color: #F2F5F5;
          }
+        .Val{
+            height:300px;
+            width:300px;
+        }
         </style>
  <div class="about">
 <h1> About Us </h1>
  <p> VAST fashion was founded in 2022 by four college students who have a passion for web design and fashion! Generic information about company and our founding members. </p>
         </div>
-        <img src="ValeriePhoto.jpg">
+        <img src="ValeriePhoto.jpg" class="Val">
         </body>
