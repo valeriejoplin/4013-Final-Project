@@ -34,7 +34,7 @@
         </nav>
      <style>
        .about{
-           height:200px;
+           height:100px;
            width:200px;
          }
         </style>
