@@ -43,7 +43,7 @@
              font-family: "Times New Roman", Times, serif;
            text-align:center;
             border: 1.5px solid black;
-           background-color: #F9D7B8;
+           background-color: #FADCA0;
          }
         .Val{
             height:300px;
