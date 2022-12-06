@@ -16,7 +16,11 @@
 		width: 100px;
 		height:100px;
 	}
+	.container{
+		font-family: "Times New Roman", Times, serif;
+	}
 	</style>
+	
 <body>
     <div class="container">
     <h1>VAST Fashion</h1>
