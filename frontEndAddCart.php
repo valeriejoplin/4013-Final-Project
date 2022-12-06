@@ -14,7 +14,7 @@
 .table{
 	text-align:center;
 	}
-                                          
+</style>                                       
 
 <table class="table">     <!-- HTML Part (optional) -->
     <tr>
