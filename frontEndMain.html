@@ -8,6 +8,10 @@
     <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
     <title>Front End Home</title>
 </head>
+function submitFunction()
+{
+  alert('Thank you! You have been added to our email list.');
+}
 <style>
 .frontpage{
 	text-align:center;
@@ -269,10 +273,7 @@ document.querySelector("#close").addEventListener("click", function(){
     document.querySelector(".popup").style.display = "none";
 });
     </script>
-function submitFunction()
-{
-  alert('Thank you! You have been added to our email list.');
-}
+
 <div class="promo">
 	<h4> Sign up for special offers and promotional emails </h4>
 	<form id="promoform" onsubmit="submitFunction()">
