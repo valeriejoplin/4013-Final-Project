@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
-    <title>Front End Home</title>
-</head>
+<?php
+require_once("frontendheader.php"):
+?>
 <body>
      <style>
        .logo{
@@ -24,9 +17,7 @@
             height:300px;
             width: 250px;
         }
-         .container{
-                          font-family: "Times New Roman", Times, serif;
-         }
+
         .table h3{
               font-family: "Times New Roman", Times, serif;
          }
