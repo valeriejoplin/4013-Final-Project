@@ -266,8 +266,18 @@ document.querySelector("#close").addEventListener("click", function(){
     document.querySelector(".popup").style.display = "none";
 });
     </script>
-        <p>Form For Entering Email/PhoneNumber</p>
-        <p>Could find java script library to validate phone number/email</p>
+<div class="promo">
+	<h1> Sign up for special offers and promotional emails </h1>
+	<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname"><br><br>
+<label for="email">Email Address:</label><br>
+  <input type="email" id="email" name="email"><br>
+  <input type="submit" value="Submit">
+</form>
+	</div>
     </div>
 </body>
 </html>
