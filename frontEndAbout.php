@@ -49,6 +49,9 @@
             height:300px;
             width: 250px;
         }
+        .table h3{
+              font-family: "Times New Roman", Times, serif;
+         }
         </style>
  <div class="about">
 <h1> About Us </h1>
