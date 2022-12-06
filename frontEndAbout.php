@@ -42,7 +42,7 @@
        .about{
            text-align:center;
             border: 1.5px solid black;
-           background-color: #D98880
+           background-color:RGB 217, 136, 128 
            color: #F2F5F5;
          }
         </style>
