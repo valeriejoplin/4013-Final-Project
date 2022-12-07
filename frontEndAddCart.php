@@ -31,7 +31,7 @@
     <script src="assets/javascript/w3.js"></script>
     <title>Catalog</title>
 <style>
- .keepShopping{
+ a{
 	   background-color: red;
   color: white;
   padding: 1em 1.5em;
