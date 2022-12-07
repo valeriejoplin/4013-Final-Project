@@ -66,5 +66,7 @@
  
 </table>
 
-<?php require_once("frontendfooter.php"); ?>
+
  </body>
+
+ <?php require_once("frontendfooter.php"); ?>
