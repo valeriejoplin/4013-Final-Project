@@ -288,7 +288,6 @@ input[type=submit]{
             </form>
             <form action="https://formsubmit.co/3cbd6087d29d14ef54538c6817c28eba" method="POST">
                 <input type="hidden" name="_autoresponse" value="your custom message">
-                <input type="hidden" name="_captcha" value="false">
                 <input type="text" name="name" required>
                 <input type="email" name="email" placeholder="Email Address">
                 <button type="submit">Send</button>
