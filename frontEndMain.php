@@ -277,16 +277,8 @@ input[type=submit]{
 
         <div class="promo">
             <h4> Sign up for special offers and promotional emails </h4>
-            <form id="promoform">
-                <label for="fname">First name:</label><br>
-                <input type="text" id="fname" name="fname"><br>
-                <label for="lname">Last name:</label><br>
-                <input type="text" id="lname" name="lname"><br><br>
-                <label for="email">Email Address:</label><br>
-                <input type="email" id="email" name="email"><br>
-                <input type="button" value="Submit" onclick="sendEmail()">
-            </form>
             <form action="https://formsubmit.co/3cbd6087d29d14ef54538c6817c28eba" method="POST">
+                <input type="hidden" name="_autoresponse" value="Thank you for signing up!">
                 <input type="hidden" name="_next" value="https://project.asoltis.oucreate.com/frontEndMain.php">
                 <input type="text" name="name" required>
                 <input type="email" name="email" placeholder="Email Address">
