@@ -45,26 +45,26 @@
 <h1> Meet the Designers <h1>
   <div class="cards">
       <div class="card">
-            <h1>Valerie Joplin>
-            <img src="ValeriePhoto.jpg">
+            <h1>Valerie Joplin</h1>
+            <img src="ValeriePhoto.jpg" class="val">
             <h3>MIS</h3>
             <h4>Class of 2023</h4>
       </div>
-      <div class="card">
+      <div class="card"</h1>
             <h1>Andrew Soltis>
-            <img src="AndrewPhoto.jpg">
+            <img src="AndrewPhoto.jpg"class="val">
             <h3>MIS & MIT</h3>
             <h4>Class of 2024</h4>
       </div>
-      <div class="card">
-            <h1>Sana Yari Hajatalou>
-            <img src="1629837912471.jpeg">
+      <div class="card"</h1>
+            <h1>Sana Yari Hajatalou/>
+            <img src="1629837912471.jpeg"class="val">
             <h3>Major</h3>
             <h4>Class of </h4>
       </div>
-      <div class="card">
+      <div class="card"</h1>
             <h1>Trevor Riley>
-            <img src="TrevorPhoto.jpg">
+            <img src="TrevorPhoto.jpg"class="val">
             <h3>MIS</h3>
             <h4>Class of 2022!</h4>
       </div>
