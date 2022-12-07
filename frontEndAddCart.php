@@ -6,8 +6,6 @@
     <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
     <title>Cart</title>
 </head>
-<style>
-
 <?php // PHP part
     session_set_cookie_params(0);
     session_start();          // Start the session
