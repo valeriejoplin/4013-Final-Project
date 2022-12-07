@@ -246,6 +246,7 @@ input[type=submit]{
     </style>
 </head>
 <body>
+<div>
     <div class="popup">
         <button id="close">&times;</button>
         <h2>Happy Holidays!</h2>
@@ -286,9 +287,10 @@ document.querySelector("#close").addEventListener("click", function(){
   <input type="submit" value="Submit">
 </form>
 	</div>
+     Add featured product here
     </div>
 
-    Add featured product here
+   
 
 </body>
 
