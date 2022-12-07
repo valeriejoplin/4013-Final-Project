@@ -156,7 +156,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMCbt2oQ2t25_-x-Tbk7Ny6OOtzvuW9rY&libraries=places&callback=initAutocomplete" async defer></script>
 
-    <div id="myModal" class="modal">
+    <!-- Trigger/Open The Modal -->
+<button id="myBtn">Open Modal</button>
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -178,7 +179,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 </div>
 
-<script>
+    <script>
 // Get the modal
 var modal = document.getElementById("myModal");
 
@@ -205,5 +206,6 @@ window.onclick = function(event) {
   }
 }
 </script>
+
 
 <body>
