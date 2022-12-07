@@ -1,6 +1,16 @@
 <?php // PHP part
     session_set_cookie_params(0);
     session_start();          // Start the session
+    // Check if the form was submitted
+    if (isset($_POST['submit'])) {
+    // Clear the session data
+    $_SESSION = array();
+  session_destroy();
+
+  // Redirect to the home page
+  header('Location: index.php');
+  exit;
+}
     if(empty($_SESSION['cart']))
 	{
 		$_SESSION['cart'] = array();
@@ -50,7 +60,7 @@
     <input type="text" id="state" name="state"><br>
     <label for="zip">Zip Code:</label><br>
     <input type="text" id="zip" name="zip"><br><br>
-    <input type="submit" value="Submit">
+    <input type="submit" value="Submit" name="submit">
   </form>
   <script>
     var openFormButton = document.getElementById('openFormButton');
