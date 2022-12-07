@@ -169,8 +169,40 @@ body {font-family: Arial, Helvetica, sans-serif;}
       <h2>Modal Header</h2>
     </div>
     <div class="modal-body">
-      <p>Some text in the Modal Body</p>
-      <p>Some other text...</p>
+      <div class="panel-body">
+                <input id="autocomplete" placeholder="Enter your address" onFocus="geolocate()" type="text" class="form-control">
+                <div id="address">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label class="control-label">Address</label>
+                            <input class="form-control" id="street_number" disabled="true">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="control-label">Street</label>
+                            <input class="form-control" id="route" disabled="true">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label class="control-label">City</label>
+                            <input class="form-control field" id="locality" disabled="true">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="control-label">State</label>
+                            <input class="form-control" id="administrative_area_level_1" disabled="true">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label class="control-label">Zip code</label>
+                            <input class="form-control" id="postal_code" disabled="true">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="control-label">Country</label>
+                            <input class="form-control" id="country" disabled="true">
+                        </div>
+                    </div>
+                </div>
     </div>
     <div class="modal-footer">
       <h3>Modal Footer</h3>
