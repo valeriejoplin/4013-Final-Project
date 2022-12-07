@@ -21,7 +21,6 @@
          }
          .table h1{
              text-align:center;
-             font-weight:bold;
          }
        .about{
              font-family: "Times New Roman", Times, serif;
