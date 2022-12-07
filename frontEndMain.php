@@ -55,6 +55,9 @@ img {vertical-align: middle;}
   position: relative;
   margin: auto;
 }
+body{
+	background-color: #F8E7D2;
+	}
 
 /* Caption text */
 .text {
@@ -289,6 +292,6 @@ document.querySelector("#close").addEventListener("click", function(){
 
 </body>
 
-
+<?php require_once("frontendfooter.php"); ?>
 
 </html>
