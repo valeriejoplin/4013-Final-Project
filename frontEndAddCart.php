@@ -1,4 +1,3 @@
-
 <?php // PHP part
     session_set_cookie_params(0);
     session_start();          // Start the session
@@ -11,6 +10,7 @@
     array_push($_SESSION['cart'],$product, $quantity);   
     //print_r($_SESSION['cart']);
 ?>
+
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
