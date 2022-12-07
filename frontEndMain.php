@@ -286,7 +286,7 @@ input[type=submit]{
                 <input type="email" id="email" name="email"><br>
                 <input type="button" value="Submit" onclick="sendEmail()">
             </form>
-            <form action="https://formsubmit.covast@project.asoltis.oucreate.com" method="POST">
+            <form action="https://formsubmit.co/vast@project.asoltis.oucreate.com" method="POST">
                 <input type="hidden" name="_autoresponse" value="your custom message">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="text" name="name" required>
