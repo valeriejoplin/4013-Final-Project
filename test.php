@@ -1,9 +1,11 @@
+<!doctype html>
 <html>
 <head>
     <title>Homework 6 &raquo; Autofill</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
     <script src="auto-complete.js"></script>
     <style type="text/css">
         html, body {
@@ -17,6 +19,13 @@
     </style>
 </head>
 <body>
+
+    <nav>
+                <a href="index.html">Index</a>
+                <a href="p2.html">Sketch.JS</a>
+                <a href="p4.html">Autofill</a>
+            </nav>
+
 
     <div class="container">
         <div class="panel panel-primary">
