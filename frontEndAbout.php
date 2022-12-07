@@ -53,7 +53,7 @@
   <tr>
     <td><img src="ValeriePhoto.jpg" class="Val"></td>
     <td>Andrew Image</td>
-    <td>Sana Image</td>
+    <td>https<img src="1629837912471.jpeg" class = "Val"</td>
     <td><img src="TrevorPhoto.jpg" class ="Val" ></td>
 
   </tr>
