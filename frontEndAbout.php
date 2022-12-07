@@ -19,7 +19,7 @@
            width:100px;
            height:100px;
          }
-         .about h1{
+         .table h1{
              text-align:center;
              font-weight:bold;
          }
