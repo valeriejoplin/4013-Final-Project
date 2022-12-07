@@ -37,6 +37,8 @@
 border: 1px solid black;
   padding: 1em 1em;
   text-decoration: none;
+	 height: 50px;
+	 width: 50px;
 	}
 	</style>
 </head>
