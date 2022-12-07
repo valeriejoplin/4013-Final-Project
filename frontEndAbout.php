@@ -62,14 +62,14 @@
             <h3>Major</h3>
             <h4>Class of </h4>
       </div>
-      <div class="card"</h1>
-            <h1>Trevor Riley>
+      <div class="card">
+            <h1>Trevor Riley</h1>
             <img src="TrevorPhoto.jpg" class="Val">
             <h3>MIS</h3>
             <h4>Class of 2022!</h4>
       </div>
       <script>
-        w3.slideshow(".card");
+        w3.slideshow(".card", 600);
       </script>
   </div>
  
