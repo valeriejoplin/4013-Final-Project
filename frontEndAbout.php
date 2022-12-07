@@ -35,6 +35,10 @@
          .designers{
                font-family: "Times New Roman", Times, serif;
          }
+
+         .card{
+             text-align: center;
+         }
         </style>
  <div class="about">
 <h1> About Us </h1>
