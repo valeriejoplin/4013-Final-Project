@@ -11,13 +11,13 @@
     //print_r($_SESSION['cart']);
 ?>
                                     
+<?php require_once("frontEndHeader.php"); ?>
 
 <table class="table">     <!-- HTML Part (optional) -->
     <tr>
       <th>Product</th>
       <th>Quantity</th>
-    </tr>
-                                                        
+    </tr>                                      
     <tr>
      <?php for($i = 0 ; $i < count($_SESSION['cart']) ; $i++) {
      echo '<td>'.$_SESSION['cart'][$i].'</td>';
