@@ -6,11 +6,7 @@
         Add New
       </button>
 
-<?php
-$sql = "SELECT * from Product";
-$result = $conn->query($sql);
 
-?>
 
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -73,6 +69,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   
 <?php
 
+
+
+$sql = "SELECT * from Product";
+$result = $conn->query($sql);
 
 
 
