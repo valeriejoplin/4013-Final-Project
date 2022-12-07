@@ -65,4 +65,6 @@
   </tr>
  
 </table>
+
+<?php require_once("frontendfooter.php"); ?>
         </body>
