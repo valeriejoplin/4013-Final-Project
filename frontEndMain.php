@@ -256,16 +256,14 @@ input[type=submit]{
 
     </div>
 <script type="text/javascript">
-window.addEventListener("load", function(){
-    setTimeout(
-        function open(event){
-            document.querySelector(".popup").style.display = "block";
-        },
-        2000 
-    )
-});
 
 
+ $(document).ready(function() {
+     if ($.cookie('pop') == null) {
+         document.querySelector(".popup").style.display = "block";
+         $.cookie('pop', '1');
+     }
+ });
 document.querySelector("#close").addEventListener("click", function(){
     document.querySelector(".popup").style.display = "none";
 });
