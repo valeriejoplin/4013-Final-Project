@@ -24,7 +24,7 @@
      <div class="container">
         <?php require_once("frontEndHeader.php"); ?>
 
-        <div>
+        <table>
             <tr>
               <th>Product</th>
               <th>Quantity</th>
@@ -34,5 +34,5 @@
              echo '<td>'.$_SESSION['cart'][$i].'</td>';
              }  ?>
             </tr>
-        </div>
+        </table>
 </div>
