@@ -32,11 +32,10 @@
     <title>Catalog</title>
 <style>
  .keepShopping{
-	   background-color: red;
-  color: white;
-  padding: 1em 1.5em;
+	   background-color: white;
+  color: black;
+  padding: 1em 1em;
   text-decoration: none;
-  text-transform: uppercase;
 	}
 	</style>
 </head>
