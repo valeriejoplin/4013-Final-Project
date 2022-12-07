@@ -8,7 +8,7 @@
             width:100px;
             height:100px;
             }
-                     
+            </style>                 
 <footer>
             <div class="icons">
                 <img class="footericon" src="assets/send-mail.svg" />
