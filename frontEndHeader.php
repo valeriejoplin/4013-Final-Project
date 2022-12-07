@@ -19,6 +19,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="frontEndAddCart.php">Cart</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="frontEndContact.php">Contact</a>
+                    </li>
                 </ul>
             </div>
         </nav>
