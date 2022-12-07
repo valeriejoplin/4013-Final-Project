@@ -45,7 +45,7 @@
   <div class="cards">
       <div class="card">
             <h1>Valerie Joplin</h1>
-            <img src="ValeriePhoto.jpg" style="height:400px">
+            <img src="ValeriePhoto.jpg" style="height:400px width:auto">
             <h3>MIS</h3>
             <h4>Class of 2023</h4>
       </div>
