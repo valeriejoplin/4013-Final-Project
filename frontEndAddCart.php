@@ -38,6 +38,7 @@
   text-decoration: none;
   text-transform: uppercase;
 	}
+	</style>
 </head>
 
 <div class="container">
