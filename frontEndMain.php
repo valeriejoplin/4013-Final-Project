@@ -288,6 +288,7 @@ document.querySelector("#close").addEventListener("click", function(){
 	</div>
     </div>
 
+    Add featured product here
 
 </body>
 
