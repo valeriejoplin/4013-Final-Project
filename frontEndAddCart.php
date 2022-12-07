@@ -40,6 +40,8 @@
             <tr>
               <th>Product</th>
               <th>Quantity</th>
+              <th>Price</th>
+              <th>Total</th>
             </tr>                                      
             <tr>
              <?php for($i = 0 ; $i < count($_SESSION['cart']) ; $i++) {
