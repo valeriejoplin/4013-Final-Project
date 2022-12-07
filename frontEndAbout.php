@@ -76,7 +76,7 @@
     <td><img src="ValeriePhoto.jpg" class="Val"></td>
     <td>Andrew Image</td>
     <td>Sana Image</td>
-    <td><img src="TrevorPhoto.jpg" class ="Trevor" ></td>
+    <td><img src="TrevorPhoto.jpg" class ="Val" ></td>
 
   </tr>
   <tr>
