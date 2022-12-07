@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
     <title>Front End Home</title>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
 <body>
     <div class="container">
@@ -67,6 +68,9 @@
             <h3>MIS</h3>
             <h4>Class of 2022!</h4>
       </div>
+      <script>
+        w3.slideshow(".card");
+      </script>
   </div>
  
 </table>
