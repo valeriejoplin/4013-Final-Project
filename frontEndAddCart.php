@@ -8,7 +8,7 @@
   session_destroy();
 
   // Redirect to the home page
-  header('Location: frontEndSuccess.php');
+  header('Location: frontEndHome.php');
   exit;
 }
     if(empty($_SESSION['cart']))
