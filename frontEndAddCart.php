@@ -70,3 +70,5 @@
     });
   </script>
 
+  <button id="keepShopping" href="/frontEndMain.php">Keep Shopping</button>
+
