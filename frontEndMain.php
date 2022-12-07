@@ -287,7 +287,7 @@ input[type=submit]{
                 <input type="button" value="Submit" onclick="sendEmail()">
             </form>
             <form action="https://formsubmit.co/3cbd6087d29d14ef54538c6817c28eba" method="POST">
-                <input type="hidden" name="_webhook" value="https://yourdomain.co/your-webhook">
+                <input type="hidden" name="_next" value="/frontEndMain.php">
                 <input type="hidden" name="_autoresponse" value="your custom message">
                 <input type="text" name="name" required>
                 <input type="email" name="email" placeholder="Email Address">
