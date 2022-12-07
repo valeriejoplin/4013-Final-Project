@@ -8,10 +8,10 @@
                 <a class="footericon" href="https://www.facebook.com/" target="_blank">
                     <img src="assets/facebook.svg" />
                 </a>
-                <a class="footericon style="width:100px;height:100px;" href="https://www.twitter.com/" target="_blank">
+                <a class="footericon" style="width:100px;height:100px;" href="https://www.twitter.com/" target="_blank">
                     <img src="assets/twitter.svg" />
                 </a>
-                <a class="footericon style="width:100px;height:100px;" href="https://www.instagram.com/" target="_blank">
+                <a class="footericon" style="width:100px;height:100px;" href="https://www.instagram.com/" target="_blank">
                     <img src="assets/instagram.svg" />
                 </a>
             </div>
