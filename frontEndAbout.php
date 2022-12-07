@@ -25,7 +25,7 @@
            background-color: #FAD2A0;
          }
         .Val{
-            height:45%;
+            height:400px;
         }
 
         .table h3{
@@ -45,7 +45,7 @@
   <div class="cards">
       <div class="card">
             <h1>Valerie Joplin</h1>
-            <img src="ValeriePhoto.jpg" style="height:400px; width:auto">
+            <img src="ValeriePhoto.jpg" style="height:400px; width:fit-content">
             <h3>MIS</h3>
             <h4>Class of 2023</h4>
       </div>
