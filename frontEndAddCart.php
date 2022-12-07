@@ -1,102 +1,15 @@
-<?php // PHP part
-    session_set_cookie_params(0);
-    session_start();          // Start the session
-    if(empty($_SESSION['cart']))
-	{
-		$_SESSION['cart'] = array();
-    }
-    $product=$_POST['product_id']; //student_name form field name
-	$quantity=$_POST['quantity'];
-    array_push($_SESSION['cart'],$product, $quantity);   
-    //print_r($_SESSION['cart']);
-?>
-
-<style>
-body {font-family: Arial, Helvetica, sans-serif;}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  border: 1px solid #888;
-  width: 80%;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
-  animation-duration: 0.4s
-}
-
-/* Add Animation */
-@-webkit-keyframes animatetop {
-  from {top:-300px; opacity:0} 
-  to {top:0; opacity:1}
-}
-
-@keyframes animatetop {
-  from {top:-300px; opacity:0}
-  to {top:0; opacity:1}
-}
-
-/* The Close Button */
-.close {
-  color: white;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.modal-header {
-  padding: 2px 16px;
-  background-color: #5cb85c;
-  color: white;
-}
-
-.modal-body {padding: 2px 16px;}
-
-.modal-footer {
-  padding: 2px 16px;
-  background-color: #5cb85c;
-  color: white;
-}
-</style>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-
+<!doctype html>
+<html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+    <title>Homework 6 &raquo; Autofill</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
     <script src="auto-complete.js"></script>
-    <title>Cart</title>
 </head>
 <body>
-     <div class="container">
+<div class="container">
         <?php require_once("frontEndHeader.php"); ?>
 
         <table class="table">
@@ -111,7 +24,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
             </tr>
         </table>
     </div>
-        <div class="container">
+    <div class="container">
         <div class="panel panel-primary">
             <div class="panel-heading">
                 <h2 class="panel-title">Add your Address</h2>
@@ -156,4 +69,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMCbt2oQ2t25_-x-Tbk7Ny6OOtzvuW9rY&libraries=places&callback=initAutocomplete" async defer></script>
 
-<body>
+
+
+</body>
+</html>
