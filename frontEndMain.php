@@ -1,3 +1,5 @@
+
+<?php     session_start();        ?>
 <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
@@ -256,11 +258,14 @@ input[type=submit]{
 
     </div>
 <script type="text/javascript">
-$j(document).ready(function() {
-    if(localStorage.getItem('popState') != 'shown'){
-        $j('#popup').delay(2000).fadeIn();
-        localStorage.setItem('popState','shown')
-    }
+window.addEventListener("load", function(){
+    setTimeout(
+        function open(event){
+            document.querySelector(".popup").style.display = "block";
+        },
+        2000 
+    )
+});
 
 document.querySelector("#close").addEventListener("click", function(){
     document.querySelector(".popup").style.display = "none";
