@@ -1,79 +1,55 @@
-<!doctype html>
 <html>
-<head>
-    <title>Homework 6 &raquo; Autofill</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
-    <script src="auto-complete.js"></script>
-    <style type="text/css">
-        html, body {
-            background: #2b2b2b;
-        }
-
-        h1, h2, h3 {
-            text-align: center;
-            color: white;
-        }
+  <head>
+    <title>Modal with Auto-Complete Form</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-autocomplete/1.0.7/jquery.auto-complete.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <style>
+      /* Style the modal */
+      .modal {
+        width: 50%;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        background-color: #fefefe;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- Button that opens the modal -->
+    <button id="modal-button">Open Modal</button>
 
-    <nav>
-                <a href="index.html">Index</a>
-                <a href="p2.html">Sketch.JS</a>
-                <a href="p4.html">Autofill</a>
-            </nav>
-
-
-    <div class="container">
-        <div class="panel panel-primary">
-            <div class="panel-heading">
-                <h2 class="panel-title">Add your Address</h2>
-            </div>
-            <div class="panel-body">
-                <input id="autocomplete" placeholder="Enter your address" onFocus="geolocate()" type="text" class="form-control">
-                <div id="address">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <label class="control-label">Address</label>
-                            <input class="form-control" id="street_number" disabled="true">
-                        </div>
-                        <div class="col-md-6">
-                            <label class="control-label">Street</label>
-                            <input class="form-control" id="route" disabled="true">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <label class="control-label">City</label>
-                            <input class="form-control field" id="locality" disabled="true">
-                        </div>
-                        <div class="col-md-6">
-                            <label class="control-label">State</label>
-                            <input class="form-control" id="administrative_area_level_1" disabled="true">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <label class="control-label">Zip code</label>
-                            <input class="form-control" id="postal_code" disabled="true">
-                        </div>
-                        <div class="col-md-6">
-                            <label class="control-label">Country</label>
-                            <input class="form-control" id="country" disabled="true">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- The modal -->
+    <div id="modal" class="modal">
+      <form id="address-form">
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" autocomplete="off">
+      </form>
     </div>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMCbt2oQ2t25_-x-Tbk7Ny6OOtzvuW9rY&libraries=places&callback=initAutocomplete" async defer></script>
+    <script>
+      // Attach a click event to the button that opens the modal
+      $('#modal-button').on('click', function() {
+        $('#modal').modal();
+      });
 
+      // Use PHP to fetch a list of addresses from a database or file
+      // and store it in a JavaScript array
+      var addresses = <?php echo json_encode(get_addresses_from_database()); ?>;
 
-
-</body>
+      // Initialize the auto-complete plugin on the address field
+      $('#address').autoComplete({
+        minChars: 1,
+        source: function(term, suggest){
+            term = term.toLowerCase();
+            var choices = addresses;
+            var suggestions = [];
+            for (i=0;i<choices.length;i++)
+                if (~choices[i].toLowerCase().indexOf(term)) suggestions.push(choices[i]);
+            suggest(suggestions);
+        }
+      });
+    </script>
+  </body>
 </html>
-
