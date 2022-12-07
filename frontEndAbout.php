@@ -53,7 +53,7 @@
   <tr>
     <td><img src="ValeriePhoto.jpg" class="Resize"></td>
     <td>Andrew Image</td>
-    <td><img src="1629837912471.jpeg" class "Resize"</td>
+    <td><img src="1629837912471.jpeg" class= "Resize"</td>
     <td><img src="TrevorPhoto.jpg" class ="Resize" ></td>
 
   </tr>
