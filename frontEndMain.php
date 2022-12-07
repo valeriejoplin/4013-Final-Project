@@ -275,23 +275,6 @@ input[type=submit]{
             }
         </script>
 
-        <script type="text/javascript">
-            function sendEmail() {
-                Email.send({
-                    Host: "mail.project.asoltis.oucreate.com",
-                    Username: "vast@project.asoltis.oucreate.com",
-                    Password: "Project1243",
-                    To: 'ams.soltis@gmail.com',
-                    From: "vast@project.asoltis.oucreate.com",
-                    Subject: "Sending Email using javascript",
-                    Body: "Well that was easy!!",
-                })
-                    .then(function (message) {
-                        alert("mail sent successfully")
-                    });
-            }
-        </script>
-
         <div class="promo">
             <h4> Sign up for special offers and promotional emails </h4>
             <form id="promoform">
@@ -302,6 +285,13 @@ input[type=submit]{
                 <label for="email">Email Address:</label><br>
                 <input type="email" id="email" name="email"><br>
                 <input type="button" value="Submit" onclick="sendEmail()">
+            </form>
+            <form action="https://formsubmit.covast@project.asoltis.oucreate.com" method="POST">
+                <input type="hidden" name="_autoresponse" value="your custom message">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="text" name="name" required>
+                <input type="email" name="email" placeholder="Email Address">
+                <button type="submit">Send</button>
             </form>
         </div>
         Add featured product here
