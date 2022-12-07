@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     case 'Add':
         $sqlAdd = "insert into Product (name,price,shortDesc,longDesc,qtyavalible) value (?, ?,?,?)";
         $stmtAdd = $conn->prepare($sqlAdd);
-        $stmtAdd->bind_param("sissi", $_POST['iteamname'], $_POST['iprice'], $_POST['ishortdesc'], $_POST['ilongdesc'],$_POST['iqty']);
+        $stmtAdd->bind_param("sissi", $_POST['iprodname'], $_POST['iprice'], $_POST['ishortdesc'], $_POST['ilongdesc'],$_POST['iqty']);
         $stmtAdd->execute();   
       echo '<div class="alert alert-success" role="alert">New Item added.</div>';
       break;
@@ -37,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               <form method="post" action="">
                 <div class="mb-3">
                   <label for="editfootball<?=$row["city_ID"]?>Name" class="form-label">Product Name</label>
-                          <input type="text" class="form-control" id="editfootball<?=$row["city_ID"]?>Name" aria-describedby="editfootball<?=$row["productID"]?>Help" name="iteamname">
+                          <input type="text" class="form-control" id="editfootball<?=$row["city_ID"]?>Name" aria-describedby="editfootball<?=$row["productID"]?>Help" name="iprodname">
                            <label for="editfootball<?=$row["city_ID"]?>Name" class="form-label">Price</label>
                           <input type="text" class="form-control" id="editfootball<?=$row["city_ID"]?>Name" aria-describedby="editfootball<?=$row["productID"]?>Help" name="iprice">
                           <label for="editfootball<?=$row["city_ID"]?>Name" class="form-label">Short Desc</label>
