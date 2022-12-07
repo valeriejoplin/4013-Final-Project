@@ -256,20 +256,14 @@ input[type=submit]{
 
     </div>
 <script type="text/javascript">
-
-
-
-            <script src="/path/to/jquery.cookie.js"></script>
-            <script>
-            $(document).ready(function() {
-                 if ($.cookie(‘pop’) == null) {
-                    function open(event){
+window.addEventListener("load", function(){
+    setTimeout(
+        function open(event){
             document.querySelector(".popup").style.display = "block";
         },
-                     $.cookie(‘pop’, ’7');
-                 }
-             });
-
+        2000 
+    )
+});
 
 document.querySelector("#close").addEventListener("click", function(){
     document.querySelector(".popup").style.display = "none";
