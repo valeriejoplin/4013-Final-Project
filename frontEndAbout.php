@@ -24,7 +24,7 @@
             border: 1.5px solid black;
            background-color: #FAD2A0;
          }
-        .Val{
+        .Resize{
             height:300px;
             width: 250px;
         }
@@ -51,10 +51,10 @@
 
   </tr>
   <tr>
-    <td><img src="ValeriePhoto.jpg" class="Val"></td>
+    <td><img src="ValeriePhoto.jpg" class="Resize"></td>
     <td>Andrew Image</td>
-    <td>Sana Image</td>
-    <td><img src="TrevorPhoto.jpg" class ="Val" ></td>
+    <td><img src="1629837912471.jpeg" class "Resize"</td>
+    <td><img src="TrevorPhoto.jpg" class ="Resize" ></td>
 
   </tr>
   <tr>
