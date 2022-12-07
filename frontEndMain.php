@@ -247,66 +247,67 @@ input[type=submit]{
     </style>
 </head>
 <body>
-<div>
-    <div class="popup">
-        <button id="close">&times;</button>
-        <h2>Happy Holidays!</h2>
-	    <h4> Want to save 15%? </h4>
-        <p style =text-align:center;>
-           Save BEFORE the Holidays and use code DECEMBER15 at checkout!
-        </p>
+    <div>
+        <div class="popup">
+            <button id="close">&times;</button>
+            <h2>Happy Holidays!</h2>
+            <h4> Want to save 15%? </h4>
+            <p style=text-align:center;>
+                Save BEFORE the Holidays and use code DECEMBER15 at checkout!
+            </p>
 
+        </div>
+        <script type="text/javascript">
+            window.addEventListener("load", function () {
+                setTimeout(
+                    function open(event) {
+                        document.querySelector(".popup").style.display = "block";
+                    },
+                    2000
+                )
+            });
+
+            document.querySelector("#close").addEventListener("click", function () {
+                document.querySelector(".popup").style.display = "none";
+            });
+            function submitFunction() {
+                alert('Thank you! You have been added to our email list.');
+            }
+        </script>
+
+        <script type="text/javascript">
+            function sendEmail() {
+                Email.send({
+                    Host: "165.227.18.177",
+                    Username: "vast@project.asoltis.oucreate.com",
+                    Password: "Project1243",
+                    To: 'ams.soltis@gmail.com',
+                    From: "vast@project.asoltis.oucreate.com",
+                    Subject: "Sending Email using javascript",
+                    Body: "Well that was easy!!",
+                })
+                    .then(function (message) {
+                        alert("mail sent successfully")
+                    });
+            }
+        </script>
+
+        <div class="promo">
+            <h4> Sign up for special offers and promotional emails </h4>
+            <form id="promoform">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname"><br><br>
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <input type="button" value="Submit" onclick="sendEmail()">
+            </form>
+        </div>
+        Add featured product here
     </div>
-<script type="text/javascript">
-window.addEventListener("load", function(){
-    setTimeout(
-        function open(event){
-            document.querySelector(".popup").style.display = "block";
-        },
-        2000 
-    )
-});
 
-document.querySelector("#close").addEventListener("click", function(){
-    document.querySelector(".popup").style.display = "none";
-});
-	function submitFunction()
-{
-  alert('Thank you! You have been added to our email list.');
-}
-    </script>
-
-<div class="promo">
-	<h4> Sign up for special offers and promotional emails </h4>
-	<form id="promoform">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname"><br><br>
-<label for="email">Email Address:</label><br>
-  <input type="email" id="email" name="email"><br>
-  <input type="button" value="Submit" onclick="sendEmail()">
-</form>
-	</div>
-     Add featured product here
-    </div>
-
-     <script type="text/javascript">
-    function sendEmail() {
-      Email.send({
-        Host: "165.227.18.177",
-        Username: "vast@project.asoltis.oucreate.com",
-        Password: "Project1243",
-        To: 'ams.soltis@gmail.com',
-        From: "vast@project.asoltis.oucreate.com",
-        Subject: "Sending Email using javascript",
-        Body: "Well that was easy!!",
-      })
-        .then(function (message) {
-          alert("mail sent successfully")
-        });
-    }
-  </script>
+     
 
 
 </body>
