@@ -8,7 +8,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="frontEndMain.html">Front End Home</a>
+                        <a class="nav-link" href="frontEndMain.php">Front End Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="frontEndAbout.php">About</a>
