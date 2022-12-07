@@ -257,6 +257,8 @@ input[type=submit]{
         </p>
 
     </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.0/jquery.cookie.min.js">
+
 <script type="text/javascript">
 $j(document).ready(function() {
     if(localStorage.getItem('popState') != 'shown'){
