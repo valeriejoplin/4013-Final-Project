@@ -182,8 +182,10 @@
                 </script>
             </div>
         </div>
-        <?php require_once("frontendfooter"); ?>
+        
     </div>
+
+    <?php require_once("frontendfooter.php"); ?>
 </body>
 
 </html>
