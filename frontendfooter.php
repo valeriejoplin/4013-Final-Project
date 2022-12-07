@@ -1,5 +1,14 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-
+<style>
+.icons{
+            width:100px;
+            height:100px;
+            }
+.footericon{
+            width:100px;
+            height:100px;
+            }
+                     
 <footer>
             <div class="icons">
                 <img class="footericon" src="assets/send-mail.svg" />
