@@ -3,9 +3,9 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Checkout Complete</title>
 </head>
 <body>
-
+    <h1>Successful Checkout</h1>
 </body>
 </html>

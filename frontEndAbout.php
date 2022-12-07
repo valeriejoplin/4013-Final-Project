@@ -56,7 +56,7 @@
       </div>
       <div class="card">
             <h1>Andrew Soltis</h1>
-            <img src="AndrewPhoto.jpg" class="Val">
+            <img src="AndrewPhoto.jpeg" class="Val">
             <h3>MIS & MIT</h3>
             <h4>Class of 2024</h4>
       </div>
