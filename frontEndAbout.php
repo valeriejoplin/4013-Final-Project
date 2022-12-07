@@ -38,11 +38,12 @@
 
          .card{
              text-align: center;
+             font-family: "Times New Roman", Times, serif;
          }
         </style>
  <div class="about">
 <h1> About Us </h1>
- <p> VAST fashion was founded in 2022 by four college students who have a passion for web design and fashion! Generic information about company and our founding members. </p>
+ <p> VAST fashion was founded in 2022 by four college students who have a passion for web design and fashion! We are all currently studying at Price College of Businesses working in similar degree programs. </p>
         </div>
     <div class="table">
 
