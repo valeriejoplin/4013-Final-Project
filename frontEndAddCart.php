@@ -24,7 +24,7 @@
      <div class="container">
         <?php require_once("frontEndHeader.php"); ?>
 
-        <table>
+        <table class="table">
             <tr>
               <th>Product</th>
               <th>Quantity</th>
