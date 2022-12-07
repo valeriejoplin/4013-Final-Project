@@ -285,5 +285,7 @@ document.querySelector("#close").addEventListener("click", function(){
 </form>
 	</div>
     </div>
+
+    <?php require_once("frontendfooter.php"); ?>
 </body>
 </html>
