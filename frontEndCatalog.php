@@ -185,7 +185,7 @@
         
     </div>
 
-    <?php require_once("frontendfooter"); ?>
+    <?php require_once("frontendfooter.php"); ?>
 </body>
 
 </html>
