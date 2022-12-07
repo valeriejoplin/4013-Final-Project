@@ -31,7 +31,7 @@
     <script>
       // Attach a click event to the button that opens the modal
       $('#modal-button').on('click', function() {
-        $('#modal').modal();
+        $('#modal').trigger('focus');
       });
 
       // Use PHP to fetch a list of addresses from a database or file
