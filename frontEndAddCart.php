@@ -2,7 +2,7 @@
     session_set_cookie_params(0);
     session_start();          // Start the session
     // Check if the form was submitted
-    if (isset($_POST['submit'])) {
+    if (isset($_GET['submit'])) {
     // Clear the session data
     $_SESSION = array();
   session_destroy();
