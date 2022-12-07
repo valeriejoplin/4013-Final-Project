@@ -258,14 +258,11 @@ input[type=submit]{
 
     </div>
 <script type="text/javascript">
-window.addEventListener("load", function(){
-    setTimeout(
-        function open(event){
-            document.querySelector(".popup").style.display = "block";
-        },
-        2000 
-    )
-});
+$j(document).ready(function() {
+    if(localStorage.getItem('popState') != 'shown'){
+        $j('#popup').delay(2000).fadeIn();
+        localStorage.setItem('popState','shown')
+    }
 
 document.querySelector("#close").addEventListener("click", function(){
     document.querySelector(".popup").style.display = "none";
