@@ -203,6 +203,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
                         </div>
                     </div>
                 </div>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMCbt2oQ2t25_-x-Tbk7Ny6OOtzvuW9rY&libraries=places&callback=initAutocomplete" async defer></script>
     </div>
     <div class="modal-footer">
       <h3>Modal Footer</h3>
