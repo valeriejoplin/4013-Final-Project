@@ -17,21 +17,24 @@
     </style>
   </head>
   <body>
-    <!-- Button that opens the modal -->
-    <button id="modal-button">Open Modal</button>
-
     <!-- The modal -->
     <div id="modal" class="modal">
       <form id="address-form">
         <label for="address">Address:</label>
         <input type="text" id="address" name="address" autocomplete="off">
+        <br><br>
+        <button type="button" id="submit-button">Submit</button>
       </form>
     </div>
 
     <script>
-      // Attach a click event to the button that opens the modal
-      $('#modal-button').on('click', function() {
-        $('#modal').trigger('focus');
+      // Use the jQuery-Modal library's open method to open the modal
+      // when the page loads
+      $('#modal').modal('open');
+
+      // Attach a click event to the submit button that closes the modal
+      $('#submit-button').on('click', function() {
+        $('#modal').modal('close');
       });
 
       // Use PHP to fetch a list of addresses from a database or file
