@@ -269,7 +269,6 @@ input[type=submit]{
                      $.cookie(‘pop’, ’7');
                  }
              });
-            </script>
 
 
 document.querySelector("#close").addEventListener("click", function(){
