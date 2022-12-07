@@ -69,7 +69,7 @@
             <h4>Class of 2022!</h4>
       </div>
       <script>
-        w3.slideshow(".card", 1500);
+        w3.slideshow(".card", 1800);
       </script>
   </div>
  
