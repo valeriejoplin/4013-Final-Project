@@ -45,25 +45,25 @@
   <div class="cards">
       <div class="card">
             <h1>Valerie Joplin</h1>
-            <img src="ValeriePhoto.jpg" class="Val">
+            <img src="ValeriePhoto.jpg" style="height:45%">
             <h3>MIS</h3>
             <h4>Class of 2023</h4>
       </div>
       <div class="card"</h1>
             <h1>Andrew Soltis>
-            <img src="AndrewPhoto.jpg"class="Val">
+            <img src="AndrewPhoto.jpg" class="Val">
             <h3>MIS & MIT</h3>
             <h4>Class of 2024</h4>
       </div>
       <div class="card"</h1>
             <h1>Sana Yari Hajatalou/>
-            <img src="1629837912471.jpeg"class="Val">
+            <img src="1629837912471.jpeg" class="Val">
             <h3>Major</h3>
             <h4>Class of </h4>
       </div>
       <div class="card"</h1>
             <h1>Trevor Riley>
-            <img src="TrevorPhoto.jpg"class="Val">
+            <img src="TrevorPhoto.jpg" class="Val">
             <h3>MIS</h3>
             <h4>Class of 2022!</h4>
       </div>
