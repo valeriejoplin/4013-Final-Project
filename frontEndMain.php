@@ -125,7 +125,7 @@ img {vertical-align: middle;}
 	 <a href="frontEndCatalog.php">
   <img src="https://wallpapershome.com/images/pages/pic_h/5211.jpg" style="width:100%">
 	</a>
-  <div class="text">Shop Now</div>
+  <div class="text" href="frontEndCatalog.php">Shop Now</div>
 </div>
 
 <div class="mySlides fade">
@@ -133,7 +133,7 @@ img {vertical-align: middle;}
 	<a href="frontEndCatalog.php">
   <img src="http://picture-cdn.wheretoget.it/h5689f-i.jpg" style="width:100%">
 	</a>
-  <div class="text">Shop Now</div>
+  <div class="text" href="frontEndCatalog.php">Shop Now</div>
 </div>
 
 <div class="mySlides fade">
@@ -141,7 +141,7 @@ img {vertical-align: middle;}
   <div class="numbertext">3 / 3</div>
 	</a>
   <img src="https://firstclasse.com.my/wp-content/uploads/2020/11/Boarini-Milanesi-bag-featured.jpg" style="width:100%">
-  <div class="text">Shop Now</div>
+  <div class="text" href="frontEndCatalog.php">Shop Now</div>
 </div>
 
 </div>
