@@ -41,28 +41,34 @@
  <p> VAST fashion was founded in 2022 by four college students who have a passion for web design and fashion! Generic information about company and our founding members. </p>
         </div>
     <div class="table">
-        <h3> Meet the designers </h3>
-        <table class="designers">
-  <tr>
-    <th>Valerie Joplin</th>
-    <th>Andrew Soltis</th>
-    <th>Sana Yari Hajatalou</th>
-    <th>Trevor Riley</th>
 
-  </tr>
-  <tr>
-    <td><img src="ValeriePhoto.jpg" class="Val"></td>
-    <td>Andrew Image</td>
-    <td><img src="1629837912471.jpeg" class = "Val"</td>
-    <td><img src="TrevorPhoto.jpg" class ="Val" ></td>
-
-  </tr>
-  <tr>
-    <td>MIS Major, Class of 2023</td>
-    <td>Info</td>
-    <td>Info</td>
-    <td>MIS Major, Class of 2022!</td>
-  </tr>
+<h1> Meet the Designers <h1>
+  <div class="cards">
+      <div class="card">
+            <h1>Valerie Joplin>
+            <img src="ValeriePhoto.jpg">
+            <h3>MIS</h3>
+            <h4>Class of 2023</h4>
+      </div>
+      <div class="card">
+            <h1>Andrew Soltis>
+            <img src="AndrewPhoto.jpg">
+            <h3>MIS & MIT</h3>
+            <h4>Class of 2024</h4>
+      </div>
+      <div class="card">
+            <h1>Sana Yari Hajatalou>
+            <img src="1629837912471.jpeg">
+            <h3>Major</h3>
+            <h4>Class of </h4>
+      </div>
+      <div class="card">
+            <h1>Trevor Riley>
+            <img src="TrevorPhoto.jpg">
+            <h3>MIS</h3>
+            <h4>Class of 2022!</h4>
+      </div>
+  </div>
  
 </table>
 
