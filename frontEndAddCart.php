@@ -32,7 +32,7 @@
     <title>Catalog</title>
 <style>
  .keepShopping{
-	   background-color: white;
+	   background-color: grey;
   color: black;
   padding: 1em 1em;
   text-decoration: none;
