@@ -30,7 +30,14 @@
     <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
     <script src="assets/javascript/w3.js"></script>
     <title>Catalog</title>
-
+<style>
+ .keepShopping{
+	   background-color: red;
+  color: white;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+	}
 </head>
 
 <div class="container">
@@ -72,5 +79,5 @@
     });
   </script>
 
-  <a id="keepShopping" href="/frontEndMain.php">Keep Shopping</a>
+  <a id="keepShopping" href="/frontEndCatalog.php">Keep Shopping</a>
 
