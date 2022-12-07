@@ -137,10 +137,10 @@ img {vertical-align: middle;}
 </div>
 
 <div class="mySlides fade">
- <a href="frontEndCatalog.php">
   <div class="numbertext">3 / 3</div>
-	</a>
+ <a href="frontEndCatalog.php">
   <img src="https://firstclasse.com.my/wp-content/uploads/2020/11/Boarini-Milanesi-bag-featured.jpg" style="width:100%">
+	 	</a>
   <div class="text" src="frontEndCatalog.php">Shop Now</div>
 </div>
 
