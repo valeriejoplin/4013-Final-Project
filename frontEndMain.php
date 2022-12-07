@@ -286,6 +286,10 @@ document.querySelector("#close").addEventListener("click", function(){
 	</div>
     </div>
 
-    <?php require_once("frontendfooter.php"); ?>
+<footer>
+
+<?php require_once("frontendfooter.php"); ?>
+
+</footer>
 </body>
 </html>
