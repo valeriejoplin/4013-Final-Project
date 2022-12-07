@@ -278,7 +278,7 @@ input[type=submit]{
         <script type="text/javascript">
             function sendEmail() {
                 Email.send({
-                    Host: "165.227.18.177",
+                    Host: "mail.project.asoltis.oucreate.com",
                     Username: "vast@project.asoltis.oucreate.com",
                     Password: "Project1243",
                     To: 'ams.soltis@gmail.com',
