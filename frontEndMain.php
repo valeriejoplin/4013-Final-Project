@@ -258,12 +258,20 @@ input[type=submit]{
 <script type="text/javascript">
 
 
- $(document).ready(function() {
-     if ($.cookie('pop') == null) {
-         document.querySelector(".popup").style.display = "block";
-         $.cookie('pop', '1');
-     }
- });
+
+            <script src="/path/to/jquery.cookie.js"></script>
+            <script>
+            $(document).ready(function() {
+                 if ($.cookie(‘pop’) == null) {
+                    function open(event){
+            document.querySelector(".popup").style.display = "block";
+        },
+                     $.cookie(‘pop’, ’7');
+                 }
+             });
+            </script>
+
+
 document.querySelector("#close").addEventListener("click", function(){
     document.querySelector(".popup").style.display = "none";
 });
