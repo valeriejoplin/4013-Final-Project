@@ -31,7 +31,7 @@
     <script src="assets/javascript/w3.js"></script>
     <title>Catalog</title>
 <style>
- a{
+ .keepShopping{
 	   background-color: red;
   color: white;
   padding: 1em 1.5em;
@@ -80,5 +80,5 @@
     });
   </script>
 
-  <a id="keepShopping" href="/frontEndCatalog.php">Keep Shopping</a>
+  <a class="keepShopping" id="keepShopping" href="/frontEndCatalog.php">Keep Shopping</a>
 
