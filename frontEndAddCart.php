@@ -34,7 +34,8 @@
  .keepShopping{
 	   background-color: grey;
   color: black;
-  padding: .75em .75em;
+border: 1px solid black;
+  padding: 1em 1em;
   text-decoration: none;
 	}
 	</style>
