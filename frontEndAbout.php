@@ -24,7 +24,7 @@
             border: 1.5px solid black;
            background-color: #FAD2A0;
          }
-        .Resize{
+        .Val{
             height:300px;
             width: 250px;
         }
@@ -51,17 +51,17 @@
 
   </tr>
   <tr>
-    <td><img src="ValeriePhoto.jpg" class="Resize"></td>
+    <td><img src="ValeriePhoto.jpg" class="Val"></td>
     <td>Andrew Image</td>
-    <td><img src="1629837912471.jpeg" class= "Resize"</td>
-    <td><img src="TrevorPhoto.jpg" class ="Resize" ></td>
+    <td>Sana Image</td>
+    <td><img src="TrevorPhoto.jpg" class ="Val" ></td>
 
   </tr>
   <tr>
     <td>MIS Major, Class of 2023</td>
     <td>Info</td>
     <td>Info</td>
-    <td>Info</td>
+    <td>MIS Major, Class of 2022!</td>
   </tr>
  
 </table>
