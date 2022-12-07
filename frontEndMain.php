@@ -285,7 +285,7 @@ input[type=submit]{
                 <input type="text" name="name" required>
                 <p>Email</p>
                 <input type="email" name="email" placeholder="Email Address">
-                <button type="submit">Send</button>
+                <button  style="width:100%"type="submit">Send</button>
             </form>
         </div>
         Add featured product here
