@@ -15,7 +15,7 @@
 	{
 		$_SESSION['cart'] = array();
     }
-    $product=$_POST['product_id']; //student_name form field name
+    $product=$_POST['product_id'];
 	$quantity=$_POST['quantity'];
     array_push($_SESSION['cart'],$product, $quantity);   
     //print_r($_SESSION['cart']);
