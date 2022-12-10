@@ -59,7 +59,7 @@ border: 1px solid black;
         </table>
 </div>
 <button id="openFormButton">Check Out</button>
-  <form id="addressForm" style="display:none;">
+  <form id="addressForm" style="display:none;" method="post" action="orderPlaced.php" >
     <label for="name">Name:</label><br>
     <input type="text" id="name" name="name"><br>
     <label for="address">Address:</label><br>
@@ -81,4 +81,5 @@ border: 1px solid black;
   </script>
 
   <a class="keepShopping" id="keepShopping" href="/frontEndCatalog.php">Keep Shopping</a>
+  
 
