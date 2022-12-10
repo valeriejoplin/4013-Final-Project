@@ -22,7 +22,7 @@ if ($conn->connect_error) {
 }
 
 // Create an SQL insert query
-$sql = "INSERT INTO order (Name, Address, City, State, Zip)
+$sql = "INSERT INTO order ('Name', 'Address', 'City', 'State', 'Zip')
         VALUES ('$name', '$address', '$city', '$state', '$zip')";
 
 mysqli_close($conn);
