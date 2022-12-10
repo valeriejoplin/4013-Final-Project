@@ -50,7 +50,7 @@ border: 1px solid black;
         </table>
 </div>
 <button id="openFormButton">Check Out</button>
-  <form method="post" id="addressForm" style="display:none;">
+  <form method="get" id="addressForm" style="display:none;">
     <label for="name">Name:</label><br>
     <input type="text" id="name" name="name"><br>
     <label for="address">Address:</label><br>
@@ -75,7 +75,7 @@ border: 1px solid black;
   
 <?php
 if (isset($_GET['submit'])) {
-        echo "hello".$_POST['name'];
+        echo "hello".$_GET['name'];
     // Clear the session data
     //$_SESSION = array();
     //session_destroy();
