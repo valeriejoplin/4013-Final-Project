@@ -70,7 +70,7 @@ border: 1px solid black;
     <input type="text" id="state" name="state"><br>
     <label for="zip">Zip Code:</label><br>
     <input type="text" id="zip" name="zip"><br><br>
-    <input type="submit" value="Submit" name="submit" id="newOrder">
+    <input type="submit" value="Submit" name="submit" id="placeOrderButton">
   </form>
   <script>
     var openFormButton = document.getElementById('openFormButton');
@@ -83,8 +83,8 @@ border: 1px solid black;
   <a class="keepShopping" id="keepShopping" href="/frontEndCatalog.php">Keep Shopping</a>
   
   <script>
-    var openFormButton = document.getElementById('newOrder');
-    openFormButton.addEventListener('click', function() {
+    var placeOrderButton = document.getElementById('placeOrderButton');
+     openFormButton.addEventListener('click', function(){
         var txtName = document.getElementById('name').value;
         var txtAddress = document.getElementById('address').value;
         var txtCity = document.getElementById('city').value;
@@ -100,7 +100,6 @@ border: 1px solid black;
             alert("Insert Record Successfuly");
             connection.close();
         }
-  }
-    var placeOrderButton = document.getElementById('placeOrderButton');
-     openFormButton.addEventListener('click', function());
+  });
+
   </script>
