@@ -73,16 +73,4 @@ border: 1px solid black;
 
   <a class="keepShopping" id="keepShopping" href="/frontEndCatalog.php">Keep Shopping</a>
   
-<?php
-                          
-if (isset($_POST['submit'])) {
-    echo "hello".$_GET['name'];
-    // Clear the session data
-    //$_SESSION = array();
-    //session_destroy();
 
-  // Redirect to the home page
-  //header('Location: frontEndMain.php');
-  //exit;
-}
-?>
