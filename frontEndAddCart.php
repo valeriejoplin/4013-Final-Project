@@ -50,7 +50,7 @@ border: 1px solid black;
         </table>
 </div>
 <button id="openFormButton">Check Out</button>
-  <form method="get" id="addressForm" style="display:none;">
+  <form method="post" id="addressForm" style="display:none;">
     <label for="name">Name:</label><br>
     <input type="text" id="name" name="name"><br>
     <label for="address">Address:</label><br>
@@ -61,7 +61,7 @@ border: 1px solid black;
     <input type="text" id="state" name="state"><br>
     <label for="zip">Zip Code:</label><br>
     <input type="text" id="zip" name="zip"><br><br>
-    <input type="submit" value="Submit" name="submit" id="placeOrderButton">
+    <input type="submit" value="Submit" name="submit" id="placeOrderButton" method="post">
   </form>
   <script>
     var openFormButton = document.getElementById('openFormButton');
@@ -74,7 +74,12 @@ border: 1px solid black;
   <a class="keepShopping" id="keepShopping" href="/frontEndCatalog.php">Keep Shopping</a>
   
 <?php
-if (isset($_GET['submit'])) {
+                          
+if (isset($_POST['submit'])) {
+    $servername = "165.227.18.177";
+    $username = "asoltiso_project";
+    $password = "Project1243";
+    $dbname = "asoltiso_project"; 
         echo "hello".$_GET['name'];
     // Clear the session data
     //$_SESSION = array();
