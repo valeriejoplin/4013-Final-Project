@@ -22,9 +22,11 @@ if ($conn->connect_error) {
 }
 
 // Create an SQL insert query
-$sql = "INSERT INTO table_name (Name, Address, City, State, Zip)
+$sql = "INSERT INTO order (Name, Address, City, State, Zip)
         VALUES ('$name', '$address', '$city', '$state', '$zip')";
 
 mysqli_close($conn);
 
 ?>
+<?php require_once("frontEndHeader.php"); ?>
+<H1> Order Placed Successfully <h1>
