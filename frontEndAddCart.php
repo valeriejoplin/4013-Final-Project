@@ -82,40 +82,13 @@ border: 1px solid black;
 
   <a class="keepShopping" id="keepShopping" href="/frontEndCatalog.php">Keep Shopping</a>
   
-  <script>
-    var placeOrderButton = document.getElementById('placeOrderButton');
-     openFormButton.addEventListener('click', function(){
-        var txtName = document.getElementById('name').value;
-        var txtAddress = document.getElementById('address').value;
-        var txtCity = document.getElementById('city').value;
-        var txtState = document.getElementById('state').value;
-        var txtZip = document.getElementById('zip').value;
-        if(txtName != 0 || txtAddress != 0 || txt != 0 || txtState != 0 || txtZip != 0)
-        {
-            <?php
-             $servername = "165.227.18.177";
-             $username = "asoltiso_project";
-             $password = "Project1243";
-             $dbname = "asoltiso_project";  
-            
-            // Create connection
-            $conn = new mysqli($servername, $username, $password, $dbname);
-            // Check connection
-                        if ($conn->connect_error) {
-                          die("Connection failed: " . $conn->connect_error);
-                        }
-
-                        $sql = "INSERT INTO MyGuests (Name, Address, City, State, Zip)
-                            VALUES ('txtName', 'txtAddress', 'txtCity', 'txtState', 'txtZip')";
-                        if ($conn->query($sql) === TRUE) {
-                          echo "New record created successfully";
-                        } else {
-                          echo "Error: " . $sql . "<br>" . $conn->error;
-                        }
-
-                        $conn->close();
-            ?>
-        }
-  });
-
-  </script>
+ <?php
+function display()
+{
+    echo "hello ".$_POST["name"];
+}
+if(isset($_POST['submit']))
+{
+   display();
+} 
+?>
