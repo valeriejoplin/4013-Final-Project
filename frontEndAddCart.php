@@ -2,11 +2,15 @@
     session_set_cookie_params(0);
     session_start();          // Start the session
     // Check if the form was submitted
+    function display()
+{
+    echo "hello ".$_POST["name"];
+}
     if (isset($_GET['submit'])) {
     // Clear the session data
     $_SESSION = array();
-  session_destroy();
-
+    session_destroy();
+    display();
   // Redirect to the home page
   header('Location: frontEndMain.php');
   exit;
