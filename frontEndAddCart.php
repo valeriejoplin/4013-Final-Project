@@ -1,17 +1,7 @@
 <?php // PHP part
     session_set_cookie_params(0);
     session_start();          // Start the session
-    // Check if the form was submitted
-    if (isset($_GET['submit'])) {
-        echo "hello".$_POST['name'];
-    // Clear the session data
-    $_SESSION = array();
-    session_destroy();
-
-  // Redirect to the home page
-  header('Location: frontEndMain.php');
-  exit;
-}
+    
     if(empty($_SESSION['cart']))
 	{
 		$_SESSION['cart'] = array();
@@ -83,13 +73,15 @@ border: 1px solid black;
 
   <a class="keepShopping" id="keepShopping" href="/frontEndCatalog.php">Keep Shopping</a>
   
- <?php
-function display()
-{
-    echo "hello ".$_POST["name"];
+<?php
+if (isset($_GET['submit'])) {
+        echo "hello".$_POST['name'];
+    // Clear the session data
+    //$_SESSION = array();
+    //session_destroy();
+
+  // Redirect to the home page
+  //header('Location: frontEndMain.php');
+  //exit;
 }
-if(isset($_POST['submit']))
-{
-   display();
-} 
 ?>
