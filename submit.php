@@ -25,13 +25,6 @@ if (!$conn) {
 $sql = "INSERT INTO table_name (Name, Address, City, State, Zip)
         VALUES ('$name', '$address', '$city', '$state', '$zip')";
 
-// Execute the query
-if (mysqli_query($conn, $sql)) {
-  echo "Record added successfully";
-} else {
-  echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-}
-
 mysqli_close($conn);
     // Clear the session data
     $_SESSION = array();
