@@ -59,7 +59,7 @@ border: 1px solid black;
         </table>
 </div>
 <button id="openFormButton">Check Out</button>
-  <form id="addressForm" style="display:none;" method="post" action="orderPlaced.php" >
+  <form id="addressForm" style="display:none;">
     <label for="name">Name:</label><br>
     <input type="text" id="name" name="name"><br>
     <label for="address">Address:</label><br>
@@ -70,7 +70,7 @@ border: 1px solid black;
     <input type="text" id="state" name="state"><br>
     <label for="zip">Zip Code:</label><br>
     <input type="text" id="zip" name="zip"><br><br>
-    <input type="submit" value="Submit" name="submit">
+    <input type="submit" value="Submit" name="submit" id="newOrder">
   </form>
   <script>
     var openFormButton = document.getElementById('openFormButton');
@@ -82,4 +82,25 @@ border: 1px solid black;
 
   <a class="keepShopping" id="keepShopping" href="/frontEndCatalog.php">Keep Shopping</a>
   
-
+  <script>
+    var openFormButton = document.getElementById('newOrder');
+    openFormButton.addEventListener('click', function() {
+        var txtName = document.getElementById('name').value;
+        var txtAddress = document.getElementById('address').value;
+        var txtCity = document.getElementById('city').value;
+        var txtState = document.getElementById('state').value;
+        var txtZip = document.getElementById('zip').value;
+        if(txtName != 0 || txtAddress != 0 || txt != 0 || txtState != 0 || txtZip != 0)
+        {
+            var connection = new ActiveXObject("ADODB.Connection");
+            var connectionString = "servername = 165.227.18.177; username = asoltiso_project; password = Project1243; dbname = asoltiso_project"  
+            connection.Open(connectionString);
+            var rs = new ActiveXObject("ADODB.Recordset");
+            rs.Open("insert into order values('" + txtName + "','" + txtAddress + "','" + txtCity + "','" + txtState + "','" + txtZip + "')", connection);  
+            alert("Insert Record Successfuly");
+            connection.close();
+        }
+  }
+    var placeOrderButton = document.getElementById('placeOrderButton');
+     openFormButton.addEventListener('click', function());
+  </script>
