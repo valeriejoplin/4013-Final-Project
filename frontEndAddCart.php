@@ -50,19 +50,19 @@ border: 1px solid black;
         </table>
 </div>
 <button id="openFormButton">Check Out</button>
-  <form method="post" id="addressForm" style="display:none;">
-    <label for="name">Name:</label><br>
-    <input type="text" id="name" name="name"><br>
-    <label for="address">Address:</label><br>
-    <input type="text" id="address" name="address"><br>
-    <label for="city">City:</label><br>
-    <input type="text" id="city" name="city"><br>
-    <label for="state">State:</label><br>
-    <input type="text" id="state" name="state"><br>
-    <label for="zip">Zip Code:</label><br>
-    <input type="text" id="zip" name="zip"><br><br>
-    <input type="submit" value="Submit" name="submit" id="placeOrderButton" method="post">
-  </form>
+<form action="submit.php" method="POST">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name"><br>
+      <label for="address">Address:</label><br>
+      <input type="text" id="address" name="address"><br>
+      <label for="city">City:</label><br>
+      <input type="text" id="city" name="city"><br>
+      <label for="state">State:</label><br>
+      <input type="text" id="state" name="state"><br>
+      <label for="zip">Zip Code:</label><br>
+      <input type="text" id="zip" name="zip"><br><br>
+      <input type="submit" value="Submit">
+    </form>
   <script>
     var openFormButton = document.getElementById('openFormButton');
     var addressForm = document.getElementById('addressForm');
@@ -76,23 +76,7 @@ border: 1px solid black;
 <?php
                           
 if (isset($_POST['submit'])) {
-    $servername = "165.227.18.177";
-    $username = "asoltiso_project";
-    $password = "Project1243";
-    $dbname = "asoltiso_project";
-    
-    $conn = new mysqli($servername, $username, $password, $dbname);
-    // Check connection
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
-
-    $sql = "INSERT INTO order (Name, Address, City, State, Zip) value (?,?,?,?,?)";
-    $stmt = $conn->prepare($sql);
-    $stmt->bind_param("sssss", $_GET['name'], $_GET['address'], $_GET['city'], $_GET['state'], $_GET['zip']);
-    $stmt->execute(); 
-
-    //echo "hello".$_GET['name'];
+    echo "hello".$_GET['name'];
     // Clear the session data
     //$_SESSION = array();
     //session_destroy();
