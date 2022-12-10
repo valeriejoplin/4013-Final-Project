@@ -3,11 +3,11 @@
     // submit.php
 
 // Get values from the form
-$name = $_POST['name'];
-$address = $_POST['address'];
-$city = $_POST['city'];
-$state = $_POST['state'];
-$zip = $_POST['zip'];
+//$name = $_POST['name'];
+//$address = $_POST['address'];
+//$city = $_POST['city'];
+//$state = $_POST['state'];
+//$zip = $_POST['zip'];
 
 // Connect to the database
                         $servername = "165.227.18.177";
