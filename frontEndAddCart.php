@@ -50,7 +50,7 @@ border: 1px solid black;
         </table>
 </div>
 <button id="openFormButton">Check Out</button>
-  <form id="addressForm" style="display:none;">
+  <form method="post" id="addressForm" style="display:none;">
     <label for="name">Name:</label><br>
     <input type="text" id="name" name="name"><br>
     <label for="address">Address:</label><br>
