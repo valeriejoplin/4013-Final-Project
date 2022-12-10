@@ -89,7 +89,7 @@ if (isset($_POST['submit'])) {
 
     $sql = "INSERT INTO order (Name, Address, City, State, Zip) value (?,?,?,?,?)";
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("sssss", $_POST['name'], $_POST['address'], $_POST['city'], $_POST['state'], $_POST['zip']);
+    $stmt->bind_param("sssss", $_GET['name'], $_GET['address'], $_GET['city'], $_GET['state'], $_GET['zip']);
     $stmt->execute(); 
 
     //echo "hello".$_GET['name'];
