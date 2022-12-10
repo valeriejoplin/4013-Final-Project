@@ -8,5 +8,4 @@
   // Redirect to the home page
   //header('Location: frontEndMain.php');
   //exit;
-}
 ?>
