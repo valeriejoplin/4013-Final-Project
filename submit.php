@@ -22,7 +22,7 @@ if ($conn->connect_error) {
 }
 
 // Create an SQL insert query
-        $sql = "INSERT INTO order (Name, Address, City, State, Zip) values ($name, $address, $city, $state, $zip)";
+        $sql = "INSERT INTO order (orderID, Name, Address, City, State, Zip) values (NULL, $name, $address, $city, $state, $zip)";
 ?>
 <?php require_once("frontEndHeader.php"); ?>
 <H1> Order Placed Successfully <h1>
