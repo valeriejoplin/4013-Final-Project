@@ -7,7 +7,7 @@ $name = $_POST['name'];
 $address = $_POST['address'];
 $city = $_POST['city'];
 $state = $_POST['state'];
-$zip = $_POST['zip'];
+/$zip = $_POST['zip'];
 
 // Connect to the database
                         $servername = "165.227.18.177";
@@ -22,10 +22,7 @@ if ($conn->connect_error) {
 }
 
 // Create an SQL insert query
-        $sqlAdd = "INSERT INTO order (orderID, Name, Address, City, State, Zip) values (?, ?, ?, ?, ?, ?)";
-        $stmtAdd = $conn->prepare($sqlAdd);
-        $stmtAdd->bind_param("isssss", 1, name, address, city, state, zip);
-        $stmtAdd->execute(); 
+        $sql = "INSERT INTO order (Name, Address, City, State, Zip) values ($_POST['name'], $_POST['address'], $_POST['city'], $_POST['state'], $_POST['zip'])";
 ?>
 <?php require_once("frontEndHeader.php"); ?>
 <H1> Order Placed Successfully <h1>
