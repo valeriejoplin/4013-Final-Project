@@ -14,11 +14,11 @@ $zip = $_POST['zip'];
                         $username = "asoltiso_project";
                         $password = "Project1243";
                         $dbname = "asoltiso_project";   
-
-$conn = new mysqli($servername, $user, $password, $dbname);
-
-if (!$conn) {
-  die("Connection failed: " . mysqli_connect_error());
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
 }
 
 // Create an SQL insert query
