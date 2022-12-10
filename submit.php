@@ -15,7 +15,7 @@ $zip = $_POST['zip'];
                         $password = "Project1243";
                         $dbname = "asoltiso_project";   
 
-$conn = mysqli_connect($servername, $user, $password, $dbname);
+$conn = new mysqli($servername, $user, $password, $dbname);
 
 if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
