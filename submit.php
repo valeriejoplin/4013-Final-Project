@@ -24,13 +24,4 @@ if ($conn->connect_error) {
 // Create an SQL insert query
 $sql = "INSERT INTO table_name (Name, Address, City, State, Zip)
         VALUES ('$name', '$address', '$city', '$state', '$zip')";
-
-mysqli_close($conn);
-    // Clear the session data
-    $_SESSION = array();
-    session_destroy();
-
-  //Redirect to the home page
-  header('Location: frontEndMain.php');
-  exit;
 ?>
