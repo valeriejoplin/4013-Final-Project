@@ -22,8 +22,8 @@ if ($conn->connect_error) {
 }
 
 // Create an SQL insert query
-        $sql = "INSERT INTO order (Name, Address, City, State, Zip) value(?,?,?,?,?);
-        $stmtAdd = $conn->prepare($sql);
+        $sqlAdd = "INSERT INTO order (Name, Address, City, State, Zip) value (?,?,?,?,?);
+        $stmtAdd = $conn->prepare($sqlAdd);
         $stmtAdd->bind_param("sssss", $_POST['name'], $_POST['address'], $_POST['city'], $_POST['state'], $_POST['zip']");
         $stmtAdd->execute(); 
 ?>
