@@ -79,8 +79,20 @@ if (isset($_POST['submit'])) {
     $servername = "165.227.18.177";
     $username = "asoltiso_project";
     $password = "Project1243";
-    $dbname = "asoltiso_project"; 
-        echo "hello".$_GET['name'];
+    $dbname = "asoltiso_project";
+    
+    $conn = new mysqli($servername, $username, $password, $dbname);
+    // Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
+    $sql = "INSERT INTO order (Name, Address, City, State, Zip) value (?,?,?,?,?)";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("sssss", $_POST['name'], $_POST['address'], $_POST['city'], $_POST['state'], $_POST['zip']);
+    $stmt->execute(); 
+
+    //echo "hello".$_GET['name'];
     // Clear the session data
     //$_SESSION = array();
     //session_destroy();
