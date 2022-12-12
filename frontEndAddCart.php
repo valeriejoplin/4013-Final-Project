@@ -57,7 +57,7 @@ border: 1px solid black;
       <?php } ?>
     </div>
   <?php } ?>
-<button id="openFormButton">Check Out</button>
+<button id="openFormButton" <?php if (empty($_SESSION['cart'])) { echo 'disabled'; } ?>>Check Out</button>
 <form id="addressForm" action="frontEndOrderPlaced.php" method="POST" class="hidden">
   <label for="name">Name:</label><br>
   <input type="text" id="name" name="name"><br>
