@@ -74,6 +74,8 @@ if (isset($_SESSION['cart'])) {
                                 <img style="width:100px; float:left;"src="assets/<?=$row["img"]?>.png" </img>
                                 <div class="details" style="height:100px; width: 90%; float: left; padding-left: 15px;">
                                    <h5 class="card-title"><?=$row["name"]?></h5>
+                                   			<input type="number" name="quantity" value="<?php echo $quantity; ?>" min="1" max="<?=$row["qtyAvalible"]?>" placeholder="Quantity" required>
+
                                     <p class="card-text">
                                     Quantity: <?php echo $quantity; ?><br>
                                     Price: $<?=$row["price"]?><br>

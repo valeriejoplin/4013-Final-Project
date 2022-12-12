@@ -21,7 +21,6 @@ Front End/
         + Logs Products Purchased
         + On check out removes quanity purchased from DB (Last thing to do! Not nessecary at this time. If doesnt remove invenotry we can place orders on site to populate sales history)
         + Click on item to go to details page
-        + Use Query to show details about product
         + Be able to calculate total (Add this to orders database)
         + Would be cool to use javascript address auto complete function
         + Add edit quantity in line
