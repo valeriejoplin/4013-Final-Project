@@ -160,6 +160,7 @@ if ($result->num_rows > 0) {
                   <label for="zip">Zip Code:</label><br>
                   <input type="text" id="zip" name="zip"><br><br>
                   <input type="hidden" id="product" name="product" value="<?=$row["productID"]?>">
+                  <input type="hidden" id="quantity" name="quantity" value="">
                   <input type="submit" value="Purchase">
                 </form>
                 <style>

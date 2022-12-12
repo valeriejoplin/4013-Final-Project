@@ -10,8 +10,9 @@ $zip = $_POST['zip'];
 
 //Product info
 $productID = $_POST['product'];
+$quantity = $_POST['quantity'];
 
-echo "<p>$productID<p>"
+echo "<p>$productID $quantity<p>"
 
 
 ?>
