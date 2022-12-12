@@ -5,11 +5,9 @@
   if (isset($_SESSION['cart'])) {
     if (isset($_POST['product_id'])) {
       $product = $_POST['product_id'];
-    }
-    if (isset($_POST['quantity'])) {
       $quantity = $_POST['quantity'];
-    }
-    array_push($_SESSION['cart'], $product, $quantity);
+      array_push($_SESSION['cart'], $product, $quantity);
+    }    
   }
     //print_r($_SESSION['cart']);
 ?>
