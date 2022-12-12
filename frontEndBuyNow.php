@@ -96,7 +96,7 @@ echo "<p>$productID $quantity<p>"
                                     $sql = "INSERT INTO orderProduct (productID, orderID, quantity)
                                             VALUES ('$productID', '$orderID', '$quantity')";
                                     if ($conn->query($sql) === TRUE) {
-                                    echo "<h1>Successfully Submitted Order<h1>";
+
                                     } else {
                                     echo "Error: " . $sql . "<br>" . $conn->error;
                                     }
