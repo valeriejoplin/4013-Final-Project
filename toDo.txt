@@ -24,6 +24,7 @@ Front End/
         + Would be cool to use javascript address auto complete function
         + Add edit quantity in line
         + Make it say 'Item Added' not Quanity Updated on first addition to cart
+        +Change check out info form to be popup modal
     - Catalog
         + Make 3 none filters redirect to catalog not fiter page with same query as catalog
         + If filtered values are not set reditect to catalog page, curretly gives a php warning
