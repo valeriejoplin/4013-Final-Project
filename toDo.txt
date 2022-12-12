@@ -9,6 +9,7 @@ Clean Up Files
         - Need to change refernces in all locations
 
 Front End/
+    - Format Currancy On All Pages
     -Header
         +Make sure same throughout
     -Footer

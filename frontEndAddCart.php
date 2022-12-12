@@ -36,6 +36,7 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
     }
   }
   $tax = $subtotal * $taxRate;
+  $total = $tax + $subtotal;
 }
 ?>
 
@@ -140,7 +141,7 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
         <div class="totals" style="font-size: 12px;">
             <p> Subtotal: $<?=$subtotal?></p>
             <p> Tax: $<?=$tax?></p>
-            <p style="font-size: 16px;"> Total: $XXX</p>
+            <p style="font-size: 16px;"> Total: $<?=$total?></p>
         </div>
         <input id="main_search_input" type="text" placeholder="Coupon" />
         <button id="search_button">Apply</button>
