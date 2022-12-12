@@ -14,7 +14,7 @@
   if($selectedBrand>=1)
   {
       echo "Brand Selected"
-  };
+  }
   ?>
   <!DOCTYPE html>
 
