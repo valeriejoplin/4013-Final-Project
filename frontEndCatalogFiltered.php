@@ -11,7 +11,7 @@
   ?>
 
   <?php
-  if($selectedBrand>==1)
+  if($selectedBrand==1)
   {
       echo "Brand Selected"
   }
