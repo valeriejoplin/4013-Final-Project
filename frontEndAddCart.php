@@ -179,7 +179,7 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
 <!-- Form to submit a request to destroy the session -->
 <form class="cartButton" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="get">
   <input type="hidden" name="form_submitted" value="1" />
-  <button type="submit">Empty Cart</button>
+  <button type="submit" style="width:100%;">Empty Cart</button>
 </form>
 
 <?php
