@@ -87,7 +87,6 @@ Andrew Next To Work On:
     Make Empty Cart Button Work
     Relocate Buttons
     Storing Product Details in DB on Buy Now
-    Cart Referencing Database
     Click on item in cart to view product detail page
     Cart Getting Total
     Cart store product pruchase details in DB table on checkout

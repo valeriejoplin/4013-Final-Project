@@ -71,6 +71,8 @@ if (isset($_SESSION['cart'])) {
                               // output data of each row 
                               while($row = $result->fetch_assoc()) {
                             ?>
+                                <a href="./frontEndProduct.php?id=<?=$row["productID"]?>">
+                                <div>
                                 <img style="width:100px; float:left;"src="assets/<?=$row["img"]?>.png" </img>
                                 <div class="details" style="height:100px; width: 90%; float: left; padding-left: 15px;">
                                    <h5 class="card-title"><?=$row["name"]?></h5>
@@ -88,6 +90,8 @@ if (isset($_SESSION['cart'])) {
                                     ?>
                                     </p>
                                 </div>
+                                </div>
+                                </a>
                             <?php
                               }
                             } else {
