@@ -55,6 +55,7 @@ Front End/
         + Would be cool to use javascript address auto complete function
     - Make chat icon in footer open a popup to simulate a chat interface
         + If brave could maybe find a chat api or AI api
+    - Prevent orders from submitting again on page reload affects frontEndBuyNow.php and frontEndOrderPlaced.php
 
 
 Back End

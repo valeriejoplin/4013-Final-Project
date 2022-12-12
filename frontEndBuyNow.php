@@ -1,5 +1,11 @@
 <?php
 
+    // Redirect to the same page to prevent resubmission
+    if(isset($_POST['submit'])){
+        header("Location: ".$_SERVER['REQUEST_URI']);
+        exit();
+    }
+
 // Get values from the form
 $name = $_POST['name'];
 $address = $_POST['address'];
@@ -7,13 +13,6 @@ $city = $_POST['city'];
 $state = $_POST['state'];
 $zip = $_POST['zip'];
 
-if(isset($_POST['submit'])){
-    // Form was submitted, do something here
-
-    // Redirect to the same page to prevent resubmission
-    header("Location: ".$_SERVER['REQUEST_URI']);
-    exit();
-}
 ?>
 
 <head>
