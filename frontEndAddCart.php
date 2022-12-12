@@ -41,12 +41,16 @@ border: 1px solid black;
   <div class="card-deck">
     <?php foreach ($_SESSION['cart'] as $productId => $quantity) { ?>
       <div class="card">
+      <?php
+          if (isset($_SESSION['cart'])) {
+              if (isset($_POST['product_id']) && isset($_POST['quantity'])) {
+                if(isset($_SESSION['cart'][$_POST['product_id']])) {
+                  echo "Quantity updated";
+                }
+              }
+          }
+      ?>
         <div class="card-body">
-          <?php if(isset($_SESSION['cart'][$_POST['product_id']])) { ?>
-            <div class="alert" role="alert">
-              Quantity updated
-            </div>
-          <?php } ?>
           <h5 class="card-title"><?php echo $productId; ?></h5>
           <p class="card-text">
             Quantity: <?php echo $quantity; ?><br>
@@ -59,7 +63,6 @@ border: 1px solid black;
 <?php } else { ?>
   <p>Your cart is empty. Please add items to your cart to see them here.</p>
 <?php } ?>
-
 
 <button id="openFormButton" <?php if (empty($_SESSION['cart'])) { echo 'disabled'; } ?>>Check Out</button>
 <form id="addressForm" action="frontEndOrderPlaced.php" method="POST" class="hidden">
