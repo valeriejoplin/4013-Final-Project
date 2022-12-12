@@ -8,16 +8,12 @@ Front End/
         + On check out removes quanity purchased from DB
         + Cart only allows for number in stock to be added to cart.
     - Catalog
-        + Filters
+        + Make 3 none filters redirect to catalog not fiter page with same query as catalog
         + Format header (Most Pages Need)
         + Show only instock products
-            - Sample Sql Statement to get gucci
-            - SELECT * FROM product join productBrand on product.productID=productBrand.productID join brand on productBrand.brandID=brand.brandID where brand="Gucci"
-            - Use string varible to store query and append brand/item/quantity to the query
     - Contact Page
         + Format
         + Make email footer button take there also
-        + Put inside of container for formatting
     - Home
         + Pop up only show first time in session
         + Show Featured Products maybe recently sold products tops 2 maybe 3? could do a w3.js slide show like about page
