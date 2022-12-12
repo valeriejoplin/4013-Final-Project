@@ -65,6 +65,7 @@ Front End/
 
 
 Back End
+    - Add tab to nav bar that opens github repo in new browser tab
     - Make pages redirect to password page is session is not logged in
     -implement backend header.php file into pages
     -add back end about page to header file
