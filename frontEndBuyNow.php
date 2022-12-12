@@ -42,7 +42,7 @@ $quantity = $_POST['quantity'];
             if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
             }
-            if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
+            if (!empty($_SESSION['cart'])) {
             $sql = "INSERT INTO orders (Name, Address, City, State, Zip)
                     VALUES ('$name', '$address', '$city', '$state', '$zip')";
             if ($conn->query($sql) === TRUE) {
@@ -89,7 +89,7 @@ $quantity = $_POST['quantity'];
                                     if ($conn->connect_error) {
                                     die("Connection failed: " . $conn->connect_error);
                                     }
-                                    if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
+                                    if (!empty($_SESSION['cart'])) {
                                     $sql = "INSERT INTO orderProduct (productID, orderID, quantity)
                                             VALUES ('$productID', '$orderID', '$quantity')";
                                     if ($conn->query($sql) === TRUE) {
