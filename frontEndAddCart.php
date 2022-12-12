@@ -48,7 +48,7 @@ border: 1px solid black;
              }  ?>
             </tr>
         </table>
-</div>
+
 <button id="openFormButton">Check Out</button>
 <form id="addressForm" action="submit.php" method="POST">
       <label for="name">Name:</label><br>
@@ -73,4 +73,5 @@ border: 1px solid black;
 
   <a class="keepShopping" id="keepShopping" href="/frontEndCatalog.php">Keep Shopping</a>
   
+	</div>
 
