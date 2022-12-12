@@ -8,16 +8,8 @@ $address = $_POST['address'];
 $city = $_POST['city'];
 $state = $_POST['state'];
 $zip = $_POST['zip'];
-?>
 
-<?php require_once("frontEndHeader.php"); ?>
-
-<H1> Order Placed Successfully <h1>
-<?php echo "<H2>$name<H2>" ?>
-<?php echo "$address"." "."$city".", "."$state"." "."$zip"?>
-
-<?php 
-    $servername = "165.227.18.177";
+$servername = "165.227.18.177";
     $username = "asoltiso_project";
     $password = "Project1243";
     $dbname = "asoltiso_project";
@@ -39,3 +31,9 @@ $zip = $_POST['zip'];
 
     $conn->close();
 ?>
+
+<?php require_once("frontEndHeader.php"); ?>
+
+<H1> Order Placed Successfully <h1>
+<?php echo "<H2>$name<H2>" ?>
+<?php echo "$address"." "."$city".", "."$state"." "."$zip"?>
