@@ -198,6 +198,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                                 $sql = "SELECT * FROM product join productBrand on product.productID=productBrand.productID join brand on productBrand.brandID=brand.brandID join productItem on product.productID=productItem.productID JOIN item ON productItem.itemID=item.itemID";
                                 //echo $sql;
                                 }
+                                else{
+                                    $sql = "SELECT * FROM product join productBrand on product.productID=productBrand.productID join brand on productBrand.brandID=brand.brandID join productItem on product.productID=productItem.productID JOIN item ON productItem.itemID=item.itemID WHERE";
+                                    if ($selectedBrand != ""{
+                                        $sql = $sql."productBrand.brandID=$selectedBrand"
+
+                                    }
+                                }
                                 $result = $conn->query($sql);
 
                                 if ($result->num_rows > 0) {
