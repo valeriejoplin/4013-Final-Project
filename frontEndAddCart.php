@@ -133,7 +133,21 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
                             }
                             $conn->close();
                             ?>
-          <button class="cartButton" id="deleteProdcut" style="width:15%;">Delete</button>
+            <form method="post">
+              <input type="hidden" name="remove" value="<?php echo $productId; ?>">
+              <input type="submit" value="Delete">
+            </form>
+            <?php
+            if (isset($_POST['remove'])) {
+  // Get the product ID of the item to remove
+  $productId = $_POST['remove'];
+  // Check if the item is in the cart
+  if (isset($_SESSION['cart'][$productId])) {
+    // Remove the item from the cart
+    unset($_SESSION['cart'][$productId]);
+  }
+}
+?>
         </div>
       </div>
     <?php } ?>
