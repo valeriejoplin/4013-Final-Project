@@ -80,6 +80,7 @@ echo "<p>$productID $quantity<p>"
                               <h1>Order #<?=$row["orderID"]?><h1>
 
                                 <?php 
+                                    $orderID = $result["orderID"];
                                     $servername = "165.227.18.177";
                                     $username = "asoltiso_project";
                                     $password = "Project1243";
@@ -93,7 +94,7 @@ echo "<p>$productID $quantity<p>"
                                     }
 
                                     $sql = "INSERT INTO orderProduct (productID, orderID)
-                                            VALUES ('$productID', '$row["orderID"]')";
+                                            VALUES ('$productID', '$orderID')";
                                     if ($conn->query($sql) === TRUE) {
                                     echo "<h1>Successfully Submitted Order<h1>";
                                     } else {
