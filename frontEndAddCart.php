@@ -8,9 +8,13 @@ if(empty($_SESSION['cart'])) {
 
 if (isset($_SESSION['cart'])) {
   if (isset($_POST['product_id']) && isset($_POST['quantity'])) {
+    if (array_key_exists($_POST['product_id'], $_SESSION['cart'])) {
+      echo "Quantity updated";
+    }
     $_SESSION['cart'][$_POST['product_id']] = $_POST['quantity'];    
   }
 }
+
 ?>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">

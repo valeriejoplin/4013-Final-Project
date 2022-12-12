@@ -81,5 +81,4 @@ Andrew Next To Work On:
     Cart Referencing Database
     Click on item in cart to view product detail page
     Cart Getting Total
-    Cart Preventing from Adding More than Quantity Avalible **This will be the hardest thing to do**
     Cart Sotoring product pruchase details in DB table on checkout
