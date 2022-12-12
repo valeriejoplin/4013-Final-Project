@@ -203,6 +203,15 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                                     if ($selectedBrand != "" && $selectedCategory != "" && $selectedItem != ""){
                                        $sql .= " productBrand.brandID='".$selectedBrand."' && "." productCategory.categoryID='".$selectedCategory."' && "." productItem.itemID='".$selectedItem."'";
                                     }
+                                    else if ($selectedBrand != "" && $selectedCategory != ""){
+                                       $sql .= " productBrand.brandID='".$selectedBrand."' && "." productCategory.categoryID='".$selectedCategory."'";
+                                    }
+                                    else if ($selectedBrand != "" && $selectedItem != ""){
+                                       $sql .= " productBrand.brandID='".$selectedBrand."' && "." productItem.itemID='".$selectedItem."'";
+                                    }
+                                    else if ($selectedCategory != "" && $selectedItem != ""){
+                                       $sql .= " productCategory.categoryID='".$selectedCategory."' && "." productItem.itemID='".$selectedItem."'";
+                                    }
                                     else if ($selectedBrand != ""){
                                        $sql .= " productBrand.brandID='".$selectedBrand."'";
                                     }
