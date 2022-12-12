@@ -22,15 +22,6 @@ if (isset($_SESSION['cart'])) {
     <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
     <script src="assets/javascript/w3.js"></script>
     <title>Cart</title>
-<style>
- .cartButton{
-	   background-color: #FAF6F1;
-  color: black;
-border: 1px solid black;
-  padding: 1em 1em;
-  text-decoration: none;
-	}
-	</style>
 </head>
 <body>
 
