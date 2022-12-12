@@ -3,7 +3,7 @@
 
   if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
     // User is logged in, do something here
-    header("Location: frontEndMain.php");
+    header("Location: backEndMain.php");
   } else {
     // User is not logged in, redirect to login page
     header("Location: backEndLogin.php");
