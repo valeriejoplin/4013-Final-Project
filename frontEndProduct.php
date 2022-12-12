@@ -148,7 +148,7 @@ if ($result->num_rows > 0) {
                                 
                 <p>Qty Avalible: <?=$row["qtyAvalible"]?></p>
             <button id="openFormButton">Buy Now</button>
-                <form id="addressForm" action="frontEndOrderPlaced.php" method="POST" class="hidden">
+                <form id="addressForm" action="frontEndBuyNow.php" method="POST" class="hidden">
                   <label for="name">Name:</label><br>
                   <input type="text" id="name" name="name"><br>
                   <label for="address">Address:</label><br>
