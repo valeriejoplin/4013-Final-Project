@@ -14,6 +14,7 @@ Front End/
     -Footer
         +Make sure same throughout
     -Cart
+        + Place buttons at top below header or one side not at bottom
         ++ Rename to 'frontEndCart.php' requires changing references in files
         + Format
         + Logs Products Purchased
@@ -40,6 +41,7 @@ Front End/
         + Make email footer button take to contact page Actualy make all the non social media buttons go to contact page
         + Can make the automated email response an html file instead of the text string we have
     - Home
+        + Change picture slideshow on front page to be a w3.js slideshow using javascript (similar to contact page)
         + Format
         + Pop up only show first time in session
         + Use span to make coupon code stand out
@@ -81,6 +83,7 @@ Back End
 
 Andrew Next To Work On:
     Make Empty Cart Button Work
+    Relocate Buttons
     Storing Product Details in DB on Buy Now
     Cart Referencing Database
     Click on item in cart to view product detail page
