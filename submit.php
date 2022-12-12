@@ -62,7 +62,7 @@ $zip = $_POST['zip'];
                               die("Connection failed: " . $conn->connect_error);
                             }
 
-                            $sql = "SELECT * FROM orders where Name="$_POST['name']" Order by orderID desc Limit 1";
+                            $sql = "SELECT * FROM orders where Name='$name' Order by orderID desc Limit 1";
                             //echo $sql;
                             $result = $conn->query($sql);
 
