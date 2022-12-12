@@ -76,7 +76,7 @@ $zip = $_POST['zip'];
             
             <?php
                 foreach ($_SESSION['cart'] as $productId => $quantity) {
-                  echo "<p>$productId $quantity:<p>"
+                  echo "<p>$productId $quantity:<p>";
                 }
              ?>
             
