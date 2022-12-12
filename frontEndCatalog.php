@@ -159,11 +159,9 @@
                               while($row = $result->fetch_assoc()) {
                             ?>
                               <div class=product>
-<form action="./frontEndProduct.php" method="POST">
-    <input type="hidden" name="id" value="<?=$row["productID"]?>" />
-    <input type="image" src="assets/<?=$row["img"]?>.png" />
-</form>
-
+				      <a href="./frontEndProduct.php?id=<?=$row["productID"]?>">
+                        <img src="assets/<?=$row["img"]?>.png" />
+                    </a>
 				      <h1><?=$row["name"]?></h1>
 				      	
                               </div>
