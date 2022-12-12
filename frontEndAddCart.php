@@ -41,7 +41,14 @@ border: 1px solid black;
   <div class="card-deck">
     <?php foreach ($_SESSION['cart'] as $productId => $quantity) { ?>
       <div class="card">
-      <?php
+
+        <div class="card-body">
+          <h5 class="card-title"><?php echo $productId; ?></h5>
+          <p class="card-text">
+            Quantity: <?php echo $quantity; ?><br>
+            Price: $XXX<br>
+          </p>
+          <?php
           if (isset($_SESSION['cart'])) {
               if (isset($_POST['product_id']) && isset($_POST['quantity']) && $_POST['product_id'] == $productId) {
                 if(isset($_SESSION['cart'][$_POST['product_id']])) {
@@ -49,14 +56,9 @@ border: 1px solid black;
                 }
               }
           }
-      ?>
-        <div class="card-body">
-          <h5 class="card-title"><?php echo $productId; ?></h5>
-          <p class="card-text">
-            Quantity: <?php echo $quantity; ?><br>
-            Price: $XXX<br>
-          </p>
+        ?>
         </div>
+
       </div>
     <?php } ?>
   </div>
