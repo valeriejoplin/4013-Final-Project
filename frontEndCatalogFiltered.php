@@ -14,7 +14,7 @@
   if($selectedBrand==NULL)
   {
       echo "No Brand"
-  }
+  };
   ?>
   <!DOCTYPE html>
 
