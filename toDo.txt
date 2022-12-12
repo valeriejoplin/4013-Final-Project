@@ -77,7 +77,7 @@ Back End
 
 
 Andrew Next To Work On:
-    Fix cart only showing one item
+    Make Empty Cart Button Work
     Storing Product Details in DB on Buy Now
     Cart Referencing Database
     Click on item in cart to view product detail page
