@@ -104,6 +104,12 @@ echo "<p>$productID $quantity<p>"
                                     $conn->close();
                                 ?>       
 
+                            <?php
+                              }
+                            } else {
+                              echo "0 results: Error";
+                            }
+                            ?>
         <?php echo "<H2>$name<H2>" ?>
         <?php echo "$address"." "."$city".", "."$state"." "."$zip"?>
     </div>
