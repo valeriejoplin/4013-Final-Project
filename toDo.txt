@@ -22,7 +22,7 @@ Front End/
             +Text for currancy
             +Remove Text Decoration for product details
             +Make say 'Item Added' not 'Quantity Updated' on first add
-        + On check out removes quanity purchased from DB (Last thing to do! Not nessecary at this time. If doesnt remove invenotry we can place orders on site to populate sales history)
+        + On check out removes quanity/inventory purchased from DB (Last thing to do! Not nessecary at this time. If doesnt remove invenotry we can place orders on site to populate sales history)
         + Checkout Address Form
             - Could make popup modal
             - Would be cool to use javascrip autocomplete function             
@@ -53,9 +53,9 @@ Front End/
         + Make sure everyones information is up to date
     - Product
         + Comment Section and Database (One Table should be fine called productReview; colums reviewID, productID, reviewerName, review, rating, date)
-        + On check out removes quanity purchased from DB
-            -Need to decide buy now quantity, one item or selected quantity?
+        + On check out removes quanity (inventory) purchased from DB
         + Checkout Address Form
+            - Show price on buy now, so that can include this info in order informtation, and doesnt have to be calcuated late will have a historical price then not a current price.
             - Could make popup modal
             - Would be cool to use javascrip autocomplete function  
     - Make chat icon in footer open a popup to simulate a chat interface
