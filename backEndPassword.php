@@ -1,5 +1,7 @@
+<!DOCTYPE html>
+<html>
+<body>
 <?php
-
 // Start a session
 session_start();
 
@@ -18,5 +20,9 @@ if ($username == "admin" && $password == "admin") {
     exit;
 } else {
     // Display an error message if the username or password is incorrect
-    echo "Invalid username or password.";
+    echo "Invalid username or password. The correct username and password is admin and admin";
 }
+
+?>
+</body>
+</html>
