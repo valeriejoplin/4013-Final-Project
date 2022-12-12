@@ -85,7 +85,7 @@ if (isset($_SESSION['cart'])) {
 </script>
 
 <button class="cartButton" id="keepShopping" onclick="window.location.href='/frontEndCatalog.php'">Keep Shopping</button>
-<?php echo"<button onclick="session_destroy()">Empty Cart</button>;"?>
+<button onclick="<?php session_destroy() ?>">Empty Cart</button>
 
 	</div>
     <?php require_once("frontendfooter.php"); ?>
