@@ -14,13 +14,11 @@ Front End/
     -Footer
         +Make sure same throughout
     -Cart
-        + Add coupon spot
         + Place buttons at top below header or one side not at bottom
         ++ Rename to 'frontEndCart.php' requires changing references in files
         + Format
         + Logs Products Purchased
         + On check out removes quanity purchased from DB (Last thing to do! Not nessecary at this time. If doesnt remove invenotry we can place orders on site to populate sales history)
-        + Be able to calculate total (Add this to orders database)
         + Would be cool to use javascript address auto complete function
         + Add edit quantity in line
         + Make it say 'Item Added' not Quanity Updated on first addition to cart
@@ -87,5 +85,4 @@ Andrew Next To Work On:
     Relocate Buttons
     Storing Product Details in DB on Buy Now
     Remove text deocration cart
-    Cart Getting Total
     Cart store product pruchase details in DB table on checkout

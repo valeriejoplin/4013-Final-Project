@@ -14,6 +14,9 @@ if (isset($_SESSION['cart'])) {
 
 // Calculate the subtotal by adding up the prices of all products in the cart
 $subtotal = 0;
+$tax = 0;
+$taxRate = 0.08;
+$total =0;
 if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
   foreach ($_SESSION['cart'] as $productId => $quantity) {
     $servername = "165.227.18.177";
@@ -32,6 +35,7 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
       }
     }
   }
+  $tax = $subtotal * $taxRate;
 }
 ?>
 
@@ -134,8 +138,8 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
 <?php } ?>
         <div class="card-body">
         <div class="totals" style="font-size: 12px;">
-            <p> Subtotal: <?=$subtotal?></p>
-            <p> Tax: $XXX</p>
+            <p> Subtotal: $<?=$subtotal?></p>
+            <p> Tax: $<?=$tax?></p>
             <p style="font-size: 16px;"> Total: $XXX</p>
         </div>
         <input id="main_search_input" type="text" placeholder="Coupon" />
