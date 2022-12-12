@@ -72,21 +72,19 @@ $zip = $_POST['zip'];
                               while($row = $result->fetch_assoc()) {
                             ?>
                               <h1>Order #<?=$row["orderID"]?><h1>
+                               <?php
+
+                               ?>
+
                               <?php
                                 if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
                                   foreach ($_SESSION['cart'] as $productId => $quantity) {
-                                    $servername = "165.227.18.177";
-                                    $username = "asoltiso_project";
-                                    $password = "Project1243";
-                                    $dbname = "asoltiso_project";
-                                    $conn = new mysqli($servername, $username, $password, $dbname);
-                                    if ($conn->connect_error) {
-                                      die("Connection failed: " . $conn->connect_error);
-                                    }
-                                    echo "<p>$productId $quantity:<p>;"
+                                    echo "<p>$productId $quantity:<p>"
                                   }
                                 }
-                                ?>
+                               ?>
+
+
                             <?php
                               }
                             } else {
