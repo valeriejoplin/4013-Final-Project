@@ -27,6 +27,7 @@
    
 
         <div class="filters">
+            <form action="filtered.php" method="get">
             <div class="dropdown">
                 <label for="brands">Brand:</label>
                                        
@@ -129,6 +130,7 @@
                 </select>
             </div>
             <button type="button">Filter</button>
+            </form>
         </div>
         <div class="content">
             <div class="products">
