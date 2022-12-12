@@ -65,7 +65,11 @@ border: 1px solid black;
   <input type="text" id="state" name="state"><br>
   <label for="zip">Zip Code:</label><br>
   <input type="text" id="zip" name="zip"><br><br>
-  <input type="submit" value="Submit">
+  <?php if (empty($_SESSION['cart'])) { ?>
+    <input type="submit" value="Submit" disabled>
+  <?php } else { ?>
+    <input type="submit" value="Submit">
+  <?php } ?>
 </form>
 <style>
   .hidden {
