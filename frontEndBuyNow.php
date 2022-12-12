@@ -1,4 +1,5 @@
 <?php
+    session_start();
 
 // Get values from the form
 //Order info
