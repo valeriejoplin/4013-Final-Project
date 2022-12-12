@@ -105,7 +105,7 @@ if (isset($_SESSION['cart'])) {
  <script>
       var emptyCart = document.getElementById('emptyCart');
       openFormButton.addEventListener('click', function() {
-            sessionStorage.clear();      
+            <?php echo '<?php session_destory(); ?>' ?>      
             });
     </script>
 </div>
