@@ -49,47 +49,45 @@ $zip = $_POST['zip'];
 
             $conn->close();
         ?>
-         <?php
-                        $servername = "165.227.18.177";
-                        $username = "asoltiso_project";
-                        $password = "Project1243";
-                        $dbname = "asoltiso_project";   
+        <?php
+            $servername = "165.227.18.177";
+            $username = "asoltiso_project";
+            $password = "Project1243";
+            $dbname = "asoltiso_project";   
 						
 
-                            // Create connection
-                            $conn = new mysqli($servername, $username, $password, $dbname);
-                            // Check connection
-                            if ($conn->connect_error) {
-                              die("Connection failed: " . $conn->connect_error);
-                            }
-
-                            $sql = "SELECT * FROM orders where Name='$name' Order by orderID desc Limit 1";
-                            //echo $sql;
-                            $result = $conn->query($sql);
-
-                            if ($result->num_rows > 0) {
-                              // output data of each row
-                              while($row = $result->fetch_assoc()) {
-                            ?>
-                              <h1>Order #<?=$row["orderID"]?><h1>
-                               <?php
-
-                               ?>
-
-                              <?php
-                                  foreach ($_SESSION['cart'] as $productId => $quantity) {
-                                    echo "<p>$productId $quantity:<p>"
-                                  }
-                               ?>
-
-
-                            <?php
-                              }
-                            } else {
-                              echo "0 results";
-                            }
-                            $conn->close();
-                            ?>
+            // Create connection
+            $conn = new mysqli($servername, $username, $password, $dbname);
+            // Check connection
+            if ($conn->connect_error) {
+              die("Connection failed: " . $conn->connect_error);
+            }
+            
+            $sql = "SELECT * FROM orders where Name='$name' Order by orderID desc Limit 1";
+            //echo $sql;
+            $result = $conn->query($sql);
+            
+            if ($result->num_rows > 0) {
+              // output data of each row
+              while($row = $result->fetch_assoc()) {
+            ?>
+            <h1>Order #<?=$row["orderID"]?><h1>
+            
+            
+            <?php
+                foreach ($_SESSION['cart'] as $productId => $quantity) {
+                  echo "<p>$productId $quantity:<p>"
+                }
+             ?>
+            
+            
+            <?php
+              }
+            } else {
+              echo "0 results";
+            }
+            $conn->close();
+            ?>
         <?php echo "<H2>$name<H2>" ?>
         <?php echo "$address"." "."$city".", "."$state"." "."$zip"?>
     </div>
