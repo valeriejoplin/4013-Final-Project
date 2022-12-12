@@ -203,11 +203,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                                     if ($selectedBrand != ""){
                                        $sql .= " productBrand.brandID='".$selectedBrand."'";
                                     }
-                                    if ($selectedCategory != ""){
+                                    else if ($selectedCategory != ""){
                                        $sql .= " productCategory.categoryID='".$selectedCategory."'";
                                     }
-                                    if ($selectedItem != ""){
+                                    else if ($selectedItem != ""){
                                        $sql .= " productItem.itemID='".$selectedItem."'";
+                                    }
+                                    else if ($selectedBrand != "" && $selectedCategory != "" && $selectedItem != ""  != ""){
+                                       $sql .= " productBrand.brandID='".$selectedBrand."' && "." productCategory.categoryID='".$selectedCategory."' && "." productItem.itemID='".$selectedItem."'";
                                     }
                                 }
                                 echo "<p>$sql<p>";
