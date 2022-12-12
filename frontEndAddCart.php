@@ -71,12 +71,14 @@ if (isset($_SESSION['cart'])) {
                               // output data of each row
                               while($row = $result->fetch_assoc()) {
                             ?>
-                                <img src="assets/<?=$row["img"]?>.png" </img>
-                               <h5 class="card-title"><?=$row["name"]?></h5>
-                                <p class="card-text">
-                                Quantity: <?php echo $quantity; ?><br>
-                                Price: $<?=$row["price"]?><br>
-                                </p>
+                                <img style="width:100px; float:left;"src="assets/<?=$row["img"]?>.png" </img>
+                                <div class="details">
+                                   <h5 class="card-title"><?=$row["name"]?></h5>
+                                    <p class="card-text">
+                                    Quantity: <?php echo $quantity; ?><br>
+                                    Price: $<?=$row["price"]?><br>
+                                    </p>
+                                </div>
                             <?php
                               }
                             } else {
