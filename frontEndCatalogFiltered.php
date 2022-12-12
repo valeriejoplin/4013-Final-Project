@@ -11,9 +11,9 @@
   ?>
 
   <?php
-  if($selectedBrand==1)
-  {
-      echo "Brand Selected"
+  switch ($selectedBrand){
+      case NULL:
+      echo "NO Brand"
   }
   ?>
   <!DOCTYPE html>
