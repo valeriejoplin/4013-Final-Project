@@ -54,11 +54,7 @@ border: 1px solid black;
     <?php } ?>
   </div>
 <button id="openFormButton">Check Out</button>
-<?php if (empty($_SESSION['cart'])) { ?>
-  <form id="addressForm" action="frontEndOrderPlaced.php" method="POST" class="hidden" disabled>
-<?php } else { ?>
-  <form id="addressForm" action="frontEndOrderPlaced.php" method="POST" class="hidden">
-<?php } ?>
+<form id="addressForm" action="frontEndOrderPlaced.php" method="POST" class="hidden">
   <label for="name">Name:</label><br>
   <input type="text" id="name" name="name"><br>
   <label for="address">Address:</label><br>
@@ -69,7 +65,11 @@ border: 1px solid black;
   <input type="text" id="state" name="state"><br>
   <label for="zip">Zip Code:</label><br>
   <input type="text" id="zip" name="zip"><br><br>
-  <input type="submit" value="Submit">
+  <?php if (empty($_SESSION['cart'])) { ?>
+    <input type="submit" value="Submit" disabled>
+  <?php } else { ?>
+    <input type="submit" value="Submit">
+  <?php } ?>
 </form>
 <style>
   .hidden {
