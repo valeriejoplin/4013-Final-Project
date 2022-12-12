@@ -63,6 +63,8 @@ Front End/
 
 
 Back End
+    -implement backend header.php file into pages
+    -add back end about page to header file
     -Put pages into a div of class="container"
         + Will fortmat to have padding on each side of screen (like front end)
     - Seperate page to add/edit Brand/Catagory/Item **Needs to be done before the Add/Edit products**
