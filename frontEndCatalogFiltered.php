@@ -203,7 +203,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                               while($row = $result->fetch_assoc()) {
                             ?>
                               <div class=product>
-				      <a href="./frontEndProduct.php?id=<?=$row["product.productID"]?>">
+				      <a href="./frontEndProduct.php?id=<?=$row["productID"]?>">
                         <img src="assets/<?=$row["img"]?>.png" />
                     </a>
 				      <h1><?=$row["name"]?></h1>
