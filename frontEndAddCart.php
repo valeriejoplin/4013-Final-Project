@@ -101,7 +101,11 @@ if (isset($_SESSION['cart'])) {
                             ?>
           
         </div>
-
+        <div class="card-body">
+        <input id="main_search_input" type="text" placeholder="Suchen" /><button id="search_button">
+            <img src="https://cdn1.iconfinder.com/data/icons/TWG_Retina_Icons/24/magnifier.png" width="20" style="border-left: 1px solid #D7D7D7; padding: 0 0 0 5px;" />
+        </button>
+        </div>
       </div>
     <?php } ?>
   </div>
