@@ -35,27 +35,24 @@ border: 1px solid black;
 <body>
 
 <div class="container">
-    <?php require_once("frontEndHeader.php"); ?>
+  <?php require_once("frontEndHeader.php"); ?>
 
-    <div class="card-deck">
-        <?php for ($i = 0; $i < count($_SESSION['cart']); $i = $i + 2) { 
-  if (!empty($_SESSION['cart'][$i])) {
-                <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title"><?php echo $_SESSION['cart'][$i]; ?></h5>
-                    <p class="card-text">
-                        Quantity: <?php echo $_SESSION['cart'][$i + 1]; ?><br>
-                        Price: $XXX<br>
-                        Total: $XXX
-                    </p>
-                </div>
-            </div>
-        <?php } ?>
-  }
-} ?>
-
-    </div>
-
+  <div class="card-deck">
+    <?php for ($i = 0; $i < count($_SESSION['cart']); $i = $i + 2) { 
+      if (!empty($_SESSION['cart'][$i])) { ?>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><?php echo $_SESSION['cart'][$i]; ?></h5>
+            <p class="card-text">
+              Quantity: <?php echo $_SESSION['cart'][$i + 1]; ?><br>
+              Price: $XXX<br>
+              Total: $XXX
+            </p>
+          </div>
+        </div>
+      <?php }
+    } ?>
+  </div>
 <button id="openFormButton">Check Out</button>
 <form id="addressForm" action="frontEndOrderPlaced.php" method="POST" class="hidden">
   <label for="name">Name:</label><br>
