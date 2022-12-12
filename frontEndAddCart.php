@@ -108,9 +108,8 @@ if (isset($_SESSION['cart'])) {
   <p>Your cart is empty. Please add items to your cart to see them here.</p>
 <?php } ?>
         <div class="card-body">
-        <input id="main_search_input" type="text" placeholder="Suchen" /><button id="search_button">
-            <img src="https://cdn1.iconfinder.com/data/icons/TWG_Retina_Icons/24/magnifier.png" width="20" style="border-left: 1px solid #D7D7D7; padding: 0 0 0 5px;" />
-        </button>
+        <input id="main_search_input" type="text" placeholder="Coupon" />
+        <button id="search_button">Apply</button>
         </div>
 <div class="buttons">
 <button  class="cartButton" id="openFormButton" <?php if (empty($_SESSION['cart'])) { echo 'disabled'; } ?>>Check Out</button>
