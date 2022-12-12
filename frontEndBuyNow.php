@@ -17,7 +17,7 @@ $zip = $_POST['zip'];
     <link href="./assets/catalogStyle.css" rel="stylesheet"/>
     <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
     <script src="assets/javascript/w3.js"></script>
-    <title>Catalog</title>
+    <title>Success</title>
 
 </head>
 

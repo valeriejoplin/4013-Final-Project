@@ -20,7 +20,7 @@
     <link href="./assets/catalogStyle.css" rel="stylesheet"/>
     <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
     <script src="assets/javascript/w3.js"></script>
-    <title>Catalog</title>
+    <title>Cart</title>
 <style>
  .keepShopping{
 	   background-color: #FAF6F1;
