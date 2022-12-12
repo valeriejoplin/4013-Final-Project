@@ -22,7 +22,6 @@ Front End/
         + Use Query to show details about product
         + Be able to calculate total (Add this to orders database)
         + Would be cool to use javascript address auto complete function
-        + Add a clear cart button to destroy session and clear cart
     - Catalog
         + Make 3 none filters redirect to catalog not fiter page with same query as catalog
         + If filtered values are not set reditect to catalog page, curretly gives a php warning
@@ -75,7 +74,6 @@ Back End
 
 Andrew Next To Work On:
     Storing Product Details in DB on Buy Now
-    Add clear cart button
     Cart Referencing Database
     Click on item in cart to view product detail page
     Cart Getting Total
