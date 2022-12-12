@@ -43,7 +43,7 @@ border: 1px solid black;
       <div class="card">
       <?php
           if (isset($_SESSION['cart'])) {
-              if (isset($_POST['product_id']) && isset($_POST['quantity'])) {
+              if (isset($_POST['product_id']) && isset($_POST['quantity']) && $_POST['product_id'] == $productId) {
                 if(isset($_SESSION['cart'][$_POST['product_id']])) {
                   echo "Quantity updated";
                 }
