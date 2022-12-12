@@ -8,13 +8,9 @@ if(empty($_SESSION['cart'])) {
 
 if (isset($_SESSION['cart'])) {
   if (isset($_POST['product_id']) && isset($_POST['quantity'])) {
-    if (array_key_exists($_POST['product_id'], $_SESSION['cart'])) {
-      echo "Quantity updated";
-    }
     $_SESSION['cart'][$_POST['product_id']] = $_POST['quantity'];    
   }
 }
-
 ?>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
@@ -50,6 +46,9 @@ border: 1px solid black;
           <p class="card-text">
             Quantity: <?php echo $quantity; ?><br>
             Price: $XXX<br>
+            <?php if (array_key_exists($productId, $_SESSION['cart'])) {
+              echo "<br>Quantity updated";
+            } ?>
           </p>
         </div>
       </div>
@@ -58,6 +57,7 @@ border: 1px solid black;
 <?php } else { ?>
   <p>Your cart is empty. Please add items to your cart to see them here.</p>
 <?php } ?>
+
 
 <button id="openFormButton" <?php if (empty($_SESSION['cart'])) { echo 'disabled'; } ?>>Check Out</button>
 <form id="addressForm" action="frontEndOrderPlaced.php" method="POST" class="hidden">
