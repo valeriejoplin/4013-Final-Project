@@ -23,6 +23,10 @@ if (isset($_SESSION['cart'])) {
     <script src="assets/javascript/w3.js"></script>
     <title>Cart</title>
 <style>
+.buttons{
+         display: flex;
+     justify-content: center;
+}
  .cartButton{
      display: flex;
      justify-content: center;
@@ -67,38 +71,39 @@ if (isset($_SESSION['cart'])) {
 <?php } else { ?>
   <p>Your cart is empty. Please add items to your cart to see them here.</p>
 <?php } ?>
-
+<div class="buttons">
 <button  class="cartButton" id="openFormButton" <?php if (empty($_SESSION['cart'])) { echo 'disabled'; } ?>>Check Out</button>
-<form id="addressForm" action="frontEndOrderPlaced.php" method="POST" class="hidden">
-  <label for="name">Name:</label><br>
-  <input type="text" id="name" name="name"><br>
-  <label for="address">Address:</label><br>
-  <input type="text" id="address" name="address"><br>
-  <label for="city">City:</label><br>
-  <input type="text" id="city" name="city"><br>
-  <label for="state">State:</label><br>
-  <input type="text" id="state" name="state"><br>
-  <label for="zip">Zip Code:</label><br>
-  <input type="text" id="zip" name="zip"><br><br>
-  <input type="submit" value="Submit">
-</form>
-<style>
-  .hidden {
-    display: none;
-  }
-</style>
-<script>
-  var openFormButton = document.getElementById('openFormButton');
-  var addressForm = document.getElementById('addressForm');
-  openFormButton.addEventListener('click', function() {
-    addressForm.classList.toggle('hidden');
-  });
-</script>
+    <form id="addressForm" action="frontEndOrderPlaced.php" method="POST" class="hidden">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name"><br>
+      <label for="address">Address:</label><br>
+      <input type="text" id="address" name="address"><br>
+      <label for="city">City:</label><br>
+      <input type="text" id="city" name="city"><br>
+      <label for="state">State:</label><br>
+      <input type="text" id="state" name="state"><br>
+      <label for="zip">Zip Code:</label><br>
+      <input type="text" id="zip" name="zip"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
+    <script>
+      var openFormButton = document.getElementById('openFormButton');
+      var addressForm = document.getElementById('addressForm');
+      openFormButton.addEventListener('click', function() {
+        addressForm.classList.toggle('hidden');
+      });
+    </script>
 
-<button class="cartButton" id="keepShopping" onclick="window.location.href='/frontEndCatalog.php'">Keep Shopping</button>
-<form action="" method="GET">
-    <button  class="cartButton" type="submit" onclick="<?php session_destroy(); ?>">Empty Cart</button>
-</form>
+    <button class="cartButton" id="keepShopping" onclick="window.location.href='/frontEndCatalog.php'">Keep Shopping</button>
+    <form action="" method="GET">
+        <button  class="cartButton" type="submit" onclick="<?php session_destroy(); ?>">Empty Cart</button>
+    </form>
+</div>
 
 	</div>
     <?php require_once("frontendfooter.php"); ?>
