@@ -38,6 +38,7 @@ Front End/
         + Can make the automated email response an html file instead of the text string we have
     - Home
         + Pop up only show first time in session
+        + Use span to make coupon code stand out
         + Show Featured Products maybe recently sold products tops 2 maybe 3? could do a w3.js slide show like about page
         + Format Footer
         + Can make the automated email response an html file instead of the text string we have
