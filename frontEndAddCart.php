@@ -2,12 +2,15 @@
     session_set_cookie_params(0);
     session_start();          // Start the session
     
+    if(empty($_SESSION['cart']))
+	{
+		$_SESSION['cart'] = array();
+    }
   if (isset($_SESSION['cart'])) {
     if (isset($_POST['product_id'])) {
       $product = $_POST['product_id'];
       $quantity = $_POST['quantity'];
-      array_push($_SESSION['cart'], $product, $quantity);
-    }    
+      array_push($_SESSION['cart'], $product, $quantity);    
   }
     //print_r($_SESSION['cart']);
 ?>
@@ -37,8 +40,8 @@ border: 1px solid black;
   <?php require_once("frontEndHeader.php"); ?>
 
   <div class="card-deck">
-    <?php if (!empty($_SESSION['cart'])) {
-      for ($i = 0; $i < count($_SESSION['cart']); $i = $i + 2) { ?>
+    <?php for ($i = 0; $i < count($_SESSION['cart']); $i = $i + 2) { 
+      if (!empty($_SESSION['cart'][$i])) { ?>
         <div class="card">
           <div class="card-body">
             <h5 class="card-title"><?php echo $_SESSION['cart'][$i]; ?></h5>
@@ -49,11 +52,8 @@ border: 1px solid black;
           </div>
         </div>
       <?php }
-    } else { ?>
-      <p>Your cart is empty. Please add items to your cart to continue.</p>
-    <?php } ?>
+    } ?>
   </div>
-  <a class="keepShopping" id="keepShopping" href="/frontEndCatalog.php">Keep Shopping</a>
 <button id="openFormButton">Check Out</button>
 <form id="addressForm" action="frontEndOrderPlaced.php" method="POST" class="hidden">
   <label for="name">Name:</label><br>
@@ -66,11 +66,7 @@ border: 1px solid black;
   <input type="text" id="state" name="state"><br>
   <label for="zip">Zip Code:</label><br>
   <input type="text" id="zip" name="zip"><br><br>
-  <?php if (empty($_SESSION['cart'])) { ?>
-    <input type="submit" value="Submit" disabled>
-  <?php } else { ?>
-    <input type="submit" value="Submit">
-  <?php } ?>
+  <input type="submit" value="Submit">
 </form>
 <style>
   .hidden {
@@ -85,7 +81,7 @@ border: 1px solid black;
   });
 </script>
 
-  
+  <a class="keepShopping" id="keepShopping" href="/frontEndCatalog.php">Keep Shopping</a>
   
 	</div>
     <?php require_once("frontendfooter.php"); ?>
