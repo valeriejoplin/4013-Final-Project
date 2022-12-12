@@ -11,6 +11,10 @@ if (isset($_SESSION['cart'])) {
     $_SESSION['cart'][$_POST['product_id']] = $_POST['quantity'];    
   }
 }
+
+// Initialize subtotal to 0
+$subtotal = 0;
+
 ?>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
