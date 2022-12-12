@@ -176,20 +176,19 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
 
     <button class="cartButton" id="keepShopping" onclick="window.location.href='/frontEndCatalog.php'">Keep Shopping</button>
 
-<button class="cartButton" id="emptyCart" type="submit" onclick="destroyPhpSession()">Empty Cart</button>
+<!-- Form to submit a request to destroy the session -->
+<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="get">
+  <input type="hidden" name="form_submitted" value="1" />
+  <button type="submit">Destroy Session</button>
+</form>
 
-<script>
-function destroyPhpSession() {
-  // Send an AJAX request to the PHP script that destroys the session
-  $.ajax({
-    url: "destroy_session.php",
-    type: "POST",
-    success: function(response) {
-      // The session has been destroyed
-    }
-  });
-}
-</script>
+<?php
+  // Check if the form has been submitted
+  if (isset($_GET['form_submitted'])) {
+    // Destroy the session
+    session_destroy();
+  }
+?>
 
 </div>
 
