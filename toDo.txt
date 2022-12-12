@@ -61,6 +61,7 @@ Front End/
 
 
 Back End
+    - Make pages redirect to password page is session is not logged in
     -implement backend header.php file into pages
     -add back end about page to header file
     -Put pages into a div of class="container"

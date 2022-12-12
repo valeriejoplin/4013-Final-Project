@@ -1,12 +1,3 @@
-<?php
-  session_start();
-
-  if (!isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] !== true) {
-    // User is not logged in, redirect to login page
-    header("Location: backEndLogin.php");
-  }
-?>
-
 <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
