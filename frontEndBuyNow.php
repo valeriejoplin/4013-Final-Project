@@ -87,14 +87,12 @@ $quantity = $_POST['quantity'];
                                     if ($conn->connect_error) {
                                     die("Connection failed: " . $conn->connect_error);
                                     }
-                                    if (!empty($_SESSION['cart'])) {
                                     $sql = "INSERT INTO orderProduct (productID, orderID, quantity)
                                             VALUES ('$productID', '$orderID', '$quantity')";
                                     if ($conn->query($sql) === TRUE) {
 
                                     } else {
                                     echo "Error: " . $sql . "<br>" . $conn->error;
-                                    }
                                     }
                                     $conn->close();
                                 ?>       
