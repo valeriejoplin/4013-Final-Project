@@ -50,7 +50,7 @@ border: 1px solid black;
         </table>
 
 <button id="openFormButton">Check Out</button>
-<form id="addressForm" action="submit.php" method="POST" display:"hidden">
+<form id="addressForm" action="submit.php" method="POST" style="display:none;">
       <label for="name">Name:</label><br>
       <input type="text" id="name" name="name"><br>
       <label for="address">Address:</label><br>
