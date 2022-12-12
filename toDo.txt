@@ -1,4 +1,4 @@
-To Do:
+To Do: DONT HATE ME THERES LOTS ON HERE LOTS OF HOPES AND DREAMS
 
 Clean Up Files
     + Group Styling
@@ -40,6 +40,7 @@ Front End/
         + Make email footer button take to contact page Actualy make all the non social media buttons go to contact page
         + Can make the automated email response an html file instead of the text string we have
     - Home
+        + Format
         + Pop up only show first time in session
         + Use span to make coupon code stand out
         + Show Featured Products maybe recently sold products tops 2 maybe 3? could do a w3.js slide show like about page
