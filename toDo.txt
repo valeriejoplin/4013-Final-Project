@@ -63,3 +63,12 @@ Back End
     -Sections to view all comments at once
         + We want a delete/remove comment feature here
     - Write up about website
+
+
+Andrew Next To Work On:
+    Storing Product Details in DB on Buy Now
+    Cart Referencing Database
+    Click on item in cart to view product detail page 
+    Cart Getting Total
+    Cart Preventing from Adding More than Quantity Avalible
+    Cart Sotoring product pruchase details in DB table on checkout
