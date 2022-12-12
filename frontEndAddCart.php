@@ -33,7 +33,7 @@ if (isset($_SESSION['cart'])) {
 	  float: left;
       padding: 10px;
       margin: 10px;
-      width: 30%;
+      width: 300px;
       text-align: center;
 	}
 	</style>
