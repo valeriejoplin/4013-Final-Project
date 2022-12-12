@@ -221,9 +221,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                                     else if ($selectedItem != ""){
                                        $sql .= " productItem.itemID='".$selectedItem."'";
                                     }
-
                                 }
-                                echo "<p>$sql<p>";
                                 $result = $conn->query($sql);
 
                                 if ($result->num_rows > 0) {
@@ -240,7 +238,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                                 <?php
                                   }
                                 } else {
-                                  echo "0 results";
+                                  echo "0 results. Try another Filter. We are constiantly adding products to our store. Hopefully we have what you want soon.";
                                 }
                                 $conn->close();
                                 ?>
