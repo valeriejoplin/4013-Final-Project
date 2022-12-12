@@ -41,7 +41,7 @@ width: 800px;
 	height: 400px;
 	font-family:"Mongolian Baliti", Times, serif;
 	align: center;
-	float:center;
+	float: left;
 	background-color: #E7FAFC;
 	}
 * {box-sizing: border-box;}
