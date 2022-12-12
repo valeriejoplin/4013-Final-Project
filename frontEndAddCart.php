@@ -187,6 +187,9 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
   if (isset($_GET['form_submitted'])) {
     // Destroy the session
     session_destroy();
+    
+    // Reload the page
+    echo '<script>location.reload();</script>';
   }
 ?>
 
