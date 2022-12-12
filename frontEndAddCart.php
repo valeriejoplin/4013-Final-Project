@@ -2,10 +2,6 @@
     session_set_cookie_params(0);
     session_start();          // Start the session
     
-    if(empty($_SESSION['cart']))
-	{
-		$_SESSION['cart'] = array();
-    }
   if (isset($_SESSION['cart'])) {
     if (isset($_POST['product_id'])) {
       $product = $_POST['product_id'];
