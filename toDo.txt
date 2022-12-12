@@ -15,6 +15,7 @@ Front End/
     -Footer
         +Make sure same throughout
     -Cart
+        + Make discount button work
         + Place buttons at top below header or one side not at bottom
         ++ Rename to 'frontEndCart.php' requires changing references in files
         + Format
@@ -25,8 +26,7 @@ Front End/
         + Make it say 'Item Added' not Quanity Updated on first addition to cart
         + Change check out info form to be popup modal
     - Catalog
-        + Make 3 none filters redirect to catalog not fiter page with same query as catalog
-        + If filtered values are all set to 'none' set reditect to catalog page, curretly gives a php warning
+        + If filtered values are all set to 'none' set reditect to catalog page, not filteredcatalog page
         + Format header (Most Pages Need)
         + Show only instock products change query to be where quantity is greater than 0 wont impact now but will later when we start to keep track of quanties
         + Could add a filter based on price

@@ -176,8 +176,19 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
 
     <button class="cartButton" id="keepShopping" onclick="window.location.href='/frontEndCatalog.php'">Keep Shopping</button>
 
-<button class="cartButton" id="emptyCart" type="submit">Empty Cart</button>
+<button onclick="destroySessionAndReloadPage()">Destroy Session and Reload Page</button>
 
+<script>
+function destroySessionAndReloadPage() {
+  // Destroy the session
+  if (sessionStorage) {
+    sessionStorage.clear();
+  }
+
+  // Reload the page without the post variable
+  window.location.replace(window.location.origin + window.location.pathname);
+}
+</script>
 </div>
 
 	</div>
