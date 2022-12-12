@@ -16,4 +16,8 @@ echo
 
 <H1> Order Placed Successfully <h1>
 <?php echo "$name" ?>
+<?php echo "$address" ?>
+<?php echo "$city" ?>
+<?php echo "$state" ?>
+<?php echo "$zip" ?>
 
