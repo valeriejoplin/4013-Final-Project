@@ -1,4 +1,16 @@
-<!DOCTYPE html>
+<?php   
+  $selectedBrand = $_POST["brands"];
+  $selectedCategory = $_POST["categories"];
+  $selectedItem = $_POST["items"];
+
+  // Output the selected values
+  echo "You selected the following options:<br>";
+  echo "Brand: " . $selectedBrand . "<br>";
+  echo "Category: " . $selectedCategory . "<br>";
+  echo "Item: " . $selectedItem;
+  ?>
+
+  <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -24,43 +36,43 @@
 <body>
     <div class="container">
                 <?php require_once("frontEndHeader.php"); ?>
-	
-  
+   
 
         <div class="filters">
-            <div class="dropdown">
-                <label for="brands">Brand:</label>
+            <form action="filtered.php" method="post">
+                <div class="dropdown">
+                    <label for="brands">Brand:</label>
                                        
-                <select name="brands" id="brands">
-                    <option value="">None</option>
-                     <?php
-                        $servername = "165.227.18.177";
-                        $username = "asoltiso_project";
-                        $password = "Project1243";
-                        $dbname = "asoltiso_project";   
+                    <select name="brands" id="brands">
+                        <option value="">None</option>
+                         <?php
+                            $servername = "165.227.18.177";
+                            $username = "asoltiso_project";
+                            $password = "Project1243";
+                            $dbname = "asoltiso_project";   
 
-                        $conn = new mysqli($servername, $username, $password, $dbname);
-                        if ($conn->connect_error) {
-                          die("Connection failed: " . $conn->connect_error);
-                        }
-                        $sql = "Select * From brand";
-                        //echo $sql;
-                            $result = $conn->query($sql);
-
-                        if ($result->num_rows > 0) {
-                          // output data of each row
-                          while($row = $result->fetch_assoc()) {
-                        ?>
-                    <option value="<?=$row["brandID"]?>"><?=$row["brand"]?></option>
-                    <?php
-                              }
-                            } else {
-                              echo "0 results";
+                            $conn = new mysqli($servername, $username, $password, $dbname);
+                            if ($conn->connect_error) {
+                              die("Connection failed: " . $conn->connect_error);
                             }
-                            $conn->close();
+                            $sql = "Select * From brand";
+                            //echo $sql;
+                                $result = $conn->query($sql);
+
+                            if ($result->num_rows > 0) {
+                              // output data of each row
+                              while($row = $result->fetch_assoc()) {
                             ?>
-                </select>
-            </div>
+                        <option value="<?=$row["brandID"]?>"><?=$row["brand"]?></option>
+                        <?php
+                                  }
+                                } else {
+                                  echo "0 results";
+                                }
+                                $conn->close();
+                                ?>
+                    </select>
+                </div>
             <div class="dropdown">
                 <label for="categories">Category:</label>
                 <select name="categories" id="categories">
@@ -129,7 +141,8 @@
                             ?>
                 </select>
             </div>
-            <button type="button">Filter</button>
+            <input type="Submit" value="Submit">
+            </form>
         </div>
         <div class="content">
             <div class="products">

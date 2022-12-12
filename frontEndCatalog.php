@@ -27,7 +27,7 @@
    
 
         <div class="filters">
-            <form action="filtered.php" method="post">
+            <form action="frontEndCatalogFiltered.php" method="post">
                 <div class="dropdown">
                     <label for="brands">Brand:</label>
                                        
