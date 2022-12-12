@@ -174,6 +174,12 @@ if ($result->num_rows > 0) {
                   openFormButton.addEventListener('click', function() {
                     addressForm.classList.toggle('hidden');
                   });
+                  // Get the quantity input in the other form
+var quantityInput = document.querySelector('form[action="frontEndAddCart.php"] input[name="quantity"]');
+// Get the hidden quantity input in the addressForm form
+var hiddenQuantityInput = document.querySelector('form#addressForm input[name="quantity"]');
+// Set the value of the hidden quantity input to the value of the quantity input
+hiddenQuantityInput.value = quantityInput.value;
                 </script>
             <form action="frontEndAddCart.php" method="POST">
 			<input type="number" name="quantity" value="1" min="1" max="<?=$row["qtyAvalible"]?>" placeholder="Quantity" required>
