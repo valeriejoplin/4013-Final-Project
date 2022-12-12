@@ -1,5 +1,20 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-             
+           
+<style>
+footer {
+    padding-top: 15px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    clear: both;
+}
+
+.footericon {
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+    </style>
 <footer>
             <div class="icons">
                 <img class="footericon" src="assets/send-mail.svg" />
