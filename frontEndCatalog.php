@@ -25,7 +25,7 @@
     <div class="container">
                 <?php require_once("frontEndHeader.php"); ?>
 	
-
+            <div class="filters">
             <form action="filtered.php" method="post">
   <div class="dropdown">
     <label for="brands">Brand:</label>
@@ -129,6 +129,7 @@
   </div>
 
   <input type="submit" value="Submit">
+  </div>
 </form>
 
 
