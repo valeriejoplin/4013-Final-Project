@@ -83,6 +83,7 @@ $subtotal = 0;
                                     <p class="card-text">
                                     Quantity: <?php echo $quantity; ?><br>
                                     Price: $<?=$row["price"]?><br>
+                                    <?php $subtotal += $row["price"]?>
                                     <?php
                                       if (isset($_SESSION['cart'])) {
                                           if (isset($_POST['product_id']) && isset($_POST['quantity']) && $_POST['product_id'] == $productId) {
@@ -113,7 +114,7 @@ $subtotal = 0;
 <?php } ?>
         <div class="card-body">
         <div class="totals" style="font-size: 12px;">
-            <p> Subtotal: $XXX</p>
+            <p> Subtotal: $subtotal</p>
             <p> Tax: $XXX</p>
             <p style="font-size: 16px;"> Total: $XXX</p>
         </div>
