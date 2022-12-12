@@ -81,6 +81,7 @@ $zip = $_POST['zip'];
         <?php echo "<H2>$name<H2>" ?>
         <?php echo "$address"." "."$city".", "."$state"." "."$zip"?>
     </div>
+    <?php require_once("frontendfooter.php"); ?>
 </body>
 
 
