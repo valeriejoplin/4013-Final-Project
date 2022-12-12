@@ -1,4 +1,5 @@
 <?php
+    session_start();
 
     // submit.php
 
@@ -82,5 +83,7 @@ $zip = $_POST['zip'];
         <?php echo "$address"." "."$city".", "."$state"." "."$zip"?>
     </div>
 </body>
+
+<?php session_destroy(); ?>
 
 
