@@ -1,19 +1,16 @@
-<?php // PHP part
-    session_set_cookie_params(0);
-    session_start();          // Start the session
-    
-    if(empty($_SESSION['cart']))
-	{
-		$_SESSION['cart'] = array();
-    }
-  if (isset($_SESSION['cart'])) {
-    if (isset($_POST['product_id'])) {
-      $product = $_POST['product_id'];
-      $quantity = $_POST['quantity'];
-      array_push($_SESSION['cart'], $product, $quantity);    
-    }
+<?php
+session_set_cookie_params(0);
+session_start();
+
+if(empty($_SESSION['cart'])) {
+  $_SESSION['cart'] = array();
+}
+
+if (isset($_SESSION['cart'])) {
+  if (isset($_POST['product_id']) && isset($_POST['quantity'])) {
+    $_SESSION['cart'][$_POST['product_id']] = $_POST['quantity'];    
   }
-    //print_r($_SESSION['cart']);
+}
 ?>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
@@ -40,23 +37,24 @@ border: 1px solid black;
 <div class="container">
   <?php require_once("frontEndHeader.php"); ?>
 
-  <?php if (empty($_SESSION['cart'])) { ?>
-    <p>Your cart is empty. Please add items to your cart to see them here.</p>
-  <?php } else { ?>
-    <div class="card-deck">
-      <?php for ($i = 0; $i < count($_SESSION['cart']); $i = $i + 2) { ?>
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title"><?php echo $_SESSION['cart'][$i]; ?></h5>
-            <p class="card-text">
-              Quantity: <?php echo $_SESSION['cart'][$i + 1]; ?><br>
-              Price: $XXX<br>
-            </p>
-          </div>
+<?php if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) { ?>
+  <div class="card-deck">
+    <?php foreach ($_SESSION['cart'] as $productId => $quantity) { ?>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><?php echo $productId; ?></h5>
+          <p class="card-text">
+            Quantity: <?php echo $quantity; ?><br>
+            Price: $XXX<br>
+          </p>
         </div>
-      <?php } ?>
-    </div>
-  <?php } ?>
+      </div>
+    <?php } ?>
+  </div>
+<?php } else { ?>
+  <p>Your cart is empty. Please add items to your cart to see them here.</p>
+<?php } ?>
+
 <button id="openFormButton" <?php if (empty($_SESSION['cart'])) { echo 'disabled'; } ?>>Check Out</button>
 <form id="addressForm" action="frontEndOrderPlaced.php" method="POST" class="hidden">
   <label for="name">Name:</label><br>
