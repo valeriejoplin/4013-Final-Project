@@ -204,7 +204,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                                        $sql .= "productBrand.brandID='".$selectedBrand."'";
                                     }
                                 }
-                                echo "<p>$sql<p>"
+                                echo "<p>$sql<p>";
                                 $result = $conn->query($sql);
 
                                 if ($result->num_rows > 0) {
