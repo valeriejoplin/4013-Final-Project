@@ -6,10 +6,11 @@
 	{
 		$_SESSION['cart'] = array();
     }
-
-    $product=$_POST['product_id'];
-	$quantity=$_POST['quantity'];
-    array_push($_SESSION['cart'],$product, $quantity);   
+  if (!empty($_SESSION['cart'])) {
+    $product = $_POST['product_id'];
+    $quantity = $_POST['quantity'];
+    array_push($_SESSION['cart'], $product, $quantity);
+  } 
     //print_r($_SESSION['cart']);
 ?>
 
@@ -46,7 +47,6 @@ border: 1px solid black;
             <p class="card-text">
               Quantity: <?php echo $_SESSION['cart'][$i + 1]; ?><br>
               Price: $XXX<br>
-              Total: $XXX
             </p>
           </div>
         </div>
