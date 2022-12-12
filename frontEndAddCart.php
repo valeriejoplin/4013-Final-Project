@@ -108,7 +108,7 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
                                 <a href="./frontEndProduct.php?id=<?=$row["productID"]?>">
                                 <div>
                                 <img style="width:10%; float:left;"src="assets/<?=$row["img"]?>.png" </img>
-                                <div class="details" style="height:100px; width: 70%; float: left; padding-left: 15px;">
+                                <div class="details" style="height:100px; width: 70%; float: left; padding: 1rem; padding-left: 2rem;">
                                    <h5 class="card-title"><?=$row["name"]?></h5>
                                     <p class="card-text">
                                     Quantity: <?php echo $quantity; ?><br>
