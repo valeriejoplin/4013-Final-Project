@@ -79,43 +79,34 @@ echo "<p>$productID $quantity<p>"
                             ?>
                               <h1>Order #<?=$row["orderID"]?><h1>
 
-                                       <?php
-                                        $servername = "165.227.18.177";
-                                        $username = "asoltiso_project";
-                                        $password = "Project1243";
-                                        $dbname = "asoltiso_project";   
-						
+                                <?php 
+                                    $servername = "165.227.18.177";
+                                    $username = "asoltiso_project";
+                                    $password = "Project1243";
+                                    $dbname = "asoltiso_project";
 
-                                            // Create connection
-                                            $conn = new mysqli($servername, $username, $password, $dbname);
-                                            // Check connection
-                                            if ($conn->connect_error) {
-                                              die("Connection failed: " . $conn->connect_error);
-                                            }
+                                    // Create connection
+                                    $conn = new mysqli($servername, $username, $password, $dbname);
+                                    // Check connection
+                                    if ($conn->connect_error) {
+                                    die("Connection failed: " . $conn->connect_error);
+                                    }
 
-                                            $sql = "SELECT * FROM product where productID='$productID'";
-                                            //echo $sql;
-                                            $result = $conn->query($sql);
+                                    $sql = "INSERT INTO products (productID, orderID)
+                                            VALUES ('$productID', '<?=$row["orderID"]?>')";
+                                    if ($conn->query($sql) === TRUE) {
+                                    echo "<h1>Successfully Submitted Order<h1>";
+                                    } else {
+                                    echo "Error: " . $sql . "<br>" . $conn->error;
+                                    }
 
-                                            if ($result->num_rows > 0) {
-                                              // output data of each row
-                                              while($row = $result->fetch_assoc()) {
-                                            ?>
-                                              <h1>Order #<?=$row["name"]?><h1>
-
-
-                                            <?php
-                                              }
-                                            } else {
-                                              echo "0 results";
-                                            }
-                                            $conn->close();
-                                            ?>
+                                    $conn->close();
+                                ?>       
 
                             <?php
                               }
                             } else {
-                              echo "0 results";
+                              echo "0 results: Error";
                             }
                             $conn->close();
                             ?>
