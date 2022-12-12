@@ -6,40 +6,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   $selectedBrand = $_POST["brands"];
   $selectedCategory = $_POST["categories"];
   $selectedItem = $_POST["items"];
-
-  // Output the selected values or a default message if no options were selected
-  echo "You selected the following options:<br>";
-  echo "Brand: ";
-  switch ($selectedBrand) {
-    case "":
-      echo "None";
-      break;
-    default:
-      echo $selectedBrand;
-      break;
-  }
-  echo "<br>";
-
-  echo "Category: ";
-  switch ($selectedCategory) {
-    case "":
-      echo "None";
-      break;
-    default:
-      echo $selectedCategory;
-      break;
-  }
-  echo "<br>";
-
-  echo "Item: ";
-  switch ($selectedItem) {
-    case "":
-      echo "None";
-      break;
-    default:
-      echo $selectedItem;
-      break;
-  }
 }
 ?>
   <!DOCTYPE html>
