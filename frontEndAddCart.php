@@ -49,6 +49,42 @@ if (isset($_SESSION['cart'])) {
       <div class="card">
 
         <div class="card-body">
+        				<?php
+                        $servername = "165.227.18.177";
+                        $username = "asoltiso_project";
+                        $password = "Project1243";
+                        $dbname = "asoltiso_project";   
+						
+
+                            // Create connection
+                            $conn = new mysqli($servername, $username, $password, $dbname);
+                            // Check connection
+                            if ($conn->connect_error) {
+                              die("Connection failed: " . $conn->connect_error);
+                            }
+
+                            $sql = "SELECT * FROM product where productID = $productId";
+                            //echo $sql;
+                            $result = $conn->query($sql);
+
+                            if ($result->num_rows > 0) {
+                              // output data of each row
+                              while($row = $result->fetch_assoc()) {
+                            ?>
+                              <div class=product>
+				      <a href="./frontEndProduct.php?id=<?=$row["productID"]?>">
+                        <img src="assets/<?=$row["img"]?>.png" />
+                    </a>
+				      <h1><?=$row["name"]?></h1>
+				      	
+                              </div>
+                            <?php
+                              }
+                            } else {
+                              echo "0 results";
+                            }
+                            $conn->close();
+                            ?>
           <h5 class="card-title"><?php echo $productId; ?></h5>
           <p class="card-text">
             Quantity: <?php echo $quantity; ?><br>

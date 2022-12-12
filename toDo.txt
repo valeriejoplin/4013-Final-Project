@@ -14,6 +14,7 @@ Front End/
     -Footer
         +Make sure same throughout
     -Cart
+        + Add coupon spot
         + Place buttons at top below header or one side not at bottom
         ++ Rename to 'frontEndCart.php' requires changing references in files
         + Format
@@ -25,7 +26,7 @@ Front End/
         + Would be cool to use javascript address auto complete function
         + Add edit quantity in line
         + Make it say 'Item Added' not Quanity Updated on first addition to cart
-        +Change check out info form to be popup modal
+        + Change check out info form to be popup modal
     - Catalog
         + Make 3 none filters redirect to catalog not fiter page with same query as catalog
         + If filtered values are all set to 'none' set reditect to catalog page, curretly gives a php warning
