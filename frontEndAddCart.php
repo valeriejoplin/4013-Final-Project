@@ -181,8 +181,8 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
     <button class="cartButton" id="keepShopping" onclick="window.location.href='/frontEndCatalog.php'">Keep Shopping</button>
 
 <!-- Form to submit a request to destroy the session -->
-<form class="cartButton" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-  <input type="hidden" name="form_submitted" value="1" id="formButton"/>
+<form class="cartButton" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" id="formButton">
+  <input type="hidden" name="form_submitted" value="1"/>
   <button type="submit" style="width:100%;">Empty Cart</button>
 </form>
 
