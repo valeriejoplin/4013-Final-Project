@@ -76,6 +76,7 @@ $zip = $_POST['zip'];
 
             
             <?php
+            if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
                 foreach ($_SESSION['cart'] as $productId => $quantity) {
                   echo "<p>$productId $quantity:<p>";
                   
@@ -102,6 +103,7 @@ $zip = $_POST['zip'];
 
                                     $conn->close(); 
                 }
+            }
              ?>
             
             
