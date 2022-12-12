@@ -89,13 +89,7 @@ $zip = $_POST['zip'];
                                       die("Connection failed: " . $conn->connect_error);
                                     }
                                     echo "<p>$productId $quantity:<p>"
-                                    $sql = "SELECT * FROM product where productID = $productId";
-                                    $result = $conn->query($sql);
-                                    if ($result->num_rows > 0) {
-                                      while($row = $result->fetch_assoc()) {
-                                        $subtotal += $row["price"] * $quantity;
-                                      }
-                                    }
+                                    
                                   }
                                   $tax = $subtotal * $taxRate;
                                   $total = $tax + $subtotal;
