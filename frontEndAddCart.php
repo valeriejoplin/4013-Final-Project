@@ -42,13 +42,15 @@ border: 1px solid black;
     <?php foreach ($_SESSION['cart'] as $productId => $quantity) { ?>
       <div class="card">
         <div class="card-body">
+          <?php if(isset($_SESSION['cart'][$_POST['product_id']])) { ?>
+            <div class="alert" role="alert">
+              Quantity updated
+            </div>
+          <?php } ?>
           <h5 class="card-title"><?php echo $productId; ?></h5>
           <p class="card-text">
             Quantity: <?php echo $quantity; ?><br>
             Price: $XXX<br>
-            <?php if (array_key_exists($productId, $_SESSION['cart'])) {
-              echo "<br>Quantity updated";
-            } ?>
           </p>
         </div>
       </div>
