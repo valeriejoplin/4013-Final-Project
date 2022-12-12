@@ -200,7 +200,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                                 }
                                 else{
                                     $sql = "SELECT * FROM product join productBrand on product.productID=productBrand.productID join brand on productBrand.brandID=brand.brandID join productItem on product.productID=productItem.productID JOIN item ON productItem.itemID=item.itemID join productCategory on product.productID=productCategory.productID join category on productCategory.categoryID=category.categoryID WHERE";
-                                    if ($selectedBrand != ""){
+                                    if ($selectedBrand != "" && $selectedCategory != "" && $selectedItem != ""){
+                                       $sql .= " productBrand.brandID='".$selectedBrand."' && "." productCategory.categoryID='".$selectedCategory."' && "." productItem.itemID='".$selectedItem."'";
+                                    }
+                                    else if ($selectedBrand != ""){
                                        $sql .= " productBrand.brandID='".$selectedBrand."'";
                                     }
                                     else if ($selectedCategory != ""){
@@ -209,9 +212,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                                     else if ($selectedItem != ""){
                                        $sql .= " productItem.itemID='".$selectedItem."'";
                                     }
-                                    else if ($selectedBrand != "" && $selectedCategory != "" && $selectedItem != ""){
-                                       $sql .= " productBrand.brandID='".$selectedBrand."' && "." productCategory.categoryID='".$selectedCategory."' && "." productItem.itemID='".$selectedItem."'";
-                                    }
+
                                 }
                                 echo "<p>$sql<p>";
                                 $result = $conn->query($sql);
