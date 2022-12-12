@@ -31,7 +31,7 @@ border: 1px solid black;
 	}
 	</style>
 </head>
-
+<body>
 <div class="container">
         <?php require_once("frontEndHeader.php"); ?>
 
@@ -79,4 +79,5 @@ border: 1px solid black;
   <a class="keepShopping" id="keepShopping" href="/frontEndCatalog.php">Keep Shopping</a>
   
 	</div>
-
+    <?php require_once("frontendfooter.php"); ?>
+</body>
