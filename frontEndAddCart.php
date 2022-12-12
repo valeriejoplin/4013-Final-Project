@@ -135,6 +135,7 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
                             ?>
           
         </div>
+        <button class="cartButton" id="deleteProdcut" >Delete</button>
       </div>
     <?php } ?>
   </div>
