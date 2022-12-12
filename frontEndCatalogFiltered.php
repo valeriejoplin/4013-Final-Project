@@ -203,6 +203,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                                     if ($selectedBrand != ""){
                                        $sql .= " productBrand.brandID='".$selectedBrand."'";
                                     }
+                                    if ($selectedCategory != ""){
+                                       $sql .= " productCategory.categoryID='".$selectedCategory."'";
+                                    }
+                                    if ($selectedItem != ""){
+                                       $sql .= " productItem.itemID='".$selectedItem."'";
+                                    }
                                 }
                                 echo "<p>$sql<p>";
                                 $result = $conn->query($sql);
