@@ -134,7 +134,7 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
 <?php } ?>
         <div class="card-body">
         <div class="totals" style="font-size: 12px;">
-            <p> Subtotal: $subtotal</p>
+            <p> Subtotal: <?=$subtotal?></p>
             <p> Tax: $XXX</p>
             <p style="font-size: 16px;"> Total: $XXX</p>
         </div>
