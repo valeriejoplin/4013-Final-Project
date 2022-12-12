@@ -78,7 +78,7 @@ $zip = $_POST['zip'];
             <?php
                 foreach ($_SESSION['cart'] as $productId => $quantity) {
                   echo "<p>$productId $quantity:<p>";
-                  <?php 
+                  
                                     $orderID = $row["orderID"];
                                     $servername = "165.227.18.177";
                                     $username = "asoltiso_project";
@@ -100,8 +100,7 @@ $zip = $_POST['zip'];
                                     echo "Error: " . $sql . "<br>" . $conn->error;
                                     }
 
-                                    $conn->close();
-                                ?>       
+                                    $conn->close(); 
                 }
              ?>
             
