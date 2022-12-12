@@ -6,7 +6,7 @@
 	{
 		$_SESSION['cart'] = array();
     }
-    if($_POST['product_id']==NULL)
+    if($_POST['product_id']=="")
     {
         break();
     }
