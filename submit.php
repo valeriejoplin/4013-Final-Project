@@ -23,11 +23,6 @@ $servername = "165.227.18.177";
 
     $sql = "INSERT INTO orders (Name, Address, City, State, Zip)
             VALUES ('$name', '$address', '$city', '$state', '$zip')";
-    if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
-    } else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
-    }
 
     $conn->close();
 ?>
