@@ -77,7 +77,6 @@ if (isset($_SESSION['cart'])) {
                                     <p class="card-text">
                                     Quantity: <?php echo $quantity; ?><br>
                                     Price: $<?=$row["price"]?><br>
-                                    </p>
                                     <?php
                                       if (isset($_SESSION['cart'])) {
                                           if (isset($_POST['product_id']) && isset($_POST['quantity']) && $_POST['product_id'] == $productId) {
@@ -87,6 +86,7 @@ if (isset($_SESSION['cart'])) {
                                           }
                                       }
                                     ?>
+                                    </p>
                                 </div>
                             <?php
                               }
