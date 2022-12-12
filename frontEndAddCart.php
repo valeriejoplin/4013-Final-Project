@@ -93,8 +93,8 @@ border: 1px solid black;
   });
 </script>
 
-  <a class="cartButton" id="keepShopping" href="/frontEndCatalog.php">Keep Shopping</a>
- <a href="#" onclick="session_destroy()">Empty Cart</a>
+<button class="cartButton" id="keepShopping" onclick="window.location.href='/frontEndCatalog.php'">Keep Shopping</button>
+<button onclick="session_destroy()">Empty Cart</button>
 
 	</div>
     <?php require_once("frontendfooter.php"); ?>
