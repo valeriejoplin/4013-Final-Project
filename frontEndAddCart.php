@@ -135,7 +135,7 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
                             ?>
             <form method="post">
               <input type="hidden" name="remove" value="<?php echo $productId; ?>">
-              <input type="submit" value="Delete">
+              <input type="submit" value="Remove">
             </form>
             <?php
             if (isset($_POST['remove'])) {
