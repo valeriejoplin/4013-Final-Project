@@ -66,6 +66,10 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
       width: 300px;
       text-align: center;
 	}
+    
+ .cartButton :formButton{
+     padding: 0px;
+ }
 	</style>
 </head>
 <body>
@@ -178,7 +182,7 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
 
 <!-- Form to submit a request to destroy the session -->
 <form class="cartButton" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-  <input type="hidden" name="form_submitted" value="1" style="padding:0px;"/>
+  <input type="hidden" name="form_submitted" value="1" id="formButton"/>
   <button type="submit" style="width:100%;">Empty Cart</button>
 </form>
 
