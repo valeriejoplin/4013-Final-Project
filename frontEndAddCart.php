@@ -189,7 +189,7 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
     session_destroy();
     
     // Reload the page
-    echo '<script>location.reload();</script>';
+    echo '<script>window.location.href = window.location.href;</script>';
   }
 ?>
 
