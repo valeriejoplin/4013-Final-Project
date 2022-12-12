@@ -176,56 +176,59 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <input type="Submit" value="Submit">
             </form>
         </div>
-        <div class="content">
-            <div class="products">
-                <h1>Products</h1>
+            <div class="content">
+                <div class="products">
+                    <h1>Products</h1>
                 
-				    <?php
-                        $servername = "165.227.18.177";
-                        $username = "asoltiso_project";
-                        $password = "Project1243";
-                        $dbname = "asoltiso_project";   
+				        <?php
+                            $servername = "165.227.18.177";
+                            $username = "asoltiso_project";
+                            $password = "Project1243";
+                            $dbname = "asoltiso_project";   
 						
 
-                            // Create connection
-                            $conn = new mysqli($servername, $username, $password, $dbname);
-                            // Check connection
-                            if ($conn->connect_error) {
-                              die("Connection failed: " . $conn->connect_error);
-                            }
+                                // Create connection
+                                $conn = new mysqli($servername, $username, $password, $dbname);
+                                // Check connection
+                                if ($conn->connect_error) {
+                                  die("Connection failed: " . $conn->connect_error);
+                                }
 
-                            $sql = "SELECT * FROM product join productBrand on product.productID=productBrand.productID join brand on productBrand.brandID=brand.brandID join productItem on product.productID=productItem.productID JOIN item ON productItem.itemID=item.itemID";
-                            //echo $sql;
-                            $result = $conn->query($sql);
+                                if ($selectedBrand == "" && $selectedCategory == "" && $selectedItem == ""){
+                                $sql = "SELECT * FROM product join productBrand on product.productID=productBrand.productID join brand on productBrand.brandID=brand.brandID join productItem on product.productID=productItem.productID JOIN item ON productItem.itemID=item.itemID";
+                                //echo $sql;
+                                }
+                                $result = $conn->query($sql);
 
-                            if ($result->num_rows > 0) {
-                              // output data of each row
-                              while($row = $result->fetch_assoc()) {
-                            ?>
-                              <div class=product>
-				      <a href="./frontEndProduct.php?id=<?=$row["productID"]?>">
-                        <img src="assets/<?=$row["img"]?>.png" />
-                    </a>
-				      <h1><?=$row["name"]?></h1>
+                                if ($result->num_rows > 0) {
+                                  // output data of each row
+                                  while($row = $result->fetch_assoc()) {
+                                ?>
+                                  <div class=product>
+				          <a href="./frontEndProduct.php?id=<?=$row["productID"]?>">
+                            <img src="assets/<?=$row["img"]?>.png" />
+                        </a>
+				          <h1><?=$row["name"]?></h1>
 				      	
-                              </div>
-                            <?php
-                              }
-                            } else {
-                              echo "0 results";
-                            }
-                            $conn->close();
-                            ?>
+                                  </div>
+                                <?php
+                                  }
+                                } else {
+                                  echo "0 results";
+                                }
+                                $conn->close();
+                                ?>
+                </div>
+                <div class="adSpace">
+                    <img class="ad" src="https://images.unsplash.com/photo-1558391743-ca83be23f286?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1976&q=80" />
+                    <img class="ad" src="https://images.unsplash.com/photo-1570439694914-0c41d72f1547?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=592&q=80" />
+                    <img class="ad" src="https://images.unsplash.com/photo-1565946802455-e22f77e72a7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80" />
+                    <script>
+                        w3.slideshow(".ad", 6000);
+                    </script>
+                </div>
             </div>
-            <div class="adSpace">
-                <img class="ad" src="https://images.unsplash.com/photo-1558391743-ca83be23f286?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1976&q=80" />
-                <img class="ad" src="https://images.unsplash.com/photo-1570439694914-0c41d72f1547?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=592&q=80" />
-                <img class="ad" src="https://images.unsplash.com/photo-1565946802455-e22f77e72a7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80" />
-                <script>
-                    w3.slideshow(".ad", 6000);
-                </script>
-            </div>
-        </div>
+        
         
     </div>
 
