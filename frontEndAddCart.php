@@ -67,9 +67,9 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
       text-align: center;
 	}
     
- .cartButton #formButton{
-     padding: 0px;
- }
+     #formButton{
+         padding: 0px;
+     }
 	</style>
 </head>
 <body>
