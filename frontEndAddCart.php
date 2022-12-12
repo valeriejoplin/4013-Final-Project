@@ -6,10 +6,6 @@
 	{
 		$_SESSION['cart'] = array();
     }
-    if(empty($_POST['product_id']))
-    {
-        break();
-    }
     $product=$_POST['product_id'];
 	$quantity=$_POST['quantity'];
     array_push($_SESSION['cart'],$product, $quantity);   
