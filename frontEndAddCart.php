@@ -41,7 +41,7 @@ border: 1px solid black;
                 <div class="card-body">
                     <h5 class="card-title"><?php echo $_SESSION['cart'][$i]; ?></h5>
                     <p class="card-text">
-                        Quantity: <?php echo $_SESSION['cart'][$i + 1]; ?><br>
+                        Quantity: <?php echo $_SESSION['cart']; ?><br>
                         Price: $XXX<br>
                         Total: $XXX
                     </p>
