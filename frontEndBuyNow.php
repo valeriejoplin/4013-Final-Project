@@ -42,14 +42,12 @@ $quantity = $_POST['quantity'];
             if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
             }
-            if (!empty($_SESSION['cart'])) {
             $sql = "INSERT INTO orders (Name, Address, City, State, Zip)
                     VALUES ('$name', '$address', '$city', '$state', '$zip')";
             if ($conn->query($sql) === TRUE) {
             echo "<h1>Successfully Submitted Order<h1>";
             } else {
             echo "Error: " . $sql . "<br>" . $conn->error;
-            }
             }
             $conn->close();
         ?>
