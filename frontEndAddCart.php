@@ -100,7 +100,7 @@ if (isset($_SESSION['cart'])) {
     </script>
 
     <button class="cartButton" id="keepShopping" onclick="window.location.href='/frontEndCatalog.php'">Keep Shopping</button>
-    <form action="" method="GET">
+    <form class="cartButton" action="" method="GET">
         <button  class="cartButton" type="submit" onclick="<?php session_destroy(); ?>">Empty Cart</button>
     </form>
 </div>
