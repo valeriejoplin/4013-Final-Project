@@ -107,7 +107,7 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
                             ?>
                                 <a href="./frontEndProduct.php?id=<?=$row["productID"]?>">
                                 <div>
-                                <img style="width:100px; float:left;"src="assets/<?=$row["img"]?>.png" </img>
+                                <img style="width:10%; float:left;"src="assets/<?=$row["img"]?>.png" </img>
                                 <div class="details" style="height:100px; width: 70%; float: left; padding-left: 15px;">
                                    <h5 class="card-title"><?=$row["name"]?></h5>
                                     <p class="card-text">
@@ -133,7 +133,7 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
                             }
                             $conn->close();
                             ?>
-          <button class="cartButton" id="deleteProdcut" style="width:50px;">Delete</button>
+          <button class="cartButton" id="deleteProdcut" style="width:15%;">Delete</button>
         </div>
       </div>
     <?php } ?>
