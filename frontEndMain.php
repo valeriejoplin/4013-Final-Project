@@ -285,6 +285,9 @@ input[type=submit]{
                 <button style="width:80%;margin: 10px;padding-bottom: 20px;border-top-width: 2px;" type="submit">Sign Up!</button>
             </form>
         </div>
+        <div class="featured">
+            <h1> Featured products 2 at a time in a coursel that rotates 3 times to show top 6 products. Could also make this the last sold products, or even last sold prodcuts that are in stock<h1> 
+        </div>
     </div>
 
      <?php require_once("frontendfooter.php"); ?>
