@@ -15,7 +15,6 @@ Front End/
     -Footer
         +Make sure same throughout
     -Cart
-        + Delete button to remove specific items from cart
         + Make discount button work
         ++ Rename to 'frontEndCart.php' requires changing references in files
         + Format
