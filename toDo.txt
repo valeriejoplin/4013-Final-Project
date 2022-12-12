@@ -81,4 +81,4 @@ Andrew Next To Work On:
     Cart Referencing Database
     Click on item in cart to view product detail page
     Cart Getting Total
-    Cart Sotoring product pruchase details in DB table on checkout
+    Cart store product pruchase details in DB table on checkout
