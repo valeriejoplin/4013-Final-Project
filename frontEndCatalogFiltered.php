@@ -1,21 +1,46 @@
-<?php   
+<?php
+
+// Check if the form has been submitted
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+  // Get the selected values from the form fields
   $selectedBrand = $_POST["brands"];
   $selectedCategory = $_POST["categories"];
   $selectedItem = $_POST["items"];
 
-  // Output the selected values
+  // Output the selected values or a default message if no options were selected
   echo "You selected the following options:<br>";
-  echo "Brand: " . $selectedBrand . "<br>";
-  echo "Category: " . $selectedCategory . "<br>";
-  echo "Item: " . $selectedItem;
-  ?>
-
-  <?php
-  switch ($selectedBrand){
-      case NULL:
-      echo "NO Brand"
+  echo "Brand: ";
+  switch ($selectedBrand) {
+    case "":
+      echo "None";
+      break;
+    default:
+      echo $selectedBrand;
+      break;
   }
-  ?>
+  echo "<br>";
+
+  echo "Category: ";
+  switch ($selectedCategory) {
+    case "":
+      echo "None";
+      break;
+    default:
+      echo $selectedCategory;
+      break;
+  }
+  echo "<br>";
+
+  echo "Item: ";
+  switch ($selectedItem) {
+    case "":
+      echo "None";
+      break;
+    default:
+      echo $selectedItem;
+      break;
+  }
+}
   <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
