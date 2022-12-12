@@ -45,7 +45,7 @@
 
         <h1>MIS 4013 Group Project</h1>
         <button onclick="location.href='frontEndMain.php'" class="button" type="button">Front End</button>
-        <button onclick="location.href='backEndPassword.php'" class="button" type="button">Back End</button>
+        <button onclick="location.href='backEndLogin.php'" class="button" type="button">Back End</button>
         <h3>Created By:</h3>
         <ul class="names">
             <li>Valerie Joplin</li>
