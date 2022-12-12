@@ -199,7 +199,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                                 //echo $sql;
                                 }
                                 else{
-                                    $sql = "SELECT * FROM product join productBrand on product.productID=productBrand.productID join brand on productBrand.brandID=brand.brandID join productItem on product.productID=productItem.productID JOIN item ON productItem.itemID=item.itemID WHERE";
+                                    $sql = "SELECT * FROM product join productBrand on product.productID=productBrand.productID join brand on productBrand.brandID=brand.brandID join productItem on product.productID=productItem.productID JOIN item ON productItem.itemID=item.itemID join productCategory on product.productID=productCategory.productID join category on productCategory.categoryID=category.categoryID WHERE";
                                     if ($selectedBrand != ""){
                                        $sql .= " productBrand.brandID='".$selectedBrand."'";
                                     }
