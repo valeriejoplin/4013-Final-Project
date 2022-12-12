@@ -74,7 +74,7 @@ if (isset($_SESSION['cart'])) {
                                <h5 class="card-title"><?=$row["name"]?></h5>
                                 <p class="card-text">
                                 Quantity: <?php echo $quantity; ?><br>
-                                Price: $XXX<br>
+                                Price: <?=$row["price"]?><br>
                                 </p>
                             <?php
                               }
