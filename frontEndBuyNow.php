@@ -12,9 +12,6 @@ $zip = $_POST['zip'];
 $productID = $_POST['product'];
 $quantity = $_POST['quantity'];
 
-echo "<p>$productID $quantity<p>"
-
-
 ?>
 
 <head>

@@ -81,7 +81,6 @@ $zip = $_POST['zip'];
             <?php
             if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
                 foreach ($_SESSION['cart'] as $productId => $quantity) {
-                  echo "<p>$productId $quantity:<p>";
                   
                                     $orderID = $row["orderID"];
                                     $servername = "165.227.18.177";
