@@ -24,4 +24,5 @@
                 <button type="submit">Send</button>
             </form>
             </div>
+                 <?php require_once("frontendfooter.php"); ?>
             </body>
