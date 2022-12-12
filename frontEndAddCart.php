@@ -12,10 +12,31 @@ if (isset($_SESSION['cart'])) {
   }
 }
 
-// Initialize subtotal to 0
+// Calculate the subtotal by adding up the prices of all products in the cart
 $subtotal = 0;
-
+if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
+  foreach ($_SESSION['cart'] as $productId => $quantity) {
+    $servername = "165.227.18.177";
+    $username = "asoltiso_project";
+    $password = "Project1243";
+    $dbname = "asoltiso_project";
+    $conn = new mysqli($servername, $username, $password, $dbname);
+    if ($conn->connect_error) {
+      die("Connection failed: " . $conn->connect_error);
+    }
+    $sql = "SELECT * FROM product where productID = $productId";
+    $result = $conn->query($sql);
+    if ($result->num_rows > 0) {
+      while($row = $result->fetch_assoc()) {
+        $subtotal += $row["price"] * $quantity;
+      }
+    }
+  }
+}
 ?>
+
+
+
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -83,7 +104,6 @@ $subtotal = 0;
                                     <p class="card-text">
                                     Quantity: <?php echo $quantity; ?><br>
                                     Price: $<?=$row["price"]?><br>
-                                    <?php $subtotal += $row["price"]?>
                                     <?php
                                       if (isset($_SESSION['cart'])) {
                                           if (isset($_POST['product_id']) && isset($_POST['quantity']) && $_POST['product_id'] == $productId) {
