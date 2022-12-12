@@ -26,6 +26,9 @@ if (isset($_SESSION['cart'])) {
  .cartButton{
 	  float: left;
       padding: 10px;
+      margin: 10px;
+      width: 30px;
+      text-align: center;
 	}
 	</style>
 </head>
