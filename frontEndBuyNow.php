@@ -70,7 +70,7 @@ $quantity = $_POST['quantity'];
                             $sql = "SELECT * FROM orders where Name='$name' Order by orderID desc Limit 1";
                             //echo $sql;
                             $result = $conn->query($sql);
-
+                            echo "$result";
                             if ($result->num_rows > 0) {
                               // output data of each row
                               while($row = $result->fetch_assoc()) {
