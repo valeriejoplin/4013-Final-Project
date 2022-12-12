@@ -23,11 +23,13 @@ Front End/
         + Use Query to show details about product
         + Be able to calculate total (Add this to orders database)
         + Not using session array in best way. Need to better learn this to use a key value pair system. Currently even elements in array are productID and the odd element following is the quantity added
+        + Would be cool to use javascript address auto complete function
     - Catalog
         + Make 3 none filters redirect to catalog not fiter page with same query as catalog
         + If filtered values are not set reditect to catalog page, curretly gives a php warning
         + Format header (Most Pages Need)
         + Show only instock products change query to be where quantity is greater than 0 wont impact now but will later when we start to keep track of quanties
+        + Could add a filter based on price
     - Contact Page
         + Format
         + Make email footer button take to contact page
@@ -45,6 +47,8 @@ Front End/
         + Comment Section and Database (One Table added to DB)
         + On check out removes quanity purchased from DB
             - Could have customer do input of 1-5 then display that as starts using javascrip
+        + Would be cool to use javascript address auto complete function
+
 
 Back End
     -Put pages into a div of class="container"
@@ -68,7 +72,7 @@ Back End
 Andrew Next To Work On:
     Storing Product Details in DB on Buy Now
     Cart Referencing Database
-    Click on item in cart to view product detail page 
+    Click on item in cart to view product detail page
     Cart Getting Total
     Cart Preventing from Adding More than Quantity Avalible
     Cart Sotoring product pruchase details in DB table on checkout
