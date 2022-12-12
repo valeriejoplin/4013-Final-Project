@@ -40,9 +40,11 @@ border: 1px solid black;
 <div class="container">
   <?php require_once("frontEndHeader.php"); ?>
 
-  <div class="card-deck">
-    <?php for ($i = 0; $i < count($_SESSION['cart']); $i = $i + 2) { 
-      if (!empty($_SESSION['cart'][$i])) { ?>
+  <?php if (empty($_SESSION['cart'])) { ?>
+    <p>Your cart is empty. Please add items to your cart to see them here.</p>
+  <?php } else { ?>
+    <div class="card-deck">
+      <?php for ($i = 0; $i < count($_SESSION['cart']); $i = $i + 2) { ?>
         <div class="card">
           <div class="card-body">
             <h5 class="card-title"><?php echo $_SESSION['cart'][$i]; ?></h5>
@@ -52,9 +54,9 @@ border: 1px solid black;
             </p>
           </div>
         </div>
-      <?php }
-    } ?>
-  </div>
+      <?php } ?>
+    </div>
+  <?php } ?>
 <button id="openFormButton">Check Out</button>
 <form id="addressForm" action="frontEndOrderPlaced.php" method="POST" class="hidden">
   <label for="name">Name:</label><br>
