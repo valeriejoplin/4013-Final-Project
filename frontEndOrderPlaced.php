@@ -72,6 +72,35 @@ $zip = $_POST['zip'];
                               while($row = $result->fetch_assoc()) {
                             ?>
                               <h1>Order #<?=$row["orderID"]?><h1>
+                              <?php
+                              // Calculate the subtotal by adding up the prices of all products in the cart
+                                $subtotal = 0;
+                                $tax = 0;
+                                $taxRate = 0.08;
+                                $total =0;
+                                if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
+                                  foreach ($_SESSION['cart'] as $productId => $quantity) {
+                                    $servername = "165.227.18.177";
+                                    $username = "asoltiso_project";
+                                    $password = "Project1243";
+                                    $dbname = "asoltiso_project";
+                                    $conn = new mysqli($servername, $username, $password, $dbname);
+                                    if ($conn->connect_error) {
+                                      die("Connection failed: " . $conn->connect_error);
+                                    }
+                                    echo "<p>$productId $quantity:<p>"
+                                    $sql = "SELECT * FROM product where productID = $productId";
+                                    $result = $conn->query($sql);
+                                    if ($result->num_rows > 0) {
+                                      while($row = $result->fetch_assoc()) {
+                                        $subtotal += $row["price"] * $quantity;
+                                      }
+                                    }
+                                  }
+                                  $tax = $subtotal * $taxRate;
+                                  $total = $tax + $subtotal;
+                                }
+                                ?>
                             <?php
                               }
                             } else {
