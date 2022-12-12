@@ -195,7 +195,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                                 }
 
                                 if ($selectedBrand == "" && $selectedCategory == "" && $selectedItem == ""){
-                                $sql = "SELECT * FROM product join productBrand on product.productID=productBrand.productID join brand on productBrand.brandID=brand.brandID join productItem on product.productID=productItem.productID JOIN item ON productItem.itemID=item.itemID";
+                                header("Location: /frontEndCatalog.php");
+                                exit();
                                 //echo $sql;
                                 }
                                 else{
