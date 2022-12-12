@@ -93,7 +93,7 @@ $zip = $_POST['zip'];
                                     }
 
                                     $sql = "INSERT INTO orderProduct (productID, orderID, quantity)
-                                            VALUES ('$productID', '$orderID', '$quantity')";
+                                            VALUES ('$productId', '$orderID', '$quantity')";
                                     if ($conn->query($sql) === TRUE) {
 
                                     } else {
@@ -110,7 +110,6 @@ $zip = $_POST['zip'];
             } else {
               echo "0 results";
             }
-            $conn->close();
             ?>
         <?php echo "<H2>$name<H2>" ?>
         <?php echo "$address"." "."$city".", "."$state"." "."$zip"?>
