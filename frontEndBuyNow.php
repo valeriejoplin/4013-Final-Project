@@ -80,7 +80,7 @@ echo "<p>$productID $quantity<p>"
                               <h1>Order #<?=$row["orderID"]?><h1>
 
                                 <?php 
-                                    $orderID = $result["orderID"];
+                                    $orderID = $row["orderID"];
                                     $servername = "165.227.18.177";
                                     $username = "asoltiso_project";
                                     $password = "Project1243";
