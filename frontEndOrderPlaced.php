@@ -73,37 +73,45 @@ $zip = $_POST['zip'];
             ?>
             <h1>Order #<?=$row["orderID"]?><h1>
             
-            <?php 
-                $orderID = $row["orderID"];
-                $servername = "165.227.18.177";
-                $username = "asoltiso_project";
-                $password = "Project1243";
-                $dbname = "asoltiso_project";
 
-                // Create connection
-                $conn = new mysqli($servername, $username, $password, $dbname);
-                // Check connection
-                if ($conn->connect_error) {
-                die("Connection failed: " . $conn->connect_error);
-                }
+            
+            <?php
                 foreach ($_SESSION['cart'] as $productId => $quantity) {
-                    $sql = "INSERT INTO orderProduct (productID, orderID, quantity)
-                            VALUES ('$productID', '$orderID', '$quantity')";
-                    if ($conn->query($sql) === TRUE) {
+                  echo "<p>$productId $quantity:<p>";
+                  <?php 
+                                    $orderID = $row["orderID"];
+                                    $servername = "165.227.18.177";
+                                    $username = "asoltiso_project";
+                                    $password = "Project1243";
+                                    $dbname = "asoltiso_project";
 
-                    } else {
-                    echo "Error: " . $sql . "<br>" . $conn->error;
-                    }
+                                    // Create connection
+                                    $conn = new mysqli($servername, $username, $password, $dbname);
+                                    // Check connection
+                                    if ($conn->connect_error) {
+                                    die("Connection failed: " . $conn->connect_error);
+                                    }
 
+                                    $sql = "INSERT INTO orderProduct (productID, orderID, quantity)
+                                            VALUES ('$productID', '$orderID', '$quantity')";
+                                    if ($conn->query($sql) === TRUE) {
+
+                                    } else {
+                                    echo "Error: " . $sql . "<br>" . $conn->error;
+                                    }
+
+                                    $conn->close();
+                                ?>       
                 }
-                $conn->close();
-            ?>
+             ?>
+            
             
             <?php
               }
             } else {
               echo "0 results";
             }
+            $conn->close();
             ?>
         <?php echo "<H2>$name<H2>" ?>
         <?php echo "$address"." "."$city".", "."$state"." "."$zip"?>
