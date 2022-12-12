@@ -1,0 +1,42 @@
+To Do:
+
+Front End/
+    -Cart
+        + Format
+        + Logs Products Purchased
+        + Give empty cart message instead of php error
+        + On check out removes quanity purchased from DB
+        + Cart only allows for number in stock to be added to cart.
+    - Catalog
+        + Filters
+        + Format header (Most Pages Need)
+        + Show only instock products
+    - Contact Page
+        + Format
+        + Make email footer button take there also
+        + Put inside of container for formatting
+    - Home
+        + Pop up only show first time in session
+        + Show Featured Products maybe recently sold products tops 2 maybe 3? could do a w3.js slide show like about page
+        + Format Footer
+    - About
+        + Format Footer
+    - Product
+        + Buy now records in orderProduct table as well as orders
+        + Comment Section and Database (One Table added to DB)
+        + On check out removes quanity purchased from DB
+    
+Back End
+    - Add/Edit Products
+        + Filter products in stock
+        + Dont want to delete products every
+        + Drop down for Selecting Brand/Catagory/Item
+    - Seperate page to add/edit Brand/Catagory/Item
+        + Do not want delete feature
+    - Add javascript graphic for purchase history
+        +Text based table too
+        + One group had table able to be exported to excel/csv
+    - Add Database Diagram
+    -Sections to view all comments at once
+        + We want a delete/remove comment feature here
+    - Write up about website
