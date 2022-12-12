@@ -1,7 +1,20 @@
 To Do:
 
+Clean Up Files
+    + Group Styling
+    + Use php reference files
+    + File Image Stucture, place all under assets
+        - Need to changes references in all locations
+    + Maybe a front end back end folder to seperate files further
+        - Need to change refernces in all locations
+
 Front End/
+    -Header
+        +Make sure same throughout
+    -Footer
+        +Make sure same throughout
     -Cart
+        ++ Rename to 'frontEndCart.php' requires changing references in files
         + Format
         + Logs Products Purchased
         + On check out removes quanity purchased from DB (Last thing to do! Not nessecary at this time. If doesnt remove invenotry we can place orders on site to populate sales history)
@@ -9,36 +22,41 @@ Front End/
         + Click on item to go back to details page
         + Use Query to show details about product
         + Be able to calculate total (Add this to orders database)
+        + Not using session array in best way. Need to better learn this to use a key value pair system. Currently even elements in array are productID and the odd element following is the quantity added
     - Catalog
         + Make 3 none filters redirect to catalog not fiter page with same query as catalog
+        + If filtered values are not set reditect to catalog page, curretly gives a php warning
         + Format header (Most Pages Need)
-        + Show only instock products
+        + Show only instock products change query to be where quantity is greater than 0 wont impact now but will later when we start to keep track of quanties
     - Contact Page
         + Format
-        + Make email footer button take there also
+        + Make email footer button take to contact page
+        + Can make the automated email response an html file instead of the text string we have
     - Home
         + Pop up only show first time in session
         + Show Featured Products maybe recently sold products tops 2 maybe 3? could do a w3.js slide show like about page
         + Format Footer
+        + Can make the automated email response an html file instead of the text string we have
     - About
+        + Make sure everyones information is up to date
         + Format Footer
     - Product
-        + Buy now records in orderProduct table as well as orders
+        + Buy now records in orderProduct table as well as orders **Start with this before doing cart, as we first have to solve not adding to cart more than is in stock**
         + Comment Section and Database (One Table added to DB)
         + On check out removes quanity purchased from DB
             - Could have customer do input of 1-5 then display that as starts using javascrip
-    
+
 Back End
     -Put pages into a div of class="container"
         + Will fortmat to have padding on each side of screen (like front end)
+    - Seperate page to add/edit Brand/Catagory/Item **Needs to be done before the Add/Edit products**
+        + Add delete feature with pop up alert asking to confirm passthrough information about item to be deleted into popup
     - Add/Edit Products
         + Filter products in stock
-        + Dont want to delete products every
+        + Add delete feature with pop up alert asking to confirm passthrough information about item to be deleted into popup
         + Drop down for Selecting Brand/Catagory/Item
-    - Seperate page to add/edit Brand/Catagory/Item
-        + Do not want delete feature
-    - Add javascript graphic for purchase history
-        +Text based table too
+    - Add javascript graphic for purchase history **Can only be done after the product quantities are recorded** Can be done after Andrew sets up the buy now product quantity recording.
+        + Text based table too?
         + One group had table able to be exported to excel/csv
     - Add Database Diagram
     -Sections to view all comments at once
