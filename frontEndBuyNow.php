@@ -1,11 +1,5 @@
 <?php
 
-    // Redirect to the same page to prevent resubmission
-    if(isset($_POST['submit'])){
-        header("Location: ".$_SERVER['REQUEST_URI']);
-        exit();
-    }
-
 // Get values from the form
 $name = $_POST['name'];
 $address = $_POST['address'];
