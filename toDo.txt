@@ -11,6 +11,9 @@ Front End/
         + Filters
         + Format header (Most Pages Need)
         + Show only instock products
+            - Sample Sql Statement to get gucci
+            - SELECT * FROM product join productBrand on product.productID=productBrand.productID join brand on productBrand.brandID=brand.brandID where brand="Gucci"
+            - Use string varible to store query and append brand/item/quantity to the query
     - Contact Page
         + Format
         + Make email footer button take there also
@@ -25,7 +28,7 @@ Front End/
         + Buy now records in orderProduct table as well as orders
         + Comment Section and Database (One Table added to DB)
         + On check out removes quanity purchased from DB
-            - Could have customer do input of 1-5 then display that as starts using javascript
+            - Could have customer do input of 1-5 then display that as starts using javascrip
     
 Back End
     -Put pages into a div of class="container"

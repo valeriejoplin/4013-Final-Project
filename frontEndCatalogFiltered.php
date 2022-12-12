@@ -25,13 +25,15 @@
     <div class="container">
                 <?php require_once("frontEndHeader.php"); ?>
 	
+  
 
-            <form action="filtered.php" method="post">
-  <div class="dropdown">
-    <label for="brands">Brand:</label>
-    <select name="brands" id="brands">
-      <option value="">None</option>
-      <?php
+        <div class="filters">
+            <div class="dropdown">
+                <label for="brands">Brand:</label>
+                                       
+                <select name="brands" id="brands">
+                    <option value="">None</option>
+                     <?php
                         $servername = "165.227.18.177";
                         $username = "asoltiso_project";
                         $password = "Project1243";
@@ -57,13 +59,13 @@
                             }
                             $conn->close();
                             ?>
-    </select>
-  </div>
-  <div class="dropdown">
-    <label for="categories">Category:</label>
-    <select name="categories" id="categories">
-      <option value="">None</option>
-      <?php
+                </select>
+            </div>
+            <div class="dropdown">
+                <label for="categories">Category:</label>
+                <select name="categories" id="categories">
+                    <option value="">None</option>
+                    <?php
                         $servername = "165.227.18.177";
                         $username = "asoltiso_project";
                         $password = "Project1243";
@@ -91,13 +93,13 @@
                             }
                             $conn->close();
                             ?>
-    </select>
-  </div>
-  <div class="dropdown">
-    <label for="items">Item:</label>
-    <select name="items" id="items">
-      <option value="">None</option>
-       <?php
+                </select>
+            </div>
+            <div class="dropdown">
+                <label for="items">Item:</label>
+                <select name="items" id="items">
+                    <option value="">None</option>
+                    <?php
                         $servername = "165.227.18.177";
                         $username = "asoltiso_project";
                         $password = "Project1243";
@@ -125,13 +127,9 @@
                             }
                             $conn->close();
                             ?>
-    </select>
-  </div>
-
-  <input type="submit" value="Submit">
-</form>
-
-
+                </select>
+            </div>
+            <button type="button">Filter</button>
         </div>
         <div class="content">
             <div class="products">
