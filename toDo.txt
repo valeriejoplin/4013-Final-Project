@@ -4,9 +4,11 @@ Front End/
     -Cart
         + Format
         + Logs Products Purchased
-        + Give empty cart message instead of php error
-        + On check out removes quanity purchased from DB
+        + On check out removes quanity purchased from DB (Last thing to do! Not nessecary at this time. If doesnt remove invenotry we can place orders on site to populate sales history)
         + Cart only allows for number in stock to be added to cart.
+        + Click on item to go back to details page
+        + Use Query to show details about product
+        + Be able to calculate total (Add this to orders database)
     - Catalog
         + Make 3 none filters redirect to catalog not fiter page with same query as catalog
         + Format header (Most Pages Need)
