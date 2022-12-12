@@ -24,11 +24,8 @@ if (isset($_SESSION['cart'])) {
     <title>Cart</title>
 <style>
  .cartButton{
-	   background-color: #FAF6F1;
-  color: black;
-border: 1px solid black;
-  padding: 1em 1em;
-  text-decoration: none;
+	  float: left;
+      padding: 10px;
 	}
 	</style>
 </head>
@@ -66,7 +63,7 @@ border: 1px solid black;
   <p>Your cart is empty. Please add items to your cart to see them here.</p>
 <?php } ?>
 
-<button id="openFormButton" <?php if (empty($_SESSION['cart'])) { echo 'disabled'; } ?>>Check Out</button>
+<button  class="cartButton" id="openFormButton" <?php if (empty($_SESSION['cart'])) { echo 'disabled'; } ?>>Check Out</button>
 <form id="addressForm" action="frontEndOrderPlaced.php" method="POST" class="hidden">
   <label for="name">Name:</label><br>
   <input type="text" id="name" name="name"><br>
@@ -93,8 +90,10 @@ border: 1px solid black;
   });
 </script>
 
-  <a class="cartButton" id="keepShopping" href="/frontEndCatalog.php">Keep Shopping</a>
- <a href="#" onclick="session_destroy()">Empty Cart</a>
+<button class="cartButton" id="keepShopping" onclick="window.location.href='/frontEndCatalog.php'">Keep Shopping</button>
+<form  class="cartButton" action="" method="GET">
+    <button type="submit" onclick="<?php session_destroy(); ?>">Empty Cart</button>
+</form>
 
 	</div>
     <?php require_once("frontendfooter.php"); ?>
