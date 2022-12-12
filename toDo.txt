@@ -27,6 +27,8 @@ Front End/
         + On check out removes quanity purchased from DB
     
 Back End
+    -Put pages into a div of class="container"
+        + Will fortmat to have padding on each side of screen (like front end)
     - Add/Edit Products
         + Filter products in stock
         + Dont want to delete products every
