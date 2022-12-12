@@ -94,7 +94,8 @@ border: 1px solid black;
 </script>
 
   <a class="keepShopping" id="keepShopping" href="/frontEndCatalog.php">Keep Shopping</a>
-  
+  <a class="emptyCart" id="emptyCart" >Empty Cart</a>
+
 	</div>
     <?php require_once("frontendfooter.php"); ?>
 </body>

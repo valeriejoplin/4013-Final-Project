@@ -18,11 +18,9 @@ Front End/
         + Format
         + Logs Products Purchased
         + On check out removes quanity purchased from DB (Last thing to do! Not nessecary at this time. If doesnt remove invenotry we can place orders on site to populate sales history)
-        + Cart only allows for number in stock to be added to cart.
-        + Click on item to go back to details page
+        + Click on item to go to details page
         + Use Query to show details about product
         + Be able to calculate total (Add this to orders database)
-        + Not using session array in best way. Need to better learn this to use a key value pair system. Currently even elements in array are productID and the odd element following is the quantity added
         + Would be cool to use javascript address auto complete function
         + Add a clear cart button to destroy session and clear cart
     - Catalog
