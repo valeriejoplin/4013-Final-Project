@@ -93,8 +93,8 @@ echo "<p>$productID $quantity<p>"
                                     die("Connection failed: " . $conn->connect_error);
                                     }
 
-                                    $sql = "INSERT INTO orderProduct (productID, orderID)
-                                            VALUES ('$productID', '$orderID')";
+                                    $sql = "INSERT INTO orderProduct (productID, orderID, quantity)
+                                            VALUES ('$productID', '$orderID', $quantity)";
                                     if ($conn->query($sql) === TRUE) {
                                     echo "<h1>Successfully Submitted Order<h1>";
                                     } else {
