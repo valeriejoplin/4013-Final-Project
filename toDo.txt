@@ -59,6 +59,7 @@ Back End
         + Text based table too?
         + One group had table able to be exported to excel/csv
     - Add Database Diagram
+        + Could make this with an adobe reader javascrip pdf viewer plug in. Ask andrew he has used before on personal site
     -Sections to view all comments at once
         + We want a delete/remove comment feature here
     - Write up about website
