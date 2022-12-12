@@ -93,7 +93,7 @@ echo "<p>$productID $quantity<p>"
                                     }
 
                                     $sql = "INSERT INTO orderProduct (productID, orderID)
-                                            VALUES ('$productID', '<?=$row["orderID"]?>')";
+                                            VALUES ('$productID', '$row["orderID"]')";
                                     if ($conn->query($sql) === TRUE) {
                                     echo "<h1>Successfully Submitted Order<h1>";
                                     } else {
