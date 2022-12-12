@@ -23,7 +23,7 @@ if (isset($_SESSION['cart'])) {
     <script src="assets/javascript/w3.js"></script>
     <title>Cart</title>
 <style>
- .keepShopping .emptyCart{
+ .cartButton{
 	   background-color: #FAF6F1;
   color: black;
 border: 1px solid black;
@@ -93,8 +93,8 @@ border: 1px solid black;
   });
 </script>
 
-  <a class="keepShopping" id="keepShopping" href="/frontEndCatalog.php">Keep Shopping</a>
-  <a class="emptyCart" id="emptyCart" >Empty Cart</a>
+  <a class="cartButton" id="keepShopping" href="/frontEndCatalog.php">Keep Shopping</a>
+  <a class="cartButton" id="emptyCart" >Empty Cart</a>
 
 	</div>
     <?php require_once("frontendfooter.php"); ?>
