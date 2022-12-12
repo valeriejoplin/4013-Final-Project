@@ -33,21 +33,22 @@ border: 1px solid black;
 </head>
 <body>
 <div class="container">
-        <?php require_once("frontEndHeader.php"); ?>
+    <?php require_once("frontEndHeader.php"); ?>
 
-        <table class="table">
-            <tr>
-              <th>Product</th>
-              <th>Quantity</th>
-              <th>Price</th>
-              <th>Total</th>
-            </tr>                                      
-            <tr>
-             <?php for($i = 0 ; $i < count($_SESSION['cart']) ; $i++) {
-             echo '<td>'.$_SESSION['cart'][$i].'</td>';
-             }  ?>
-            </tr>
-        </table>
+    <div class="card-deck">
+        <?php for($i = 0 ; $i < count($_SESSION['cart']) ; $i++) { ?>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"><?php echo $_SESSION['cart'][$i]; ?></h5>
+                    <p class="card-text">
+                        Quantity: <?php echo $_SESSION['cart'][$i + 1]; ?><br>
+                        Price: $XXX<br>
+                        Total: $XXX
+                    </p>
+                </div>
+            </div>
+        <?php } ?>
+    </div>
 
 <button id="openFormButton">Check Out</button>
 <form id="addressForm" action="frontEndOrderPlaced.php" method="POST" class="hidden">
