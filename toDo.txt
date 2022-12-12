@@ -16,21 +16,24 @@ Front End/
         +Make sure same throughout
     -Cart
         + Make discount button work
-        + Place buttons at top below header or one side not at bottom
         ++ Rename to 'frontEndCart.php' requires changing references in files
         + Format
-        + Logs Products Purchased
+            +Buttons
+            +Text for currancy
+            +Remove Text Decoration for product details
+            +Make say 'Item Added' not 'Quantity Updated' on first add
         + On check out removes quanity purchased from DB (Last thing to do! Not nessecary at this time. If doesnt remove invenotry we can place orders on site to populate sales history)
-        + Would be cool to use javascript address auto complete function
+        + Checkout Address Form
+            - Could make popup modal
+            - Would be cool to use javascrip autocomplete function             
         + Add edit quantity in line
-        + Make it say 'Item Added' not Quanity Updated on first addition to cart
-        + Change check out info form to be popup modal
     - Catalog
         + If filtered values are all set to 'none' set reditect to catalog page, not filteredcatalog page
-        + Format header (Most Pages Need)
         + Show only instock products change query to be where quantity is greater than 0 wont impact now but will later when we start to keep track of quanties
         + Could add a filter based on price
-        + FOrtmat Error message on filtered page
+        + Fortmat
+            - When filter gives no results show error message and product suggestions
+            - Need to add query for this
     - Contact Page
         + Format
         + Add fake phone number
@@ -50,7 +53,6 @@ Front End/
         + Make sure everyones information is up to date
         + Format Footer
     - Product
-        + Buy now records in orderProduct table as well as orders **Start with this before doing cart, as we first have to solve not adding to cart more than is in stock**
         + Comment Section and Database (One Table added to DB)
         + On check out removes quanity purchased from DB
             - Could have customer do input of 1-5 then display that as starts using javascrip
@@ -83,8 +85,6 @@ Back End
 
 
 Andrew Next To Work On:
-    Make Empty Cart Button Work
-    Relocate Buttons
     Storing Product Details in DB on Buy Now
-    Remove text deocration cart
-    Cart store product pruchase details in DB table on checkout
+    Store Product Details in DB on Cart Checkout
+    Remove text deocration cart product details
