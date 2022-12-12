@@ -48,6 +48,7 @@ $zip = $_POST['zip'];
             echo "Error: " . $sql . "<br>" . $conn->error;
             }
             }
+            
 
             $conn->close();
         ?>
