@@ -244,7 +244,7 @@ input[type=submit]{
     </style>
 </head>
 <body>
-    <div>
+    <div class="container">
         <div class="popup">
             <button id="close">&times;</button>
             <h2>Happy Holidays!</h2>
@@ -285,14 +285,13 @@ input[type=submit]{
                 <button style="width:80%;margin: 10px;padding-bottom: 20px;border-top-width: 2px;" type="submit">Sign Up!</button>
             </form>
         </div>
-        Add featured product here
     </div>
 
-     
+     <?php require_once("frontendfooter.php"); ?>
 
 
 </body>
 
-<?php require_once("frontendfooter.php"); ?>
+
 
 </html>
