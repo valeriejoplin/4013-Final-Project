@@ -53,6 +53,7 @@ border: 1px solid black;
       <p>Your cart is empty. Please add items to your cart to continue.</p>
     <?php } ?>
   </div>
+  <a class="keepShopping" id="keepShopping" href="/frontEndCatalog.php">Keep Shopping</a>
 <button id="openFormButton">Check Out</button>
 <form id="addressForm" action="frontEndOrderPlaced.php" method="POST" class="hidden">
   <label for="name">Name:</label><br>
@@ -84,7 +85,7 @@ border: 1px solid black;
   });
 </script>
 
-  <a class="keepShopping" id="keepShopping" href="/frontEndCatalog.php">Keep Shopping</a>
+  
   
 	</div>
     <?php require_once("frontendfooter.php"); ?>
