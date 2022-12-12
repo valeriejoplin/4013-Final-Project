@@ -72,7 +72,7 @@ if (isset($_SESSION['cart'])) {
                               while($row = $result->fetch_assoc()) {
                             ?>
                                 <img style="width:100px; float:left;"src="assets/<?=$row["img"]?>.png" </img>
-                                <div class="details" style="height:100px;">
+                                <div class="details" style="height:100px; width: 90%; float: left;">
                                    <h5 class="card-title"><?=$row["name"]?></h5>
                                     <p class="card-text">
                                     Quantity: <?php echo $quantity; ?><br>
