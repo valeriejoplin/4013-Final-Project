@@ -60,8 +60,6 @@ Front End/
             - Would be cool to use javascrip autocomplete function  
     - Make chat icon in footer open a popup to simulate a chat interface
         + If brave could maybe find a chat api or AI api
-    - Prevent orders from submitting again on page reload affects frontEndBuyNow.php and frontEndOrderPlaced.php
-
 
 Back End
     - Add tab to nav bar that opens github repo in new browser tab
@@ -87,6 +85,8 @@ Back End
 
 
 Andrew Next To Work On:
-    Storing Product Details in DB on Buy Now
-    Store Product Details in DB on Cart Checkout
     Remove text deocration cart product details
+    Add edit quanitity to checkout
+    Make coupon work check out
+    Comments section product
+
