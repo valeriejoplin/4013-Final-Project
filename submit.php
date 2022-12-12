@@ -15,7 +15,7 @@ echo
 <?php require_once("frontEndHeader.php"); ?>
 
 <H1> Order Placed Successfully <h1>
-<?php echo "$name" ?>
+<?php echo "<H2>$name<H2>" ?>
 <?php echo "$address" ?>
 <?php echo "$city" ?>
 <?php echo "$state" ?>
