@@ -147,7 +147,32 @@ if ($result->num_rows > 0) {
             <div class="filters">
                                 
                 <p>Qty Avalible: <?=$row["qtyAvalible"]?></p>
-                        <button type="button">Buy Now</button>
+            <button id="openFormButton">Check Out</button>
+                <form id="addressForm" action="frontEndOrderPlaced.php" method="POST" class="hidden">
+                  <label for="name">Name:</label><br>
+                  <input type="text" id="name" name="name"><br>
+                  <label for="address">Address:</label><br>
+                  <input type="text" id="address" name="address"><br>
+                  <label for="city">City:</label><br>
+                  <input type="text" id="city" name="city"><br>
+                  <label for="state">State:</label><br>
+                  <input type="text" id="state" name="state"><br>
+                  <label for="zip">Zip Code:</label><br>
+                  <input type="text" id="zip" name="zip"><br><br>
+                  <input type="submit" value="Submit">
+                </form>
+                <style>
+                  .hidden {
+                    display: none;
+                  }
+                </style>
+                <script>
+                  var openFormButton = document.getElementById('openFormButton');
+                  var addressForm = document.getElementById('addressForm');
+                  openFormButton.addEventListener('click', function() {
+                    addressForm.classList.toggle('hidden');
+                  });
+                </script>
             <form action="frontEndAddCart.php" method="POST">
 			<input type="number" name="quantity" value="1" min="1" max="<?=$row["qtyAvalible"]?>" placeholder="Quantity" required>
             <input type="hidden" name="product_id" value="<?=$row["productID"]?>">
