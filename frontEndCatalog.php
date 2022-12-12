@@ -28,39 +28,39 @@
 
         <div class="filters">
             <form action="filtered.php" method="post">
-            <div class="dropdown">
-                <label for="brands">Brand:</label>
+                <div class="dropdown">
+                    <label for="brands">Brand:</label>
                                        
-                <select name="brands" id="brands">
-                    <option value="">None</option>
-                     <?php
-                        $servername = "165.227.18.177";
-                        $username = "asoltiso_project";
-                        $password = "Project1243";
-                        $dbname = "asoltiso_project";   
+                    <select name="brands" id="brands">
+                        <option value="">None</option>
+                         <?php
+                            $servername = "165.227.18.177";
+                            $username = "asoltiso_project";
+                            $password = "Project1243";
+                            $dbname = "asoltiso_project";   
 
-                        $conn = new mysqli($servername, $username, $password, $dbname);
-                        if ($conn->connect_error) {
-                          die("Connection failed: " . $conn->connect_error);
-                        }
-                        $sql = "Select * From brand";
-                        //echo $sql;
-                            $result = $conn->query($sql);
-
-                        if ($result->num_rows > 0) {
-                          // output data of each row
-                          while($row = $result->fetch_assoc()) {
-                        ?>
-                    <option value="<?=$row["brandID"]?>"><?=$row["brand"]?></option>
-                    <?php
-                              }
-                            } else {
-                              echo "0 results";
+                            $conn = new mysqli($servername, $username, $password, $dbname);
+                            if ($conn->connect_error) {
+                              die("Connection failed: " . $conn->connect_error);
                             }
-                            $conn->close();
+                            $sql = "Select * From brand";
+                            //echo $sql;
+                                $result = $conn->query($sql);
+
+                            if ($result->num_rows > 0) {
+                              // output data of each row
+                              while($row = $result->fetch_assoc()) {
                             ?>
-                </select>
-            </div>
+                        <option value="<?=$row["brandID"]?>"><?=$row["brand"]?></option>
+                        <?php
+                                  }
+                                } else {
+                                  echo "0 results";
+                                }
+                                $conn->close();
+                                ?>
+                    </select>
+                </div>
             <div class="dropdown">
                 <label for="categories">Category:</label>
                 <select name="categories" id="categories">
@@ -129,7 +129,7 @@
                             ?>
                 </select>
             </div>
-            <button type="button">Filter</button>
+            <input type="Submit" value="Submit">
             </form>
         </div>
         <div class="content">
