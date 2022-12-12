@@ -37,9 +37,12 @@ $servername = "165.227.18.177";
     <script src="assets/javascript/w3.js"></script>
     <title>Catalog</title>
 <head>
+<body>
+    <div class="container">
+        <?php require_once("frontEndHeader.php"); ?>
 
-<?php require_once("frontEndHeader.php"); ?>
-
-<H1> Order Placed Successfully <h1>
-<?php echo "<H2>$name<H2>" ?>
-<?php echo "$address"." "."$city".", "."$state"." "."$zip"?>
+        <H1> Order Placed Successfully <h1>
+        <?php echo "<H2>$name<H2>" ?>
+        <?php echo "$address"." "."$city".", "."$state"." "."$zip"?>
+    </div>
+</body>

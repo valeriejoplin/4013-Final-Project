@@ -25,8 +25,7 @@
     <div class="container">
                 <?php require_once("frontEndHeader.php"); ?>
 	
-<body>
-   
+  
 
         <div class="filters">
             <div class="dropdown">
