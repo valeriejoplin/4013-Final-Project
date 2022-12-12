@@ -73,11 +73,6 @@ $zip = $_POST['zip'];
                             ?>
                               <h1>Order #<?=$row["orderID"]?><h1>
                               <?php
-                              // Calculate the subtotal by adding up the prices of all products in the cart
-                                $subtotal = 0;
-                                $tax = 0;
-                                $taxRate = 0.08;
-                                $total =0;
                                 if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
                                   foreach ($_SESSION['cart'] as $productId => $quantity) {
                                     $servername = "165.227.18.177";
@@ -89,10 +84,7 @@ $zip = $_POST['zip'];
                                       die("Connection failed: " . $conn->connect_error);
                                     }
                                     echo "<p>$productId $quantity:<p>"
-                                    
                                   }
-                                  $tax = $subtotal * $taxRate;
-                                  $total = $tax + $subtotal;
                                 }
                                 ?>
                             <?php
