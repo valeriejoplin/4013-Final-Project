@@ -8,8 +8,10 @@ $address = $_POST['address'];
 $city = $_POST['city'];
 $state = $_POST['state'];
 $zip = $_POST['zip'];
+?>
 
-$servername = "165.227.18.177";
+<?php 
+    $servername = "165.227.18.177";
     $username = "asoltiso_project";
     $password = "Project1243";
     $dbname = "asoltiso_project";
@@ -23,11 +25,15 @@ $servername = "165.227.18.177";
 
     $sql = "INSERT INTO orders (Name, Address, City, State, Zip)
             VALUES ('$name', '$address', '$city', '$state', '$zip')";
+    if ($conn->query($sql) === TRUE) {
+    echo "New record created successfully";
+    } else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+    }
 
     $conn->close();
 ?>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -36,7 +42,9 @@ $servername = "165.227.18.177";
     <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
     <script src="assets/javascript/w3.js"></script>
     <title>Catalog</title>
-<head>
+
+</head>
+
 <body>
     <div class="container">
         <?php require_once("frontEndHeader.php"); ?>
@@ -46,3 +54,5 @@ $servername = "165.227.18.177";
         <?php echo "$address"." "."$city".", "."$state"." "."$zip"?>
     </div>
 </body>
+
+
