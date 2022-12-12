@@ -71,13 +71,11 @@ if (isset($_SESSION['cart'])) {
                               // output data of each row
                               while($row = $result->fetch_assoc()) {
                             ?>
-                              <div class=product>
-				      <a href="./frontEndProduct.php?id=<?=$row["productID"]?>">
-                        <img src="assets/<?=$row["img"]?>.png" />
-                    </a>
-				      <h1><?=$row["name"]?></h1>
-				      	
-                              </div>
+                               <h5 class="card-title"><?=$row["productID"]?></h5>
+                                <p class="card-text">
+                                Quantity: <?php echo $quantity; ?><br>
+                                Price: $XXX<br>
+                                </p>
                             <?php
                               }
                             } else {
@@ -85,11 +83,6 @@ if (isset($_SESSION['cart'])) {
                             }
                             $conn->close();
                             ?>
-          <h5 class="card-title"><?php echo $productId; ?></h5>
-          <p class="card-text">
-            Quantity: <?php echo $quantity; ?><br>
-            Price: $XXX<br>
-          </p>
           <?php
           if (isset($_SESSION['cart'])) {
               if (isset($_POST['product_id']) && isset($_POST['quantity']) && $_POST['product_id'] == $productId) {
