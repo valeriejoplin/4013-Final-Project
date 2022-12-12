@@ -102,12 +102,7 @@ if (isset($_SESSION['cart'])) {
     <button class="cartButton" id="keepShopping" onclick="window.location.href='/frontEndCatalog.php'">Keep Shopping</button>
 
 <button class="cartButton" id="emptyCart" type="submit">Empty Cart</button>
- <script>
-      var emptyCart = document.getElementById('emptyCart');
-      openFormButton.addEventListener('click', function() {
-            <?php echo '<?php session_destory(); ?>' ?>      
-            });
-    </script>
+
 </div>
 
 	</div>
