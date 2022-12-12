@@ -38,14 +38,9 @@ border: 1px solid black;
     <?php require_once("frontEndHeader.php"); ?>
 
     <div class="card-deck">
-    <?php
-        if(empty($_SESSION['cart']))
-	{
-		break;
-    }
-    ?>
-        <?php for($i = 0 ; $i < count($_SESSION['cart']) ; $i=$i+2) { ?>
-            <div class="card">
+        <?php for ($i = 0; $i < count($_SESSION['cart']); $i = $i + 2) { 
+  if (!empty($_SESSION['cart'][$i])) {
+                <div class="card">
                 <div class="card-body">
                     <h5 class="card-title"><?php echo $_SESSION['cart'][$i]; ?></h5>
                     <p class="card-text">
@@ -56,6 +51,8 @@ border: 1px solid black;
                 </div>
             </div>
         <?php } ?>
+  }
+} ?>
 
     </div>
 
