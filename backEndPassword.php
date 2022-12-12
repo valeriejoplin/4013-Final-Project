@@ -23,6 +23,8 @@ if (isset($_POST['submit'])) {
 
 ?>
 
+<h1>username: admin</h1>
+<h1>password: admin</h1>
 <!-- HTML form for the user to enter their username and password -->
 <form method="post" action="">
   <label for="username">Username:</label>
