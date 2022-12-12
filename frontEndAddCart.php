@@ -145,8 +145,6 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
   if (isset($_SESSION['cart'][$productId])) {
     // Remove the item from the cart
     unset($_SESSION['cart'][$productId]);
-        // Destroy the session
-    session_destroy();
     
     // Reload the page
     echo '<script>window.location.href = "frontEndAddCart.php";</script>';
