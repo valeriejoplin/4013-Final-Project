@@ -41,7 +41,7 @@ $zip = $_POST['zip'];
             $sql = "INSERT INTO orders (Name, Address, City, State, Zip)
                     VALUES ('$name', '$address', '$city', '$state', '$zip')";
             if ($conn->query($sql) === TRUE) {
-            echo "<h1>Order Placed Successfully<h1>";
+            echo "<h1>Successfully Submitted Order<h1>";
             } else {
             echo "Error: " . $sql . "<br>" . $conn->error;
             }
@@ -70,7 +70,7 @@ $zip = $_POST['zip'];
                               // output data of each row
                               while($row = $result->fetch_assoc()) {
                             ?>
-                              <h1><?=$row["orderID"]?><h1>
+                              <h1>Order #<?=$row["orderID"]?><h1>
                             <?php
                               }
                             } else {
