@@ -159,7 +159,7 @@ if ($result->num_rows > 0) {
                   <input type="text" id="state" name="state"><br>
                   <label for="zip">Zip Code:</label><br>
                   <input type="text" id="zip" name="zip"><br><br>
-                  <input type="submit" value="Submit">
+                  <input type="submit" value="Purchase">
                 </form>
                 <style>
                   .hidden {
