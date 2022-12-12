@@ -23,6 +23,7 @@ Front End/
         + Be able to calculate total (Add this to orders database)
         + Would be cool to use javascript address auto complete function
         + Add edit quantity in line
+        + Make it say 'Item Added' not Quanity Updated on first addition to cart
     - Catalog
         + Make 3 none filters redirect to catalog not fiter page with same query as catalog
         + If filtered values are not set reditect to catalog page, curretly gives a php warning
@@ -75,6 +76,7 @@ Back End
 
 
 Andrew Next To Work On:
+    Fix cart only showing one item
     Storing Product Details in DB on Buy Now
     Cart Referencing Database
     Click on item in cart to view product detail page
