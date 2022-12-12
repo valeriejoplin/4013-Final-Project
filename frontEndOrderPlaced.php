@@ -83,7 +83,7 @@ $zip = $_POST['zip'];
                                     if ($conn->connect_error) {
                                       die("Connection failed: " . $conn->connect_error);
                                     }
-                                    echo "<p>$productId $quantity:<p>"
+                                    echo "<p>$productId $quantity:<p>;"
                                   }
                                 }
                                 ?>
