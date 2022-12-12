@@ -49,6 +49,9 @@ border: 1px solid black;
           </div>
         </div>
       <?php }
+     else{
+         <h1>Add to Cart</h1>
+     }
     } ?>
   </div>
 <button id="openFormButton">Check Out</button>
