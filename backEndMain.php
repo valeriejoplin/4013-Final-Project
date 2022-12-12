@@ -1,9 +1,7 @@
 <?php
   session_start();
 
-  if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
-    break();
-  } else {
+  if (!isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] !== true) {
     // User is not logged in, redirect to login page
     header("Location: backEndLogin.php");
   }
