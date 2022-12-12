@@ -11,9 +11,9 @@
   ?>
 
   <?php
-  if($selectedBrand==NULL)
+  if($selectedBrand>=1)
   {
-      echo "No Brand"
+      echo "Brand Selected"
   };
   ?>
   <!DOCTYPE html>
