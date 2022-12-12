@@ -46,7 +46,7 @@ border: 1px solid black;
           <p class="card-text">
             Quantity: <?php echo $quantity; ?><br>
             Price: $XXX<br>
-            <?php if (array_key_exists($_POST['product_id'], $_SESSION['cart'])) {
+            <?php if (array_key_exists($productId, $_SESSION['cart'])) {
               echo "<br>Quantity updated";
             } ?>
           </p>
