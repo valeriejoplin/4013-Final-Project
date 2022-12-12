@@ -9,6 +9,8 @@
     <title>Front End Home</title>
 
 </head>
+<body>
+<div class="container">
  <?php require_once("frontEndHeader.php"); ?>
              <form action="https://formsubmit.co/3cbd6087d29d14ef54538c6817c28eba" method="POST">
 
@@ -21,3 +23,5 @@
                 <input type="text" name="Feedback" required>
                 <button type="submit">Send</button>
             </form>
+            </div>
+            </body>
