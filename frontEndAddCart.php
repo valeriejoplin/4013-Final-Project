@@ -108,7 +108,7 @@ if (isset($_SESSION['cart'])) {
   <p>Your cart is empty. Please add items to your cart to see them here.</p>
 <?php } ?>
         <div class="card-body">
-        <h1> Total: $XXX<h1>
+        <h1> Total: $XXX</h1>
         <input id="main_search_input" type="text" placeholder="Coupon" />
         <button id="search_button">Apply</button>
         </div>
