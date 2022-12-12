@@ -92,7 +92,7 @@ echo "<p>$productID $quantity<p>"
                                     die("Connection failed: " . $conn->connect_error);
                                     }
 
-                                    $sql = "INSERT INTO products (productID, orderID)
+                                    $sql = "INSERT INTO orderProduct (productID, orderID)
                                             VALUES ('$productID', '<?=$row["orderID"]?>')";
                                     if ($conn->query($sql) === TRUE) {
                                     echo "<h1>Successfully Submitted Order<h1>";
