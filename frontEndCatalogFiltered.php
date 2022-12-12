@@ -10,6 +10,12 @@
   echo "Item: " . $selectedItem;
   ?>
 
+  <?php
+  if($selectedBrand==NULL)
+  {
+      echo "No Brand"
+  }
+  ?>
   <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
