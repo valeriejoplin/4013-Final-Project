@@ -194,7 +194,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                               die("Connection failed: " . $conn->connect_error);
                             }
 
-                            $sql = "SELECT * FROM product";
+                            $sql = "SELECT * FROM product join productBrand on product.productID=productBrand.productID join brand on productBrand.brandID=brand.brandID join productItem on product.productID=productItem.productID JOIN item ON productItem.itemID=item.itemID";
                             //echo $sql;
                             $result = $conn->query($sql);
 
@@ -203,7 +203,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                               while($row = $result->fetch_assoc()) {
                             ?>
                               <div class=product>
-				      <a href="./frontEndProduct.php?id=<?=$row["productID"]?>">
+				      <a href="./frontEndProduct.php?id=<?=$row["product.productID"]?>">
                         <img src="assets/<?=$row["img"]?>.png" />
                     </a>
 				      <h1><?=$row["name"]?></h1>
