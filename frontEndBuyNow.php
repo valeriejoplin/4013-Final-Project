@@ -1,11 +1,19 @@
 <?php
 
 // Get values from the form
+//Order info
 $name = $_POST['name'];
 $address = $_POST['address'];
 $city = $_POST['city'];
 $state = $_POST['state'];
 $zip = $_POST['zip'];
+
+//Product info
+$productID = $_POST['productID'];
+$quantity = $_POST['quantity'];
+
+echo "<p>$productID $quantity<p>"
+
 
 ?>
 
