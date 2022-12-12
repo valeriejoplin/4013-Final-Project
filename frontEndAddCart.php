@@ -23,7 +23,7 @@ if (isset($_SESSION['cart'])) {
     <script src="assets/javascript/w3.js"></script>
     <title>Cart</title>
 <style>
- .keepShopping{
+ .keepShopping .emptyCart{
 	   background-color: #FAF6F1;
   color: black;
 border: 1px solid black;
