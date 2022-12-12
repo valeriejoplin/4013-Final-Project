@@ -111,6 +111,8 @@ $quantity = $_POST['quantity'];
         <?php echo "$address"." "."$city".", "."$state"." "."$zip"?>
     </div>
     <?php require_once("frontendfooter.php"); ?>
+
 </body>
 
+<?php session_destroy(); ?>
 
