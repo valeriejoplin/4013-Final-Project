@@ -209,7 +209,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                                     else if ($selectedItem != ""){
                                        $sql .= " productItem.itemID='".$selectedItem."'";
                                     }
-                                    else if ($selectedBrand != "" && $selectedCategory != "" && $selectedItem != ""  != ""){
+                                    else if ($selectedBrand != "" && $selectedCategory != "" && $selectedItem != ""){
                                        $sql .= " productBrand.brandID='".$selectedBrand."' && "." productCategory.categoryID='".$selectedCategory."' && "." productItem.itemID='".$selectedItem."'";
                                     }
                                 }
