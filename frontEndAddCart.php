@@ -133,9 +133,8 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
                             }
                             $conn->close();
                             ?>
-          
+          <button class="cartButton" id="deleteProdcut" >Delete</button>
         </div>
-        <button class="cartButton" id="deleteProdcut" >Delete</button>
       </div>
     <?php } ?>
   </div>
