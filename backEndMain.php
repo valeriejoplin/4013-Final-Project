@@ -1,7 +1,7 @@
 <?php
   session_start();
 
-  if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
+  if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
     // User is logged in, do something here
     header("Location: frontEndMain.php");
   } else {
