@@ -23,13 +23,12 @@
        }
        .contact{
            position: relative; 
-           top: 30px;
+           top: 15px;
            left: 215px;
            border: 1px solid black;
            width: 60%;
            text-align:center;
            background-color: #E4FAFA;
-           bottom: 10px;
            font-family:"Times New Roman", Times, serif;
        }
 
