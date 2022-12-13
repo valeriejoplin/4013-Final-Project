@@ -31,6 +31,9 @@
        p{
                       font-family:"Times New Roman", Times, serif;
        }
+       button{
+                      font-family:"Times New Roman", Times, serif;
+       }
     </style>
 <body>
 
