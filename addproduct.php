@@ -60,9 +60,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               <form method="post" action="">
                 <div class="mb-3">
                   <label for="productList" class="form-label">Product</label>
-                          <select class="form-select" aria-label="Select Product" id="instructorList" name="cInsID">
+                          <select class="form-select" aria-label="Select Product" id="productList" name="pID">
                           <?php
-                            $productSQL = "select productID, name, shortDesc, longDesc, qtyAvailable from product P Order by productID";
+                            $productSQL = "select P.productID, P.name, P.shortDesc, P.longDesc, P.qtyAvailable from product P Order by productID";
                             $productResult = $conn->query($productSQL);
                             while($productRow = $productResult->fetch_assoc()) {
                             ?>
@@ -71,17 +71,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             ?>
                           </select>
                           <label for="editproduct<?=$row["productID"]?>Name" class="form-label">ID</label>
-                          <input type="text" class="form-control" id="editproduct<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="pID">
+                          <input type="text" class="form-control" id="editproduct<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="pID"> 
                           <label for="editproduct<?=$row["productID"]?>Name" class="form-label">Name</label>
                           <input type="text" class="form-control" id="editCourse<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="pname">
                           <label for="editproduct<?=$row["productID"]?>Name" class="form-label">Price</label>
-                          <input type="text" class="form-control" id="editCourse<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="pprice"> 
+                          <input type="text" class="form-control" id="editCourse<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="pprice">
                           <label for="editproduct<?=$row["productID"]?>Name" class="form-label">Short Description</label>
-                          <input type="text" class="form-control" id="editCourse<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="pshortdesc">  
+                          <input type="text" class="form-control" id="editCourse<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="pshortdesc"> 
                            <label for="editproduct<?=$row["productID"]?>Name" class="form-label">Long Description</label>
                           <input type="text" class="form-control" id="editCourse<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="plongdesc">
                         <label for="editproduct<?=$row["productID"]?>Name" class="form-label">Quantity Available</label>
-                          <input type="text" class="form-control" id="editCourse<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="pqtyavailable"> 
+                          <input type="text" class="form-control" id="editCourse<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="pqty">
                           <div id="editproduct<?=$row["productID"]?>Help" class="form-text">Enter the product information.</div>
                         </div>
                 <input type="hidden" name="saveType" value="Add">
@@ -145,20 +145,20 @@ if ($result->num_rows > 0) {
                             ?>
                           </select>
                          <label for="editproduct<?=$row["productID"]?>Name" class="form-label">ID</label>
-                          <input type="text" class="form-control" id="editproduct<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="pID">
+                          <input type="text" class="form-control" id="editproduct<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="pID" value="<?=$row['productID']?>">
                           <label for="editproduct<?=$row["productID"]?>Name" class="form-label">Name</label>
-                          <input type="text" class="form-control" id="editCourse<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="pname">
+                          <input type="text" class="form-control" id="editCourse<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="pname"> value="<?=$row['name']?>">
                           <label for="editproduct<?=$row["productID"]?>Name" class="form-label">Price</label>
-                          <input type="text" class="form-control" id="editCourse<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="pprice"> 
+                          <input type="text" class="form-control" id="editCourse<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="pprice"> value="<?=$row['price']?>">
                           <label for="editproduct<?=$row["productID"]?>Name" class="form-label">Short Description</label>
-                          <input type="text" class="form-control" id="editCourse<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="pshortdesc">  
+                          <input type="text" class="form-control" id="editCourse<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="pshortdesc"> value="<?=$row['shortDesc']?>">
                            <label for="editproduct<?=$row["productID"]?>Name" class="form-label">Long Description</label>
-                          <input type="text" class="form-control" id="editCourse<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="plongdesc">
+                          <input type="text" class="form-control" id="editCourse<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="plongdesc"> value="<?=$row['longDesc']?>">
                         <label for="editproduct<?=$row["productID"]?>Name" class="form-label">Quantity Available</label>
-                          <input type="text" class="form-control" id="editCourse<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="pqtyavailable"> 
+                          <input type="text" class="form-control" id="editCourse<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="pqtyavailable"> value="<?=$row['qtyAvilable']?>">
                           <div id="editproduct<?=$row["productID"]?>Help" class="form-text">Enter the product information.</div>
                         </div>
-                        <input type="hidden" name="cid" value="<?=$row['CourseID']?>">
+                        <input type="hidden" name="pID" value="<?=$row['productID']?>">
                         <input type="hidden" name="saveType" value="Edit">
                         <button type="submit" class="btn btn-primary">Submit</button>
                       </form>
