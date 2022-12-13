@@ -224,6 +224,9 @@ display: none;
 	text-align:center;
 	color:white;
 	    }
+.popup h4{
+	color: white;
+	    }
 input[type=submit]{
     display: block;
     width: 150px;
