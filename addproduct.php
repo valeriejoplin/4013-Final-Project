@@ -22,7 +22,7 @@ if ($conn->connect_error) {
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   switch ($_POST['saveType']) {
     case 'Add':
-        $sqlAdd = "insert into product (name,price,shortDesc,longDesc,qtyavalible) value (?, ?,?,?)";
+        $sqlAdd = "insert into product (name,price,shortDesc,longDesc,qtyavalible) value (?, ?,?,?,?)";
         $stmtAdd = $conn->prepare($sqlAdd);
         $stmtAdd->bind_param("isissi", $_POST['pID'], $_POST['pname'], $_POST['pprice'], $_POST['pshortdesc'], $_POST['plongdesc'],$_POST['pqty']);
         $stmtAdd->execute();   
@@ -81,8 +81,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                           <input type="text" class="form-control" id="editCourse<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="pshortdesc">  
                            <label for="editproduct<?=$row["productID"]?>Name" class="form-label">Long Description</label>
                           <input type="text" class="form-control" id="editCourse<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="plongdesc">
-                        <label for="editproduct<?=$row["productID"]?>Name" class="form-label">Quantity Available</label>
-                          <input type="text" class="form-control" id="editCourse<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="pqtyavailable"> 
+                        <label for="editproduct<?=$row["productID"]?>Name" class="form-label">Quantity valible</label>
+                          <input type="text" class="form-control" id="editCourse<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="pqty"> 
                           <div id="editproduct<?=$row["productID"]?>Help" class="form-text">Enter the product information.</div>
                         </div>
                 <input type="hidden" name="saveType" value="Add">
@@ -101,12 +101,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <th>Price</th>
             <th>Short Description</th>
             <th>Long Description</th>
-            <th>Quantity Available</th>
+            <th>Quantity Avalible</th>
           </tr>
         </thead>
         <tbody>
   <?php
-   $sql="SELECT productID, name, shortDesc, longDesc, qtyAvailable from product P Order by productID";
+   $sql="SELECT productID, name, shortDesc, longDesc, qtyAvalible from product Order by productID";
   $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -119,7 +119,7 @@ if ($result->num_rows > 0) {
             <td><?=$row["price"]?></td>
             <td><?=$row["shortDesc"]?></td>
             <td><?=$row["longDesc"]?></td>
-            <td><?=$row["qtyAvailable"]?></td>
+            <td><?=$row["qtyAvalible"]?></td>
             <td>         
          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editproduct<?=$row["productID"]?>">
                 Edit
