@@ -68,7 +68,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             $productResult = $conn->query($productSQL);
                             while($productRow = $productResult->fetch_assoc()) {
                             ?>
-                            <option value="<?=$productRow["productID"]?>"><?=$productRow["productID"]."?><?=$productRow["name"]?></option>
                             <?php
                             }
                             ?>
