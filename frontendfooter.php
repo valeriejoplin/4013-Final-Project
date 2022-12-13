@@ -13,10 +13,7 @@ footer {
     margin-left: 10px;
     text-decoration: none;
 }
-.icons{
-           height: 20px;
-           width:20px;
-           }
+
 
     </style>
 <footer>
