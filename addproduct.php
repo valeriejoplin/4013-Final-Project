@@ -5,7 +5,6 @@
         </head>
  <body>
     <div class="container">
-<h1>Add Product </h1>
 
 
 
