@@ -10,17 +10,22 @@
 
     </head>
    <style>
-       h{
+       h2{
+           text-align:center;
+           font-family:"Times New Roman", Times, serif;
+       }
+       h4{
            text-align:center;
            font-family:"Times New Roman", Times, serif;
        }
     </style>
 <body>
- <h2> We would love to hear your feedback and suggestions! </h2>
-     <h4> Enter your email address and comments below. </h4>
+
                                                              
 <div class="container">
  <?php require_once("frontEndHeader.php"); ?>
+     <h2> We would love to hear your feedback and suggestions! </h2>
+     <h4> Enter your email address and comments below. </h4>
              <form action="https://formsubmit.co/3cbd6087d29d14ef54538c6817c28eba" method="POST">
 
                 <input type="hidden" name="_autoresponse" value="Thank you for your inquirie to VAST someone will never get back to you!">
