@@ -35,7 +35,7 @@
                       font-family:"Times New Roman", Times, serif;
        }
        .comments{
-           float:center;
+           border: 1px solid black;
        }
     </style>
 <body>
