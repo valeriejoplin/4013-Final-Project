@@ -21,14 +21,12 @@ if ($conn->connect_error) {
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   switch ($_POST['saveType']) {
     case 'Add':
-        $sqlAdd = "insert into product (name,price,shortDesc,longDesc,qtyavalible) value (?, ?,?,?)";
+        $sqlAdd = "insert into product (name,price,shortDesc,longDesc,qtyavalible) value (?, ?,?,?,?)";
         $stmtAdd = $conn->prepare($sqlAdd);
         $stmtAdd->bind_param("isissi", $_POST['pID'], $_POST['pname'], $_POST['pprice'], $_POST['pshortdesc'], $_POST['plongdesc'],$_POST['pqty']);
         $stmtAdd->execute();   
       echo '<div class="alert alert-success" role="alert">New Product added.</div>';
       break;
-
-
       case 'Edit':
       $sqlEdit = "update product set name=?, price=?, shortDesc=?,longDesc=?,qtyavailable=? where productID=?";
       $stmtEdit = $conn->prepare($sqlEdit);
