@@ -117,7 +117,7 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
                                       if (isset($_SESSION['cart'])) {
                                           if (isset($_POST['product_id']) && isset($_POST['quantity']) && $_POST['product_id'] == $productId) {
                                             if(isset($_SESSION['cart'][$_POST['product_id']])) {
-                                              echo "Quantity updated";
+                                              echo "Item Added";
                                             }
                                           }
                                       }
