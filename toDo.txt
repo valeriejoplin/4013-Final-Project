@@ -89,4 +89,5 @@ Andrew Next To Work On:
     Add edit quanitity to checkout
     Make coupon work check out
     Comments section product
+    Fix resubmit on frontEndBuyNow Causes Duplicate Orders to be placed
 
