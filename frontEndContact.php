@@ -35,8 +35,10 @@
                       font-family:"Times New Roman", Times, serif;
        }
        .comments{
+           margin: auto;
+           width: 50%;
            border: 1px solid black;
-           float: center;
+           padding: 10px;
        }
     </style>
 <body>
