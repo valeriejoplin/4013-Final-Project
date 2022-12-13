@@ -36,7 +36,6 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
       }
     }
   }
-
   $tax = $subtotal * $taxRate;
   $total = $tax + $subtotal;
   $discountreceived = $subtotal * $discount;
@@ -166,7 +165,6 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
         <div class="totals" style="font-size: 12px;">
             <p> Subtotal: $<?=$subtotal?></p>
             <p> Tax: $<?=$tax?></p>
-		<p> Discount:$<?=$discountreceived?></p>
             <p style="font-size: 16px;"> Total: $<?=$total?></p>
         </div>
         <input id="main_search_input" type="text" placeholder="Coupon"/>
