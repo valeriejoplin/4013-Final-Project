@@ -136,7 +136,7 @@ if ($result->num_rows > 0) {
                           <label for="productList" class="form-label">Product</label>
                           <select class="form-select" aria-label="Select Product" id="productList" name="pID">
                           <?php
-                            $productSQL = "select * from product Order by productID";
+                            $productSQL = "select P.productID, P.name, P.shortDesc, P.longDesc, P.qtyAvailable from product P Order by productID";
                             $productResult = $conn->query($productSQL);
                             while($productRow = $productResult->fetch_assoc()) {
                             ?>
@@ -180,6 +180,6 @@ $conn->close();
         </tbody>
       </table>
      </body>
-
+</html>
 
     
