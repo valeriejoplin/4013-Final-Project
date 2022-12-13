@@ -12,6 +12,9 @@
 
 </head>
 <style>
+	input[type=submit]{
+		top 15px;
+	}
 	.logo{
 		width: 100px;
 		height:100px;
