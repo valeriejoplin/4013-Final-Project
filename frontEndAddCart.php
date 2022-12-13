@@ -168,7 +168,7 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
             <p style="font-size: 16px;"> Total: $<?=$total?></p>
         </div>
         <input id="main_search_input" type="text" placeholder="Coupon"/>
-        <button id="search_button">Apply</button>
+		<button id="search_button">Apply</button>
         </div>
 <div class="buttons">
 <button  class="cartButton" id="openFormButton" <?php if (empty($_SESSION['cart'])) { echo 'disabled'; } ?>>Check Out</button>
