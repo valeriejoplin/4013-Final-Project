@@ -61,9 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               <form method="post" action="">
                 <div class="mb-3">
                   <label for="productList" class="form-label">Product</label>
-                        
-                          <label for="editproduct<?=$row["productID"]?>Name" class="form-label">ID</label>
-                          <input type="text" class="form-control" id="editproduct<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="pID">
+
                           <label for="editproduct<?=$row["productID"]?>Name" class="form-label">Name</label>
                           <input type="text" class="form-control" id="editCourse<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="pname">
                           <label for="editproduct<?=$row["productID"]?>Name" class="form-label">Price</label>
