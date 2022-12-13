@@ -28,21 +28,19 @@
            border: 1px solid black;
            width: 60%;
            text-align:center;
+           background-color: #E4FAFA;
            font-family:"Times New Roman", Times, serif;
        }
-       p{
-                      font-family:"Times New Roman", Times, serif;
-       }
-       button{
-                      font-family:"Times New Roman", Times, serif;
-       }
+
        .comments{
            margin: auto;
            width: 50%;
            border: 1px solid black;
            padding: 10px;
            text-align:center;
-           background-color: #E4FAFA
+           background-color: #E4FAFA;
+           font-family:"Times New Roman", Times, serif;
+ 
        }
     </style>
 <body>
