@@ -8,8 +8,17 @@
     <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
     <title>Contact</title>
 
-</head>
+    </head>
+   <style>
+       h{
+           text-align:center;
+           font-family:"Times New Roman", Times, serif;
+       }
+    </style>
 <body>
+ <h2> We would love to hear your feedback and suggestions! </h2>
+     <h4> Enter your email address and comments below. </h4>
+                                                             
 <div class="container">
  <?php require_once("frontEndHeader.php"); ?>
              <form action="https://formsubmit.co/3cbd6087d29d14ef54538c6817c28eba" method="POST">
