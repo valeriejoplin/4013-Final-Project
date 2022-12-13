@@ -42,11 +42,11 @@
            font-family:"Times New Roman", Times, serif;
  
        }
-       body{
+       .body{
            background-color:F8FEFE;
        }
     </style>
-<body>
+<body class ="body">
 
                                                              
 <div class="container">
