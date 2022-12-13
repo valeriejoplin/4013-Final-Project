@@ -14,6 +14,7 @@
 <style>
 	input[type=submit]{
 		top 100px;
+		background-color: blue;
 	}
 	.logo{
 		width: 100px;
