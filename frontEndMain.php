@@ -19,12 +19,6 @@
 	width:100px;
 	height:100px;
 	}
-<style>
-.frontpage{
-	text-align:center;
-	border: 1.5px solid black;
-	font-family: "Times New Roman", Times, serif;
-	}
 img{
   display: block;
   margin-left: auto;
@@ -49,7 +43,6 @@ body {font-family: Verdana, sans-serif;}
 .mySlides {display: none;}
 img {vertical-align: middle;}
 
-/* Slideshow container */
 .slideshow-container {
  height: 300px
   max-width: 1000px;
@@ -57,7 +50,6 @@ img {vertical-align: middle;}
   margin: auto;
 }
 
-/* Caption text */
 .text {
   font-weight: bold;
   font-family: "Times New Roman", Times, serif;
@@ -70,7 +62,6 @@ img {vertical-align: middle;}
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -79,7 +70,6 @@ img {vertical-align: middle;}
   top: 0;
 }
 
-/* The dots/bullets/indicators */
 .dot {
   height: 15px;
   width: 15px;
@@ -94,7 +84,6 @@ img {vertical-align: middle;}
   background-color: #717171;
 }
 
-/* Fading animation */
 .fade {
   animation-name: fade;
   animation-duration: 2s;
@@ -105,7 +94,6 @@ img {vertical-align: middle;}
   to {opacity: 1}
 }
 
-/* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
@@ -249,9 +237,8 @@ input[type=submit]{
             <button id="close">&times;</button>
             <h2>Happy Holidays!</h2>
             <h4> Want to save 15%? </h4>
-            <p style=text-align:center;>
-                Save BEFORE the Holidays and use code DECEMBER15 at checkout!
-            </p>
+            <p> Save BEFORE the Holidays and use code DECEMBER15 at checkout.</p>
+		<h8> Expires 01/01/2023 </h8>
 
         </div>
         <script type="text/javascript">
