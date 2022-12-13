@@ -220,7 +220,7 @@ display: none;
     line-height: 25px;
     text-align:center;
 	    }
-.popup h8{
+.popup h9{
 	text-align:center;
 	color:white;
 	    }
@@ -248,7 +248,7 @@ input[type=submit]{
             <h2>Happy Holidays!</h2>
             <h4> Want to save 15%? </h4>
             <p> Save BEFORE the Holidays and use code DECEMBER15 at checkout.</p>
-		<h8> Expires 01/01/2023 </h8>
+		<h9> Valid through 01/01/2023 </h9>
 
         </div>
         <script type="text/javascript">
