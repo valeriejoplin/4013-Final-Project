@@ -27,16 +27,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="backEndMain.html">Back End Home</a>
+                    <a class="nav-link" href="backEndMain.php">Back End Home</a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="addproduct.php">Add Product</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="backEndMain.html">View Sales History</a>
+                    <a class="nav-link" href="backEndMain.php">View Sales History</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="backEndMain.html">Database Diagram</a>
+                    <a class="nav-link" href="backEndMain.php">Database Diagram</a>
                 </li>
             </ul>
         </div>
