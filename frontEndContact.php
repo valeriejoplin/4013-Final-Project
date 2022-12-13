@@ -18,6 +18,9 @@
            text-align:center;
            font-family:"Times New Roman", Times, serif;
        }
+       .contact{
+           float:left;
+       }
     </style>
 <body>
 
@@ -37,10 +40,11 @@
                 <input type="text" name="Feedback" required>
                 <button type="submit">Send</button>
             </form>
+    <div class="contact">
     <h3> VAST Contact Information </h3>
     <li> Phone Number: (405)-405-4054 </li>
     <li> Email Address: vastfashcontact@gmail.com </li>
-
+    </div>
             </div>
                  <?php require_once("frontendfooter.php"); ?>
             </body>
