@@ -34,6 +34,9 @@
        button{
                       font-family:"Times New Roman", Times, serif;
        }
+       .comments{
+           float:center;
+       }
     </style>
 <body>
 
@@ -42,6 +45,7 @@
  <?php require_once("frontEndHeader.php"); ?>
      <h2> We would love to hear your feedback and suggestions! </h2>
      <h4> Enter your email address and comments below. </h4>
+    <div class="comments"
              <form action="https://formsubmit.co/3cbd6087d29d14ef54538c6817c28eba" method="POST">
 
                 <input type="hidden" name="_autoresponse" value="Thank you for your inquirie to VAST someone will never get back to you!">
@@ -53,6 +57,7 @@
                 <input type="text" name="Feedback" required>
                 <button type="submit">Send</button>
             </form>
+    </div>
     <div class="contact">
     <h3> Contact Information </h3>
     <h6> Phone Number: (405)-405-4054 </h6>
