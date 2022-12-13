@@ -12,7 +12,7 @@
 
 </head>
 <style>
-	input[type=submit]{
+	.input[type=submit]{
 		top 100px;
 		background-color: blue;
 	}
