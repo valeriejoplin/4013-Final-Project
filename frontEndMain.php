@@ -50,17 +50,7 @@ img {vertical-align: middle;}
   margin: auto;
 }
 
-.text {
-  font-weight: bold;
-  font-family: "Times New Roman", Times, serif;
-  color: black;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
+
 
 .numbertext {
   color: #f2f2f2;
