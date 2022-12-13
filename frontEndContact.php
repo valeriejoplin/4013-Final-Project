@@ -36,6 +36,7 @@
        }
        .comments{
            border: 1px solid black;
+           float: right;
        }
     </style>
 <body>
