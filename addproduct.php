@@ -61,7 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               <form method="post" action="">
                 <div class="mb-3">
                   <label for="productList" class="form-label">Product</label>
-                          <select class="form-select" aria-label="Select Product" id="instructorList" name="cInsID">
+                          <select class="form-select" aria-label="Select Product" id="productList" name="pID">
                           <?php
                             $productSQL = "select * from product Order by productID";
                             $productResult = $conn->query($productSQL);
@@ -146,7 +146,7 @@ if ($result->num_rows > 0) {
                             ?>
                           </select>
                         </div>
-                        <input type="hidden" name="cid" value="<?=$row['CourseID']?>">
+                        <input type="hidden" name="pID" value="<?=$row['pID']?>">
                         <input type="hidden" name="saveType" value="Edit">
                         <button type="submit" class="btn btn-primary">Submit</button>
                       </form>
