@@ -116,7 +116,7 @@ if ($result->num_rows > 0) {
     <tr>
             <td><?=$row["productID"]?></td>
             <td><?=$row["name"]?></td>
-            <td><?=$row["price"]?></td>
+            <td>$<?=$row["price"]?></td>
             <td><?=$row["shortDesc"]?></td>
             <td><?=$row["longDesc"]?></td>
             <td><?=$row["qtyAvalible"]?></td>
