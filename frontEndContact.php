@@ -29,6 +29,7 @@
            width: 60%;
            text-align:center;
            background-color: #E4FAFA;
+           bottom: 10px;
            font-family:"Times New Roman", Times, serif;
        }
 
