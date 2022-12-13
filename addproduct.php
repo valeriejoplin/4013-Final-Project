@@ -106,7 +106,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </thead>
         <tbody>
   <?php
-   $sql="SELECT productID, name, shortDesc, longDesc, qtyAvalible from product Order by productID";
+   $sql="SELECT productID, name, price, shortDesc, longDesc, qtyAvalible from product Order by productID";
   $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
