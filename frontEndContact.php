@@ -37,6 +37,10 @@
                 <input type="text" name="Feedback" required>
                 <button type="submit">Send</button>
             </form>
+    <h3> VAST Contact Information </h3>
+    <li> Phone Number: (405)-405-4054 </li>
+    <li> Email Address: vastfashcontact@gmail.com </li>
+
             </div>
                  <?php require_once("frontendfooter.php"); ?>
             </body>
