@@ -216,7 +216,12 @@ display: none;
     text-align: justify;
     margin: 20px 0;
     line-height: 25px;
-}
+    text-align:center;
+	    }
+.popup h8{
+	text-align:center;
+	color:white;
+	    }
 input[type=submit]{
     display: block;
     width: 150px;
