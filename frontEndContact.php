@@ -64,10 +64,10 @@
                 <p>Comment/Feedback</p>
                 <input type="text" name="Feedback" required>
                 <button type="submit">Send</button>
+            <h9> For additional inquiries or concerns, contact us directly. </h9>
             </form>
     </div>
     <div class="contact">
-        <h9> For additional inquiries or concerns, contact us directly. </h9>
     <h3> Contact Information </h3>
     <h6> Phone Number: (405)-405-4054 </h6>
     <h6> Email Address: vastfashcontact@gmail.com </h6>
