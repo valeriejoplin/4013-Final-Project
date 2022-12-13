@@ -140,7 +140,6 @@ if ($result->num_rows > 0) {
                           <input type="text" class="form-control" id="editCourse<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="pqty" value="<?=$row['qtyAvalible']?>"> 
                           <div id="editproduct<?=$row["productID"]?>Help" class="form-text">Enter the product information.</div>
                         </div>
-                        <input type="hidden" name="pID" value="<?=$row['pID']?>">
                         <input type="hidden" name="saveType" value="Edit">
                         <button type="submit" class="btn btn-primary">Submit</button>
                       </form>
