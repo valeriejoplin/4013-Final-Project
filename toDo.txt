@@ -21,7 +21,7 @@ Front End/
             +Buttons
             +Text for currancy
             +Remove Text Decoration for product details
-            +Make say 'Item Added' not 'Quantity Updated' on first add
+            ✓ Make say 'Item Added' not 'Quantity Updated' on first add 
         + On check out removes quanity/inventory purchased from DB (Last thing to do! Not nessecary at this time. If doesnt remove invenotry we can place orders on site to populate sales history)
         + Checkout Address Form
             - Could make popup modal
@@ -36,8 +36,8 @@ Front End/
             - Need to add query for this
     - Contact Page
         + Format
-        + Add fake phone number
-        + Add fake email
+        ✓ Add fake phone number
+        ✓ Add fake email
         + Add fake social handles
         + Make email footer button take to contact page Actualy make all the non social media buttons go to contact page
         + Can make the automated email response an html file instead of the text string we have
