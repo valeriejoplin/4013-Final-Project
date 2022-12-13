@@ -17,6 +17,7 @@ $subtotal = 0;
 $tax = 0;
 $taxRate = 0.08;
 $total =0;
+$discount=0.15;
 if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
   foreach ($_SESSION['cart'] as $productId => $quantity) {
     $servername = "165.227.18.177";
@@ -35,8 +36,11 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
       }
     }
   }
+
   $tax = $subtotal * $taxRate;
   $total = $tax + $subtotal;
+  $discountreceived = $subtotal * $discount;
+  $discounttotal = $subtotal - $discountrecieved + $tax;
 }
 ?>
 
@@ -162,9 +166,10 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
         <div class="totals" style="font-size: 12px;">
             <p> Subtotal: $<?=$subtotal?></p>
             <p> Tax: $<?=$tax?></p>
+		<p> Discount:$<?=$discountreceived?></p>
             <p style="font-size: 16px;"> Total: $<?=$total?></p>
         </div>
-        <input id="main_search_input" type="text" placeholder="Coupon" />
+        <input id="main_search_input" type="text" placeholder="Coupon"/>
         <button id="search_button">Apply</button>
         </div>
 <div class="buttons">
