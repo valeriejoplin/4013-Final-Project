@@ -42,6 +42,9 @@
            font-family:"Times New Roman", Times, serif;
  
        }
+       body{
+           background-color:F8FEFE;
+       }
     </style>
 <body>
 
