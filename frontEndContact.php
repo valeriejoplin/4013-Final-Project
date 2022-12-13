@@ -45,8 +45,8 @@
             </form>
     <div class="contact">
     <h3> VAST Contact Information </h3>
-    <li> Phone Number: (405)-405-4054 </li>
-    <li> Email Address: vastfashcontact@gmail.com </li>
+    <h6> Phone Number: (405)-405-4054 </h6>
+    <h6> Email Address: vastfashcontact@gmail.com </h6>
     </div>
             </div>
                  <?php require_once("frontendfooter.php"); ?>
