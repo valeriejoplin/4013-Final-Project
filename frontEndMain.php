@@ -210,6 +210,8 @@ display: none;
 }
 .popup h2{
 	margin-top: -20px;
+	color:white;
+	font-weight:bold;
 }
 .popup p{
     font-size: 14px;
