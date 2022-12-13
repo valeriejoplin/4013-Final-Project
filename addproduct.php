@@ -61,16 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               <form method="post" action="">
                 <div class="mb-3">
                   <label for="productList" class="form-label">Product</label>
-                          <select class="form-select" aria-label="Select Product" id="productList" name="pID">
-                          <?php
-                            $productSQL = "select * from product Order by productID";
-                            $productResult = $conn->query($productSQL);
-                            while($productRow = $productResult->fetch_assoc()) {
-                            ?>
-                            <?php
-                            }
-                            ?>
-                          </select>
+                        
                           <label for="editproduct<?=$row["productID"]?>Name" class="form-label">ID</label>
                           <input type="text" class="form-control" id="editproduct<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="pID">
                           <label for="editproduct<?=$row["productID"]?>Name" class="form-label">Name</label>
