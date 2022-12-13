@@ -44,7 +44,7 @@
                 <button type="submit">Send</button>
             </form>
     <div class="contact">
-    <h3> VAST Contact Information </h3>
+    <h3> Contact Information </h3>
     <h6> Phone Number: (405)-405-4054 </h6>
     <h6> Email Address: vastfashcontact@gmail.com </h6>
     </div>
