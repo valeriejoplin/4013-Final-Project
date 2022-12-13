@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
       case 'Edit':
-      $sqlEdit = "update product set name=?, price=?, shortDesc=?,longDesc=?,qtyavailable=? where productID=?";
+      $sqlEdit = "update product set productID=?,name=?, price=?, shortDesc=?,longDesc=?,qtyavailable=? where productID=?";
       $stmtEdit = $conn->prepare($sqlEdit);
       $stmtEdit->bind_param("isissi", $_POST['pID'],$_POST['pname'], $_POST['pprice'], $_POST['pshortdesc'], $_POST['plongdesc'],$_POST['pqty']);
       $stmtEdit->execute();
