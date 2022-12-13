@@ -10,12 +10,11 @@
 
     </head>
    <style>
-       .container{
-           font-family:"Times New Roman", Times, serif;
-       }
        h2{
            top: 10px;
            text-align:center;
+           font-family:"Times New Roman", Times, serif;
+
        }
        h4{
            top: 15px;
@@ -28,6 +27,9 @@
            border: 1px solid black;
            text-align:center;
            font-family:"Times New Roman", Times, serif;
+       }
+       p{
+                      font-family:"Times New Roman", Times, serif;
        }
     </style>
 <body>
