@@ -13,7 +13,7 @@
 </head>
 <style>
 	input[type=submit]{
-		top 15px;
+		top 30px;
 	}
 	.logo{
 		width: 100px;
