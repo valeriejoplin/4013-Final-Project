@@ -46,7 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <table class="table table-striped">
           
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addproduct">
-        Add New
+        Add Product
       </button>
 
 
@@ -122,6 +122,42 @@ if ($result->num_rows > 0) {
             <td><?=$row["longDesc"]?></td>
             <td><?=$row["qtyAvailable"]?></td>
             <td>         
+         <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editproduct<?=$row["productID"]?>">
+                Edit
+              </button>
+              <div class="modal fade" id="editproduct<?=$row["productID"]?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editproduct<?=$row["productID"]?>Label" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="editproduct<?=$row["productID"]?>Label">Edit Product</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form method="post" action="">  
+                        <div class="mb-3">
+                          <label for="productList" class="form-label">Product</label>
+                          <select class="form-select" aria-label="Select Product" id="productList" name="pID">
+                          <?php
+                            $productSQL = "select * from product Order by productID";
+                            $productResult = $conn->query($productSQL);
+                            while($productRow = $productResult->fetch_assoc()) {
+                            ?>
+                            <?php
+                            }
+                            ?>
+                          </select>
+                        </div>
+                        <input type="hidden" name="cid" value="<?=$row['CourseID']?>">
+                        <input type="hidden" name="saveType" value="Edit">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+ 
 <?php
   }
 } else {
