@@ -12,10 +12,6 @@
 
 </head>
 <style>
-	.input[type=submit]{
-		top 100px;
-		background-color: blue;
-	}
 	.logo{
 		width: 100px;
 		height:100px;
@@ -36,7 +32,7 @@
                     <label for="brands">Brand:</label>
                                        
                     <select name="brands" id="brands">
-                        <option value="">None</option>
+                        <option value="">All</option>
                          <?php
                             $servername = "165.227.18.177";
                             $username = "asoltiso_project";
@@ -68,7 +64,7 @@
             <div class="dropdown">
                 <label for="categories">Category:</label>
                 <select name="categories" id="categories">
-                    <option value="">None</option>
+                    <option value="">All</option>
                     <?php
                         $servername = "165.227.18.177";
                         $username = "asoltiso_project";
@@ -102,7 +98,7 @@
             <div class="dropdown">
                 <label for="items">Item:</label>
                 <select name="items" id="items">
-                    <option value="">None</option>
+                    <option value="">All</option>
                     <?php
                         $servername = "165.227.18.177";
                         $username = "asoltiso_project";
