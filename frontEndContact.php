@@ -71,6 +71,7 @@
     <h3> Contact Information </h3>
     <h6> Phone Number: (405)-405-4054 </h6>
     <h6> Email Address: vastfashcontact@gmail.com </h6>
+        <h6> Head Quarters Address: 307 West Brooks Street, Norman, OK 73019 </h6>
     </div>
             </div>
                  <?php require_once("frontendfooter.php"); ?>
