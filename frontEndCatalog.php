@@ -128,10 +128,9 @@
                             $conn->close();
                             ?>
                 </select>
-            </div>
+		</div>
+           <input type="Submit" value="Submit">
             </form>
-		            <input type="Submit" value="Submit">
-
         </div>
         <div class="content">
             <div class="products">
