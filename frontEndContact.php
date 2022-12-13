@@ -19,6 +19,8 @@
            font-family:"Times New Roman", Times, serif;
        }
        .contact{
+           position: relative; 
+           top: 15px;
            border: 1px solid black;
            text-align:center;
            font-family:"Times New Roman", Times, serif;
