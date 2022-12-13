@@ -41,6 +41,8 @@
            width: 50%;
            border: 1px solid black;
            padding: 10px;
+           text-align:center;
+           background-color: #E4FAFA
        }
     </style>
 <body>
