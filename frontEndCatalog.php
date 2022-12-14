@@ -19,7 +19,7 @@
 	.container{
 		font-family: "Times New Roman", Times, serif;
 	}
-	.products{
+	.product{
 		background-color: #E4FAFA;
 	}
 	</style>
