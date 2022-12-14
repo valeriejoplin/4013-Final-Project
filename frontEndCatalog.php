@@ -19,6 +19,9 @@
 	.container{
 		font-family: "Times New Roman", Times, serif;
 	}
+	.products{
+		background-color: #E4FAFA;
+	}
 	</style>
 	
 <body>
