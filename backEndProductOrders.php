@@ -7,6 +7,9 @@
    body {
             background-image: url('https://www.vestian.com/blog/wp-content/uploads/vestian-marathalli-6.jpg');
         }
+   .rows{
+        background-color:#BCC9F7;
+           }    
   </style>
 <body>
         <h2>Current Orders </h2>
@@ -38,7 +41,7 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
  while($row = $result->fetch_assoc()) {
 ?>
-  <tr>
+  <tr class="rows">
     <td><?=$row["orderProductID"]?></td>  
     <td><?=$row["productID"]?></td>  
     <td><?=$row["orderID"]?></td>
