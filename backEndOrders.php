@@ -3,6 +3,11 @@
 <head>
 <?php require_once("backendheader.php"); ?>
         </head> 
+  <style>
+   body {
+            background-image: url('https://www.vestian.com/blog/wp-content/uploads/vestian-marathalli-6.jpg');
+        }
+  </style>
 <body>
         <h2>Order Summary </h2>
 <table class="table table-striped">
