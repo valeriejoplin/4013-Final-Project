@@ -4,7 +4,7 @@
 <?php require_once("backendheader.php"); ?>
         </head> 
 <body>
-        <h2>Order Summary </h2>
+        <h2>Current Orders </h2>
 <table class="table table-striped">
   <thead>
     <tr>
@@ -31,8 +31,7 @@ $sql = "SELECT * from orderproduct ORDER by orderProductID";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
-
-  while($row = $result->fetch_assoc()) {
+ while($row = $result->fetch_assoc()) {
 ?>
   <tr>
     <td><?=$row["orderProductID"]?></td>  
@@ -49,4 +48,3 @@ $conn->close();
 ?>
   </tbody>
     </table>
-  <?php require_once("backendfooter.php"); ?>
