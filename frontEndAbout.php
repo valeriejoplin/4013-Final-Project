@@ -26,7 +26,7 @@
              font-family: "Times New Roman", Times, serif;
            text-align:center;
             border: 1.5px solid black;
-           background-color: #FAD2A0;
+           background-color: #E4FAFA;
          }
         .Val{
             height:400px;
