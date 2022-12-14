@@ -7,7 +7,7 @@
    body {
             background-image: url('https://www.vestian.com/blog/wp-content/uploads/vestian-marathalli-6.jpg');
         }
-.table table-striped{
+.productList{
         background-color:white;
            }
   </style>
