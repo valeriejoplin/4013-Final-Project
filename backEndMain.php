@@ -57,7 +57,7 @@
     </style>
     <div class="container">
         <h1> VAST Fashion Back End </h1>
-        <p> Navigate the back end of our website by using the navigation bar at the top of the screen. View our database diagram, sales history, and add a new product </p>
+        <p> Navigate the back end of our website by using the navigation bar at the top of the screen. View our product inventory, customer information, order history, and database diagram.</p>
     </div>
 </body>
 
