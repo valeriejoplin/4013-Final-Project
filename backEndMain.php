@@ -23,7 +23,7 @@
                     <a class="nav-link" href="addproduct.php">Add Product</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="backEndMain.php">View Sales History</a>
+                    <a class="nav-link" href="backEndOrders.php">View Order History</a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="backEndMain.php">Database Diagram</a>
