@@ -30,10 +30,10 @@
                     <a class="nav-link" href="backEndMain.php">Back End Home</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="addproduct.php">Add Product</a>
+                    <a class="nav-link" href="addproduct.php">Product Inventory</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="backEndOrders.php">View Order History</a>
+                    <a class="nav-link" href="backEndOrders.php">Customer Information</a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="backEndMain.php">Database Diagram</a>
