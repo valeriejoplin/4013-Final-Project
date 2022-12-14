@@ -38,8 +38,6 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
   }
   $tax = $subtotal * $taxRate;
   $total = $tax + $subtotal;
-  $discountreceived = $subtotal * $discount;
-  $discounttotal = $subtotal - $discountrecieved + $tax;
 }
 ?>
 
