@@ -22,6 +22,9 @@
 	.product{
 		background-color: #C5DEDE;
 	}
+	.product hover{
+		background-color: #C5DEDE;
+	}
 	</style>
 	
 <body>
