@@ -133,17 +133,17 @@ if ($result->num_rows > 0) {
             <div class="products">
                 <div class="product">
 
-                <h1><?=$row["name"]?></h1>
+                <h1 style="background-color:powderblue;"><?=$row["name"]?></h1>
 
                 <img src="assets/<?=$row["img"]?>.png" </img>
-                <h2><?=$row["shortDesc"]?> </h2>
-                <h3>$<?=$row["price"]?></h3>
-                <p><?=$row["longDesc"]?> </p>
+                <h2 style="background-color:powderblue;"><?=$row["shortDesc"]?> </h2>
+                <h3 style="background-color:powderblue;">$<?=$row["price"]?></h3>
+                <p style="background-color:powderblue;"><?=$row["longDesc"]?> </p>
                 </div>
                 <div class="reviews">
-                    <h1>Cutomer Reviews</h1>
-                    <p>Rating</p>
-                    <p>Text</p>
+                    <h1 style="background-color:powderblue;">Cutomer Reviews</h1>
+                    <p style="background-color:powderblue;">Rating</p>
+                    <p style="background-color:powderblue;">Text</p>
                 </div>
 
             </div>
