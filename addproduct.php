@@ -14,7 +14,7 @@
 .head{
           font-family: "Times New Roman", Times, serif;
         text-align:center;
-        background-color:A5DFFA;
+        background-color:#A5DFFA;
            }
   </style>
  <body>
