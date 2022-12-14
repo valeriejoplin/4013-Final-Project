@@ -7,6 +7,9 @@
    body {
             background-image: url('https://www.vestian.com/blog/wp-content/uploads/vestian-marathalli-6.jpg');
         }
+.rows{
+        background-color:#BCC9F7;
+           }    
   </style>
 <body>
         <h2>Order Summary </h2>
@@ -41,7 +44,7 @@ if ($result->num_rows > 0) {
 
   while($row = $result->fetch_assoc()) {
 ?>
-  <tr>
+  <tr class ="rows">
     <td><?=$row["orderID"]?></td>  
     <td><?=$row["Name"]?></td>  
     <td><?=$row["Address"]?></td>
