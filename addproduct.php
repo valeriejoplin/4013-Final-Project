@@ -9,6 +9,7 @@
         }
 .rows{
         background-color:#7692F5;
+  font-family: "Times New Roman", Times, serif;
            }        
   </style>
  <body>
