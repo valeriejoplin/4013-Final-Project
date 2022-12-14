@@ -1,3 +1,13 @@
+BEFORE SUBMISSION:
+
+Finish Back End
+Add 3rd party Javascript Library in back end
+Formatting on front and back end (especially header and footer)
+Put back end pages into a div of class container (same as front end)
+Write up about the project, features, pages, database interaction
+Format contact page on front end
+
+IGNORE ANYTHING BELOW THIS:
 To Do: DONT HATE ME THERES LOTS ON HERE LOTS OF HOPES AND DREAMS
 
 Clean Up Files
