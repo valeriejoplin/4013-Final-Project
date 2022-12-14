@@ -1,7 +1,8 @@
 BEFORE SUBMISSION:
 
-Finish Back End
-Add 3rd party Javascript Library in back end
+Place orders on website to populate data
+Finish Back End - be able to add edit delete all information
+Add 3rd party Javascript Library in back end - maybe for order history
 Formatting on front and back end (especially header and footer)
 Put back end pages into a div of class container (same as front end)
 Write up about the project, features, pages, database interaction
