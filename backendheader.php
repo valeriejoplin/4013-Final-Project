@@ -36,6 +36,9 @@
                     <a class="nav-link" href="backEndOrders.php">Customer Information</a>
                 </li>
                 <li class="nav-item active">
+                    <a class="nav-link" href="backEndProductOrders.php">Order History</a>
+                </li>
+              <li class="nav-item active">
                     <a class="nav-link" href="backEndMain.php">Database Diagram</a>
                 </li>
             </ul>
