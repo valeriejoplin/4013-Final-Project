@@ -22,9 +22,6 @@
 	.product{
 		background-color: #C5DEDE;
 	}
-	.product hover{
-		background-color: #C5DEDE;
-	}
 	</style>
 	
 <body>
@@ -135,7 +132,7 @@
                             ?>
                 </select>
 		</div>
-           <input type="Submit" value="Submit">
+           <input type="Submit" value="Filter">
             </form>
         </div>
         <div class="content">
