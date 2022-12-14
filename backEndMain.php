@@ -31,6 +31,9 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="backEndMain.php">Database Diagram</a>
                 </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="https://github.com/valeriejoplin/4013-Final-Project">GitHub Repo</a>
+                </li>
             </ul>
         </div>
     </nav>
