@@ -4,6 +4,7 @@
 <?php require_once("backendheader.php"); ?>
         </head> 
 <body>
+        <h2>Order Summary </h2>
 <table class="table table-striped">
   <thead>
     <tr>
@@ -28,7 +29,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT * from orders";
+$sql = "SELECT * from orders ORDER by orderID";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
