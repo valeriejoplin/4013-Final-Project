@@ -7,7 +7,7 @@
    body {
             background-image: url('https://www.vestian.com/blog/wp-content/uploads/vestian-marathalli-6.jpg');
         }
-.productList{
+.rows{
         background-color:white;
            }
   </style>
@@ -112,7 +112,7 @@ if ($result->num_rows > 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {
 ?>
-    <tr>
+    <tr class="rows">
             <td><?=$row["productID"]?></td>
             <td><?=$row["name"]?></td>
             <td>$<?=$row["price"]?></td>
