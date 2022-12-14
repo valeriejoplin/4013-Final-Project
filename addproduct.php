@@ -8,7 +8,7 @@
             background-image: url('https://www.vestian.com/blog/wp-content/uploads/vestian-marathalli-6.jpg');
         }
 .rows{
-        background-color:#ADC8C8;
+        background-color:#AEEAEA;
            }
   </style>
  <body>
