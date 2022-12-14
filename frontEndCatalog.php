@@ -20,7 +20,7 @@
 		font-family: "Times New Roman", Times, serif;
 	}
 	.product{
-		background-color: #E4FAFA;
+		background-color: #C5DEDE;
 	}
 	</style>
 	
