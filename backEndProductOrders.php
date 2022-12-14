@@ -27,7 +27,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT * from orderproduct ORDER by orderProductID";
+$sql = "SELECT * from orderProduct";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
