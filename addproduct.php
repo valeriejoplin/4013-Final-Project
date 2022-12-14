@@ -7,6 +7,9 @@
    body {
             background-image: url('https://www.vestian.com/blog/wp-content/uploads/vestian-marathalli-6.jpg');
         }
+.table table-striped{
+        background-color:white;
+           }
   </style>
  <body>
     <div class="container">
