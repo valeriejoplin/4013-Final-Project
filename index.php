@@ -43,10 +43,10 @@
 <body class="body">
     <div class="container">
 
-        <h1>MIS 4013 Group Project</h1>
+        <h1 style="color:blue;">MIS 4013 Group Project</h1>
         <button onclick="location.href='frontEndMain.php'" class="button" type="button">Front End</button>
         <button onclick="location.href='backEndLogin.php'" class="button" type="button">Back End</button>
-        <h3>Created By:</h3>
+        <h3 style="color:blue;">Created By:</h3>
         <ul class="names">
             <li>Valerie Joplin</li>
             <li>Andrew Soltis</li>
