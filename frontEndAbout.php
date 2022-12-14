@@ -67,8 +67,8 @@
       <div class="card">
             <h1>Sana Yari Hajatalou</h1>
             <img src="1629837912471.jpeg" class="Val">
-            <h3>Major</h3>
-            <h4>Class of </h4>
+            <h3>MIS & MIT</h3>
+            <h4>Class of 2023</h4>
       </div>
       <div class="card">
             <h1>Trevor Riley</h1>
