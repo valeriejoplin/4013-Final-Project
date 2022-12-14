@@ -16,7 +16,7 @@
         text-align:center;
         background-color:#A5DFFA;
            }
- .h1{
+ h1{
                  text-align:center;
            }
          
