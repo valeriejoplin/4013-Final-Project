@@ -16,6 +16,10 @@
         text-align:center;
         background-color:#A5DFFA;
            }
+ .h1{
+                 text-align:center;
+           }
+         
   </style>
  <body>
     <div class="container">
