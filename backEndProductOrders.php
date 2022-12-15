@@ -136,7 +136,7 @@ if ($result->num_rows > 0) {
     <td><?=$row["name"]?></td>
     <td><?=$row["Name"]?></td>
     <td><?=$row["Address"]?></td>
-          
+     <td>     
   <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editorder<?=$row["orderID"]?>">
                 Edit
               </button>
