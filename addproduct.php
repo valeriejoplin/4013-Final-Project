@@ -54,7 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmtAdd = $conn->prepare($sqlAdd);
         $stmtAdd->bind_param("sisssi", $_POST['pname'], $_POST['pprice'], $_POST['pshortdesc'], $_POST['plongdesc'], $_POST['pimg'], $_POST['pqty']);
         $stmtAdd->execute();
-                  
+?>                  
         <?php
                         $servername = "165.227.18.177";
                         $username = "asoltiso_project";
@@ -94,7 +94,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                          
         //Category
         //Need to query to get product ID of new product added. Then do insert statement to add querried productId and value (itemID) from drop down
-
+<?php
       echo '<div class="alert alert-success" role="alert">New Product added.</div>';
       break;
 
