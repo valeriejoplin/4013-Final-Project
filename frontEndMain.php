@@ -383,9 +383,9 @@ input[type=submit]{
                             }
                             $conn->close();
                             ?>
-		    		 <script>
+		 <script>
                     w3.slideshow(".cards", 1500);
-                </script>
+               </script>
     </div>
       <?php require_once("frontendfooter.php"); ?>
 </body>
