@@ -26,7 +26,7 @@
            top: 15px;
            left: 215px;
            border: 1px solid black;
-           width: 60%;
+           width: 40%;
            text-align:center;
            background-color: #F9E9D8;
            font-family:"Times New Roman", Times, serif;
@@ -36,7 +36,7 @@
 
        .comments{
            margin: auto;
-           width: 60%;
+           width: 50%;
            border: 1px solid black;
            padding: 10px;
            text-align:center;
