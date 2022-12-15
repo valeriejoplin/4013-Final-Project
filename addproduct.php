@@ -103,12 +103,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <label for="editproduct<?=$row["productID"]?>Name" class="form-label">Quantity avalible</label>
                           <input type="text" class="form-control" id="editCourse<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="pqty">
                         <label for="editproduct<?=$row["productID"]?>Name" class="form-label">Item</label>
-                          <input type="text" class="form-control" id="editCourse<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="pitem"> 
-                        <label for="editproduct<?=$row["productID"]?>Name" class="form-label">Brand</label>
-                               <input type="text" class="form-control" id="editCourse<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="pbrand"> 
-                        <label for="editproduct<?=$row["productID"]?>Name" class="form-label">Category</label>
-                          <input type="text" class="form-control" id="editCourse<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="pcategory"> 
-                          <div id="editproduct<?=$row["productID"]?>Help" class="form-text">Enter the product information.</div>
+<select class="form-control" id="editCourse<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="pitem">
+  <option value="1">Option 1</option>
+  <option value="2">Option 2</option>
+  <option value="3">Option 3</option>
+</select>
+
+<label for="editproduct<?=$row["productID"]?>Name" class="form-label">Brand</label>
+<select class="form-control" id="editCourse<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="pbrand">
+  <option value="1">Option 1</option>
+  <option value="2">Option 2</option>
+  <option value="3">Option 3</option>
+</select>
+
+<label for="editproduct<?=$row["productID"]?>Name" class="form-label">Category</label>
+<select class="form-control" id="editCourse<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="pcategory">
+  <option value="1">Option 1</option>
+  <option value="2">Option 2</option>
+  <option value="3">Option 3</option>
+</select>
+                        <div id="editproduct<?=$row["productID"]?>Help" class="form-text">Enter the product information.</div>
                         </div>
                 <input type="hidden" name="saveType" value="Add">
                 <button type="submit" class="btn btn-primary">Submit</button>
