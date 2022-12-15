@@ -314,6 +314,13 @@ input[type=submit]{
             <img src="assets/<?=$row["img"]?>.png" />
             </a>
 		    </div>
+		    <?php
+                              }
+                            } else {
+                              echo "0 results";
+                            }
+                            $conn->close();
+                            ?>
  <?php
                         $servername = "165.227.18.177";
                         $username = "asoltiso_project";
@@ -337,7 +344,14 @@ input[type=submit]{
             <a href="./frontEndProduct.php?id=<?=$row["productID"]?>">
             <img src="assets/<?=$row["img"]?>.png" />
             </a>
-</div>
+		    </div>
+			    <?php
+                              }
+                            } else {
+                              echo "0 results";
+                            }
+                            $conn->close();
+                            ?>
  <?php
                         $servername = "165.227.18.177";
                         $username = "asoltiso_project";
@@ -369,6 +383,7 @@ input[type=submit]{
                             }
                             $conn->close();
                             ?>
+		    
     </div>
       <?php require_once("frontendfooter.php"); ?>
 </body>
