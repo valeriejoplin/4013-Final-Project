@@ -296,7 +296,7 @@ input[type=submit]{
                               die("Connection failed: " . $conn->connect_error);
                             }
 
-                            $sql = "SELECT * FROM product";
+                            $sql = "SELECT * FROM product where productID=1";
                             $result = $conn->query($sql);
 
                             if ($result->num_rows > 0) {
