@@ -81,7 +81,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	    
 	    			<?php
 				      $itemID = $_POST['pitem'];
-                              echo "<h1>Product #<?=$row["productID"]?><h1>";
 				  echo "<h1> $itemID </h1>";
 				?>
                                      
