@@ -68,7 +68,7 @@
         </ul>
     </div>
 <div class="description">
-    <p> For this project, we created an online clothing store that we named VAST. We decided it would be best to create a website that contained a front end and a back end. The front end contains a product catalog with additional information about each item, a shopping cart that you can fill with products, and the ability to make a purchase. The back end contains our current product inventory, orders, and customer information. The data in the order and customer information was taken from the orders that have been placed on the front end of our website. </p>
+    <p> For this project, we created an online clothing store that we named VAST. We decided it would be best to create a website that contained a front end and a back end. The front end contains a product catalog with additional information about each item, a shopping cart that you can fill with products, and the ability to make a purchase. The back end contains our current product inventory, orders, and customer information and requires a valid username and password to access. The data in the order and customer information was taken from the orders that have been placed on the front end of our website. </p>
     </div>
 </body>
 </html>
