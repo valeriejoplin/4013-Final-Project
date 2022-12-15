@@ -184,7 +184,7 @@ if ($result->num_rows > 0) {
             </td>
            <td>
               <form method="post" action="">
-                <input type="hidden" name="cid" value="<?=$row["OrderID"]?>" />
+                <input type="hidden" name="oID" value="<?=$row["OrderID"]?>" />
                 <input type="hidden" name="saveType" value="Delete">
                 <button type="submit" class="btn" onclick="return confirm('Are you sure you want to cancel this order? The total will be refunded in full to the buyer.')"> Cancel </button>
               </form>
