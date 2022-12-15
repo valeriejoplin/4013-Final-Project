@@ -79,10 +79,30 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 				      
                             ?>
 	    
-	    			<?php
-				      $itemID = $_POST['pitem'];
-				  echo "<h1> $itemID </h1>";
-				?>
+	    
+	    				<?php
+				    $product = $row["productID"];
+				    $itemID = $_POST['pitem'];
+                                    $servername = "165.227.18.177";
+                                    $username = "asoltiso_project";
+                                    $password = "Project1243";
+                                    $dbname = "asoltiso_project";
+
+                                    // Create connection
+                                    $conn = new mysqli($servername, $username, $password, $dbname);
+                                    // Check connection
+                                    if ($conn->connect_error) {
+                                    die("Connection failed: " . $conn->connect_error);
+                                    }
+                                    $sql = "INSERT INTO productItem (productID, itemID)
+                                            VALUES ('$product', '$itemID')";
+                                    if ($conn->query($sql) === TRUE) {
+
+                                    } else {
+                                    echo "Error: " . $sql . "<br>" . $conn->error;
+                                    }
+                                    $conn->close();
+                                ?>       
                                      
 
                             <?php
