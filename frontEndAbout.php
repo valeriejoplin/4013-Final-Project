@@ -43,9 +43,7 @@
              text-align: center;
              font-family: "Times New Roman", Times, serif;
          }
-         .desc{
-             font-size: 16px;
-         }
+
         </style>
  <div class="about">
 <h1> About Us </h1>
