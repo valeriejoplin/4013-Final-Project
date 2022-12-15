@@ -29,9 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 	.container{
 		font-family: "Times New Roman", Times, serif;
 	}
-	.product{
-		background-color: #C5DEDE;
-	}
+
 	</style>
 	
 <body>
