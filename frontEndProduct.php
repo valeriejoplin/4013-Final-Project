@@ -87,6 +87,9 @@
         text-align: left;
         text-indent: 50px;
     }
+.product{
+	background-color:none;
+	    }
 
 footer {
     padding-top: 15px;
