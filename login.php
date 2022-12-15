@@ -19,9 +19,7 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
         exit;
     } else {
         // Display an error message if the username or password is incorrect
-        echo "<h1>Invalid username or password. The correct username and password is admin and admin<h1> <a href="/backEndLogin.php">
-            <button class="btn btn-primary btn-lg">Click</button>
-        </a>";
+        echo "<h1>Invalid username or password. The correct username and password is admin and admin<h1> <a href="/backEndLogin.php"> <button class="btn btn-primary btn-lg">Click</button> </a>";
     }
 }
 
