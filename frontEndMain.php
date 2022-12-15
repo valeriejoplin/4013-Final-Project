@@ -288,6 +288,25 @@ input[type=submit]{
             </form>
         </div>
         <div class="featured">
+		    <?php
+                        $servername = "165.227.18.177";
+                        $username = "asoltiso_project";
+                        $password = "Project1243";
+                        $dbname = "asoltiso_project";   
+						
+
+                            $conn = new mysqli($servername, $username, $password, $dbname);
+                            if ($conn->connect_error) {
+                              die("Connection failed: " . $conn->connect_error);
+                            }
+
+                            $sql = "SELECT * FROM product where productID=8";
+                            //echo $sql;
+                            $result = $conn->query($sql);
+
+                            if ($result->num_rows > 0) {
+                              while($row = $result->fetch_assoc()) {
+                            ?>
             <h1> Featured products: Comming Soon<h1> 
       <div class="card">
 	    <h1><?=$row["name"]?></h1>
