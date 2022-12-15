@@ -287,10 +287,9 @@ input[type=submit]{
                 <button style="width:80%;margin: 10px;padding-bottom: 20px;border-top-width: 2px;" type="submit">Sign Up!</button>
             </form>
         </div>
+	 
         <div class="featured">
-            <h1> Featured products: Comming Soon<h1> 
-      <div class="card">
-	      <?php
+		    <?php
                         $servername = "165.227.18.177";
                         $username = "asoltiso_project";
                         $password = "Project1243";
@@ -308,11 +307,20 @@ input[type=submit]{
                             if ($result->num_rows > 0) {
                               while($row = $result->fetch_assoc()) {
                             ?>
+            <h1> Featured products: Comming Soon<h1> 
+      <div class="card">
 	    <h1><?=$row["name"]?></h1>
             <a href="./frontEndProduct.php?id=<?=$row["productID"]?>">
             <img src="assets/<?=$row["img"]?>.png" />
             </a>
 </div>
+		    <?php
+                              }
+                            } else {
+                              echo "0 results";
+                            }
+                            $conn->close();
+                            ?>
     </div>
       <?php require_once("frontendfooter.php"); ?>
 </body>
