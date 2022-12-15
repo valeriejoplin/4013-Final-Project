@@ -1,9 +1,7 @@
 <?php
     session_start();
 
-    // submit.php
 
-// Get values from the form
 $name = $_POST['name'];
 $address = $_POST['address'];
 $city = $_POST['city'];
@@ -21,7 +19,11 @@ $zip = $_POST['zip'];
     <title>Success</title>
 
 </head>
-
+<style>
+.container{
+	text-align:center;
+	}
+</style>
 <body>
     <div class="container">
         <?php require_once("frontEndHeader.php"); ?>
@@ -43,7 +45,7 @@ $zip = $_POST['zip'];
             $sql = "INSERT INTO orders (Name, Address, City, State, Zip)
                     VALUES ('$name', '$address', '$city', '$state', '$zip')";
             if ($conn->query($sql) === TRUE) {
-            echo "<h1>Successfully Submitted Order<h1>";
+            echo "<h1>Thank you! Your order has been placed.<h1>";
             } else {
             echo "Error: " . $sql . "<br>" . $conn->error;
             }
