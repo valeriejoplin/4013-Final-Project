@@ -33,6 +33,7 @@ width: 800px;
 .cards img{
 	width:300px;
 	height:300px;
+	text-align: center;
 	}
 .promo{
 	text-align:center;
