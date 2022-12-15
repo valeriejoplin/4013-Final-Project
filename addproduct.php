@@ -75,10 +75,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             if ($result->num_rows > 0) {
                               // output data of each row
                               while($row = $result->fetch_assoc()) {
+				      
+				      echo "<h1>Item: $_POST['pitem']</h1>";
                             ?>
                               <h1>Product #<?=$row["productID"]?><h1>
 			
-				<h1>Item: $_POST['pitem']</h1>
                                      
 
                             <?php
