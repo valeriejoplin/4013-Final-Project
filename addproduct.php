@@ -50,7 +50,7 @@ if ($conn->connect_error) {
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   switch ($_POST['saveType']) {
     case 'Add':
-        $sqlAdd = "insert into product (name,price,shortDesc,longDesc,qtyavalible) value (?,?, ?,?,?,?)";
+        $sqlAdd = "insert into product (name,price,shortDesc,longDesc,qtyavalible) value (?, ?,?,?,?)";
         $stmtAdd = $conn->prepare($sqlAdd);
         $stmtAdd->bind_param("sissi", $_POST['pname'], $_POST['pprice'], $_POST['pshortdesc'], $_POST['plongdesc'],$_POST['pqty']);
         $stmtAdd->execute();
