@@ -107,6 +107,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                            <label for="editproduct<?=$row["productID"]?>Name" class="form-label">Long Description</label>
                           <input type="text" class="form-control" id="editCourse<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="plongdesc">
                         <label for="editproduct<?=$row["productID"]?>Name" class="form-label">Quantity avalible</label>
+                                                <label for="editproduct<?=$row["productID"]?>Name" class="form-label">Image Name</label>
+                          <input type="text" class="form-control" id="editCourse<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="pimg">
                           <input type="text" class="form-control" id="editCourse<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="pqty">
                         <label for="editproduct<?=$row["productID"]?>Name" class="form-label">Item</label>
 <select class="form-control" id="editCourse<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="pitem">
