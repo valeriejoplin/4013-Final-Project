@@ -42,13 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       echo '<div class="alert alert-success" role="alert">Order edited.</div>';
       break;
                   
-      case 'Delete':
-        $sqlDelete = "Delete From product where productID=?";
-        $stmtDelete = $conn->prepare($sqlDelete);
-        $stmtDelete->bind_param("i", $_POST['cid']);
-        $stmtDelete->execute();
-      echo '<div class="alert alert-success" role="alert">Order deleted.</div>';
-  }
+      }
 }
 ?>
         <h2>Current Order Information </h2>
@@ -181,13 +175,6 @@ if ($result->num_rows > 0) {
                   </div>
                 </div>
               </div>
-            </td>
-           <td>
-              <form method="post" action="">
-                <input type="hidden" name="oID" value="<?=$row["OrderID"]?>" />
-                <input type="hidden" name="saveType" value="Delete">
-                <button type="submit" class="btn" onclick="return confirm('Are you sure you want to cancel this order? The total will be refunded in full to the buyer.')"> Cancel </button>
-              </form>
             </td>
   </tr>
 <?php
