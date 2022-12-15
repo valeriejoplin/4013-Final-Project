@@ -24,7 +24,7 @@
        .contact{
            position: relative; 
            top: 15px;
-           left: 240px;
+           left: 270px;
            border: 1px solid black;
            width: 50%;
            text-align:center;
