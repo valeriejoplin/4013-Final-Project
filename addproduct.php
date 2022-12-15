@@ -54,9 +54,41 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmtAdd = $conn->prepare($sqlAdd);
         $stmtAdd->bind_param("sisssi", $_POST['pname'], $_POST['pprice'], $_POST['pshortdesc'], $_POST['plongdesc'], $_POST['pimg'], $_POST['pqty']);
         $stmtAdd->execute();
+                  
+        <?php
+                        $servername = "165.227.18.177";
+                        $username = "asoltiso_project";
+                        $password = "Project1243";
+                        $dbname = "asoltiso_project";   
+						
+
+                            // Create connection
+                            $conn = new mysqli($servername, $username, $password, $dbname);
+                            // Check connection
+                            if ($conn->connect_error) {
+                              die("Connection failed: " . $conn->connect_error);
+                            }
+
+                            $sql = "SELECT * FROM product Order by productID desc Limit 1";
+                            //echo $sql;
+                            $result = $conn->query($sql);
+                            if ($result->num_rows > 0) {
+                              // output data of each row
+                              while($row = $result->fetch_assoc()) {
+                            ?>
+                              <h1>Product #<?=$row["productID"]?><h1>
+
+                                     
+
+                            <?php
+                              }
+                            } else {
+                              echo "0 results: Error";
+                            }
+                            ?>
         //Item          
         //Need to query to get product ID of new product added. Then do insert statement to add querried productId and value (itemID) from drop down
-                  
+        $sqlProductID = "select productID from product Order by orderID desc Limit 1"
         //Brand
         //Need to query to get product ID of new product added. Then do insert statement to add querried productId and value (itemID) from drop down
                          
