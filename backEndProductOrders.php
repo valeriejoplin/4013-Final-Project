@@ -12,14 +12,17 @@
            }    
   </style>
 <body>
-        <h2>Current Orders </h2>
+        <h2>Current Order Information </h2>
 <table class="table table-striped">
   <thead>
     <tr>
-      <th>ID</th>
+      <th>Order #</th>
       <th>Product ID</th>
-      <th>Order ID</th>
+      <th>Price</th>
       <th>Quantity Purchased</th>
+      <th>Product Name</th>
+      <th>Buyer Name</th>
+      <th>Shipping Address</th>
     </tr>
   </thead>
   <tbody>
@@ -35,17 +38,23 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT * from orderProduct";
+$sql = "SELECT oP.orderID, P.productID, P.price, oP.quantity, P.name, O.Name, O.Address
+FROM orderProduct oP join product P on oP.productID=P.productID join orders O on oP.orderID=O.orderID
+ORDER by oP.orderID";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
  while($row = $result->fetch_assoc()) {
 ?>
   <tr class="rows">
-    <td><?=$row["orderProductID"]?></td>  
+    <td><?=$row["orderID"]?></td>  
     <td><?=$row["productID"]?></td>  
-    <td><?=$row["orderID"]?></td>
+    <td><?=$row["price"]?></td>
     <td><?=$row["quantity"]?></td>
+    <td><?=$row["name"]?></td>
+    <td><?=$row["Name"]?></td>
+    <td><?=$row["Address"]?></td>
+
   </tr>
 <?php
   }
