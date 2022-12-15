@@ -50,9 +50,9 @@ if ($conn->connect_error) {
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   switch ($_POST['saveType']) {
     case 'Add':
-        $sqlAdd = "insert into product (name,price,shortDesc,longDesc,qtyavalible) value (?, ?,?,?,?)";
+        $sqlAdd = "insert into product (name,price,shortDesc,longDesc, img, qtyavalible) value (?,?,?,?,?,?)";
         $stmtAdd = $conn->prepare($sqlAdd);
-        $stmtAdd->bind_param("sissi", $_POST['pname'], $_POST['pprice'], $_POST['pshortdesc'], $_POST['plongdesc'],$_POST['pqty']);
+        $stmtAdd->bind_param("sisssi", $_POST['pname'], $_POST['pprice'], $_POST['pshortdesc'], $_POST['plongdesc'], $_POST['pimg'], $_POST['pqty']);
         $stmtAdd->execute();
         //Item          
         //Need to query to get product ID of new product added. Then do insert statement to add querried productId and value (itemID) from drop down
