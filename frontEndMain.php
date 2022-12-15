@@ -19,7 +19,7 @@
 	width:100px;
 	height:100px;
 	}
-img{
+.img{
   display: block;
   margin-left: auto;
   margin-right: auto;	
@@ -111,7 +111,7 @@ img {vertical-align: middle;}
 <div class="mySlides fade">
   <div class="numbertext">1 / 3</div>
 	 <a href="frontEndCatalog.php">
-  <img src="https://wallpapershome.com/images/pages/pic_h/5211.jpg" style="width:100%">
+  <img class="img" src="https://wallpapershome.com/images/pages/pic_h/5211.jpg" style="width:100%">
 	</a>
   <div class="text" src="frontEndCatalog.php">Shop Now</div>
 </div>
@@ -119,7 +119,7 @@ img {vertical-align: middle;}
 <div class="mySlides fade">
   <div class="numbertext">2 / 3</div>
 	<a href="frontEndCatalog.php">
-  <img src="http://picture-cdn.wheretoget.it/h5689f-i.jpg" style="width:100%">
+  <img class="img" src="http://picture-cdn.wheretoget.it/h5689f-i.jpg" style="width:100%">
 	</a>
   <div class="text" src="frontEndCatalog.php">Shop Now</div>
 </div>
@@ -127,7 +127,7 @@ img {vertical-align: middle;}
 <div class="mySlides fade">
   <div class="numbertext">3 / 3</div>
  <a href="frontEndCatalog.php">
-  <img src="https://firstclasse.com.my/wp-content/uploads/2020/11/Boarini-Milanesi-bag-featured.jpg" style="width:100%">
+  <img class="img" src="https://firstclasse.com.my/wp-content/uploads/2020/11/Boarini-Milanesi-bag-featured.jpg" style="width:100%">
 	 	</a>
   <div class="text" src="frontEndCatalog.php">Shop Now</div>
 </div>
