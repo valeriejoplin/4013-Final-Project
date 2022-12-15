@@ -49,7 +49,7 @@ if ($result->num_rows > 0) {
   <tr class="rows">
     <td><?=$row["orderID"]?></td>  
     <td><?=$row["productID"]?></td>  
-    <td><?=$row["price"]?></td>
+    <td>$<?=$row["price"]?></td>
     <td><?=$row["quantity"]?></td>
     <td><?=$row["name"]?></td>
     <td><?=$row["Name"]?></td>
