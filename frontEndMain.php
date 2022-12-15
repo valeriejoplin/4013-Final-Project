@@ -78,6 +78,7 @@ img {vertical-align: middle;}
 .featured{
 	text-align:center;
 	font-family: "Times New Roman", Times, serif;
+	background-color: #E7FAFC;
 	}
 .dot {
   height: 15px;
@@ -305,7 +306,7 @@ input[type=submit]{
                               die("Connection failed: " . $conn->connect_error);
                             }
 
-                            $sql = "SELECT * FROM product order by productID desc top 3";
+                            $sql = "SELECT * FROM product where productID=8";
                             $result = $conn->query($sql);
 
                             if ($result->num_rows > 0) {
