@@ -4,9 +4,6 @@
 <?php require_once("backendheader.php"); ?>
         </head> 
   <style>
-   body {
-            background-image: url('https://www.vestian.com/blog/wp-content/uploads/vestian-marathalli-6.jpg');
-        }
 .rows{
         background-color:#DEE3E3;
            }    
