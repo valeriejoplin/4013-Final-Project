@@ -102,7 +102,55 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                     echo "Error: " . $sql . "<br>" . $conn->error;
                                     }
                                     $conn->close();
-                                ?>       
+                                ?>
+	    
+	    			<?php
+				    $product = $row["productID"];
+				    $brandID = $_POST['pbrand'];
+                                    $servername = "165.227.18.177";
+                                    $username = "asoltiso_project";
+                                    $password = "Project1243";
+                                    $dbname = "asoltiso_project";
+
+                                    // Create connection
+                                    $conn = new mysqli($servername, $username, $password, $dbname);
+                                    // Check connection
+                                    if ($conn->connect_error) {
+                                    die("Connection failed: " . $conn->connect_error);
+                                    }
+                                    $sql = "INSERT INTO productBrand (brandID, productID)
+                                            VALUES ('$brandID', '$product')";
+                                    if ($conn->query($sql) === TRUE) {
+
+                                    } else {
+                                    echo "Error: " . $sql . "<br>" . $conn->error;
+                                    }
+                                    $conn->close();
+                                ?>
+	    
+	    <?php
+				    $product = $row["productID"];
+				    $categoryID = $_POST['pcategory'];
+                                    $servername = "165.227.18.177";
+                                    $username = "asoltiso_project";
+                                    $password = "Project1243";
+                                    $dbname = "asoltiso_project";
+
+                                    // Create connection
+                                    $conn = new mysqli($servername, $username, $password, $dbname);
+                                    // Check connection
+                                    if ($conn->connect_error) {
+                                    die("Connection failed: " . $conn->connect_error);
+                                    }
+                                    $sql = "INSERT INTO productBrand (productID, categoryID)
+                                            VALUES ('$product', '$categoryID')";
+                                    if ($conn->query($sql) === TRUE) {
+
+                                    } else {
+                                    echo "Error: " . $sql . "<br>" . $conn->error;
+                                    }
+                                    $conn->close();
+                                ?>    
                                      
 
                             <?php
