@@ -33,6 +33,9 @@
                     <a class="nav-link" href="addproduct.php">Product Inventory</a>
                 </li>
                 <li class="nav-item active">
+                    <a class="nav-link" href="backEndAssocative.php">Product Associative</a>
+                </li>
+                <li class="nav-item active">
                     <a class="nav-link" href="backEndOrders.php">Customer Information</a>
                 </li>
                 <li class="nav-item active">
