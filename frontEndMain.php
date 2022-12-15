@@ -31,7 +31,7 @@ width: 800px;
 	}
 .card img{
 	width:300px;
-	height300px;
+	height:300px;
 	}
 .promo{
 	text-align:center;
@@ -300,8 +300,7 @@ input[type=submit]{
                               die("Connection failed: " . $conn->connect_error);
                             }
 
-                            $sql = "SELECT * FROM product where productID=8";
-                            //echo $sql;
+                            $sql = "SELECT * FROM product where productID=2";
                             $result = $conn->query($sql);
 
                             if ($result->num_rows > 0) {
