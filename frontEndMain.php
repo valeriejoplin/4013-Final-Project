@@ -14,8 +14,10 @@
 	text-align:center;
 	border: 1.5px solid black;
 	font-family: "Times New Roman", Times, serif;
+	background-color:#F9E9D8;
 	}
-.logo{
+.logo{        
+
 	width:100px;
 	height:100px;
 	}
