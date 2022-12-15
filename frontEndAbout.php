@@ -43,6 +43,13 @@
              text-align: center;
              font-family: "Times New Roman", Times, serif;
          }
+         .about p {
+             font-size: 16px;
+         }
+         p{
+             font-size: 12px;
+         }
+            
 
         </style>
  <div class="about">
