@@ -8,6 +8,7 @@
     - Add item/brand/category to be edited with product details (associative tables)
     - Drop downs would be easiest
 4) Add CRUD for Item/Brand/Category
+    - Started but need to make buttons work (backEndAssociative.php)
 
 
 ****************************************************************************************
