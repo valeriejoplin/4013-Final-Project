@@ -26,76 +26,10 @@ if ($conn->connect_error) {
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   switch ($_POST['saveType']) {
     case 'Add':
-        $sqlAdd = "insert into orderProduct (orderID, quantity) value (?,?)";
+        $sqlAdd = "insert into orderProduct (orderID, quantity) value (?,?) into product (productID,price,name) value (?,?,?) into orders (Name, Address) values (?,?)";
         $stmtAdd = $conn->prepare($sqlAdd);
-        $stmtAdd->bind_param("ii", $_POST['oID'],$_POST['oquantity']);
+        $stmtAdd->bind_param("iiiisss", $_POST['oID'], $_POST['pID'], $_POST['pprice'], $_POST['oquantity'], $_POST['pname'],$_POST['oname'], $_POST['oaddress']);
         $stmtAdd->execute();   
- ?>
-   <?php
-                        $servername = "165.227.18.177";
-                        $username = "asoltiso_project";
-                        $password = "Project1243";
-                        $dbname = "asoltiso_project";   
-						
-
-                            $conn = new mysqli($servername, $username, $password, $dbname);
-                            if ($conn->connect_error) {
-                              die("Connection failed: " . $conn->connect_error);
-                            }
-                              $sql = "SELECT orderID, quantity FROM orderProduct";
-                            $result = $conn->query($sql);
-                            if ($result->num_rows > 0) {
-                              while($row = $result->fetch_assoc()) {
-				      
-				      
-                            ?>
-                            
-	    				<?php
-                                    $servername = "165.227.18.177";
-                                    $username = "asoltiso_project";
-                                    $password = "Project1243";
-                                    $dbname = "asoltiso_project";
-
-                                    $conn = new mysqli($servername, $username, $password, $dbname);
-                                    if ($conn->connect_error) {
-                                    die("Connection failed: " . $conn->connect_error);
-                                    }
-                                    $sql = "INSERT INTO product (price, name)
-                                            VALUES (?,?)";
-                                    if ($conn->query($sql) === TRUE) {
-
-                                    } else {
-                                    echo "Error: " . $sql . "<br>" . $conn->error;
-                                    }
-                                    $conn->close();
-                                ?>
-	    
-	    			<?php
-                                    $servername = "165.227.18.177";
-                                    $username = "asoltiso_project";
-                                    $password = "Project1243";
-                                    $dbname = "asoltiso_project";
-
-                                    $conn = new mysqli($servername, $username, $password, $dbname);
-                                    if ($conn->connect_error) {
-                                    die("Connection failed: " . $conn->connect_error);
-                                    }
-                                    $sql = "INSERT INTO orders (Name, Address)
-                                            VALUES (?, ?)";
-                                    if ($conn->query($sql) === TRUE) {
-
-                                    } else {
-                                    echo "Error: " . $sql . "<br>" . $conn->error;
-                                    }
-                                    $conn->close();
-                                ?>
-
-                            <?php
-                              }
-                            } else {
-                              echo "0 results: Error";
-                            }
-                            ?>
       echo '<div class="alert alert-success" role="alert">New Order received.</div>';
       break;
 
@@ -107,7 +41,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $stmtEdit->execute();
       echo '<div class="alert alert-success" role="alert">Order edited.</div>';
       break;
- 
+                  
+      case 'Delete':
+        $sqlDelete = "Delete From product where productID=?";
+        $stmtDelete = $conn->prepare($sqlDelete);
+        $stmtDelete->bind_param("i", $_POST['cid']);
+        $stmtDelete->execute();
+      echo '<div class="alert alert-success" role="alert">Order deleted.</div>';
   }
 }
 ?>
@@ -242,6 +182,13 @@ if ($result->num_rows > 0) {
                 </div>
               </div>
             </td>
+           <td>
+              <form method="post" action="">
+                <input type="hidden" name="oID" value="<?=$row["OrderID"]?>" />
+                <input type="hidden" name="saveType" value="Delete">
+                <button type="submit" class="btn" onclick="return confirm('Are you sure you want to cancel this order? The total will be refunded in full to the buyer.')"> Cancel </button>
+              </form>
+            </td>
   </tr>
 <?php
   }
@@ -252,5 +199,3 @@ $conn->close();
 ?>
   </tbody>
     </table>
-</body>
-</html>
