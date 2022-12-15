@@ -75,7 +75,10 @@ img {vertical-align: middle;}
   position: absolute;
   top: 0;
 }
-
+.featured{
+	text-align:center;
+	font-family: "Times New Roman", Times, serif;
+	}
 .dot {
   height: 15px;
   width: 15px;
@@ -308,8 +311,9 @@ input[type=submit]{
                             if ($result->num_rows > 0) {
                               while($row = $result->fetch_assoc()) {
                             ?>
+            <h1> Featured products: Comming Soon<h1> 
       <div class="cards">
-	    <h1><?=$row["name"]?></h1>
+	    <h3><?=$row["name"]?></h3>
             <a href="./frontEndProduct.php?id=<?=$row["productID"]?>">
             <img src="assets/<?=$row["img"]?>.png" />
             </a>
@@ -340,7 +344,7 @@ input[type=submit]{
                               while($row = $result->fetch_assoc()) {
                             ?>
       <div class="cards">
-	    <h1><?=$row["name"]?></h1>
+	    <h3><?=$row["name"]?></h3>
             <a href="./frontEndProduct.php?id=<?=$row["productID"]?>">
             <img src="assets/<?=$row["img"]?>.png" />
             </a>
@@ -371,7 +375,7 @@ input[type=submit]{
                               while($row = $result->fetch_assoc()) {
                             ?>
       <div class="cards">
-	    <h1><?=$row["name"]?></h1>
+	    <h3><?=$row["name"]?></h3>
             <a href="./frontEndProduct.php?id=<?=$row["productID"]?>">
             <img src="assets/<?=$row["img"]?>.png" />
             </a>
