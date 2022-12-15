@@ -45,7 +45,7 @@ if ($result->num_rows > 0) {
 ?>
   <tr class ="rows">
     <td><?=$row["itemID"]?></td>  
-    <td><?=$row["name"]?></td>  
+    <td><?=$row["item"]?></td>  
     <tr><td><button class="editbtn">edit</button></td></tr>
     <tr><td><button class="deletebtn">delete</button></td></tr>
   </tr>
