@@ -15,6 +15,9 @@
 
 <body>
      <style>
+         p{
+             font-size: 12px;
+         }
        .logo{
            width:100px;
            height:100px;
