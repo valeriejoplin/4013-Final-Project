@@ -13,7 +13,7 @@
   </style>
 <body>
         <div class="associative">
-            <div class="tableHeader">
+            <div class="tableHeader" style="display:flex;">
                 <h2>Item </h2>
                 <button class="addbtn">add</button>
            </div>
