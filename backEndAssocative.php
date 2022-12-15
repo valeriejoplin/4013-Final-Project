@@ -14,6 +14,7 @@
 <body>
         <div class="associative">
         <h2>Item </h2>
+                <button class="addbtn">add</button>
 <table class="table table-striped">
   <thead>
     <tr>
