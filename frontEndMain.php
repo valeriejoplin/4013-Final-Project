@@ -78,7 +78,6 @@ img {vertical-align: middle;}
 .featured{
 	text-align:center;
 	font-family: "Times New Roman", Times, serif;
-	background-color: #E7FAFC;
 	}
 .dot {
   height: 15px;
