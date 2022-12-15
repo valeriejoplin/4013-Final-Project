@@ -308,7 +308,10 @@ input[type=submit]{
                               while($row = $result->fetch_assoc()) {
                             ?>
             <h1> Featured products: Comming Soon<h1> 
-      <div class="card">
+		 <script>
+                    w3.slideshow(".cards", 1800);
+                </script>
+      <div class="cards">
 	    <h1><?=$row["name"]?></h1>
             <a href="./frontEndProduct.php?id=<?=$row["productID"]?>">
             <img src="assets/<?=$row["img"]?>.png" />
@@ -339,7 +342,7 @@ input[type=submit]{
                             if ($result->num_rows > 0) {
                               while($row = $result->fetch_assoc()) {
                             ?>
-      <div class="card">
+      <div class="cards">
 	    <h1><?=$row["name"]?></h1>
             <a href="./frontEndProduct.php?id=<?=$row["productID"]?>">
             <img src="assets/<?=$row["img"]?>.png" />
@@ -370,15 +373,12 @@ input[type=submit]{
                             if ($result->num_rows > 0) {
                               while($row = $result->fetch_assoc()) {
                             ?>
-      <div class="card">
+      <div class="cards">
 	    <h1><?=$row["name"]?></h1>
             <a href="./frontEndProduct.php?id=<?=$row["productID"]?>">
             <img src="assets/<?=$row["img"]?>.png" />
             </a>
 </div>
-		    		 <script>
-                    w3.slideshow(".card", 1800);
-                </script>
 		    <?php
                               }
                             } else {
