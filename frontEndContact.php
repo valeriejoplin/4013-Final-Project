@@ -45,6 +45,9 @@
        .body{
            background-color:F8FEFE;
        }
+       img{
+           top:40px;
+       }
     </style>
 <body class ="body">
 
