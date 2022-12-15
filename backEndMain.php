@@ -2,7 +2,6 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<?php require_once("backendheader.php"); ?>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -33,6 +32,7 @@
         }
     </style>
     <div class="container">
+        <?php require_once("backendheader.php"); ?>
         <h1> VAST Fashion Back End </h1>
         <p> Your login was successful! Now you can navigate the back end of our website by using the navigation bar at the top of the screen. View our product inventory, customer information, order history, and database diagram.</p>
     </div>
