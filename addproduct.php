@@ -104,9 +104,33 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                           <input type="text" class="form-control" id="editCourse<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="pqty">
                         <label for="editproduct<?=$row["productID"]?>Name" class="form-label">Item</label>
 <select class="form-control" id="editCourse<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="pitem">
-  <option value="1">Option 1</option>
-  <option value="2">Option 2</option>
-  <option value="3">Option 3</option>
+  <?php
+                        $servername = "165.227.18.177";
+                        $username = "asoltiso_project";
+                        $password = "Project1243";
+                        $dbname = "asoltiso_project";   
+
+                        // Create connection
+                        $conn = new mysqli($servername, $username, $password, $dbname);
+                        // Check connection
+                        if ($conn->connect_error) {
+                          die("Connection failed: " . $conn->connect_error);
+                        }
+                        $sql = "Select * From item";
+                        //echo $sql;
+                            $result = $conn->query($sql);
+
+                        if ($result->num_rows > 0) {
+                          // output data of each row
+                          while($row = $result->fetch_assoc()) {
+                        ?>
+                    <option value="<?=$row["itemID"]?>"><?=$row["item"]?></option>
+                    <?php
+                              }
+                            } else {
+                              echo "0 results";
+                            }
+                            ?>
 </select>
 
 <label for="editproduct<?=$row["productID"]?>Name" class="form-label">Brand</label>
@@ -166,7 +190,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             } else {
                               echo "0 results";
                             }
-                            $conn->close();
                             ?>
 </select>
                         <div id="editproduct<?=$row["productID"]?>Help" class="form-text">Enter the product information.</div>
