@@ -32,6 +32,7 @@
   text-align:center;
 }
 .description{
+  top: 50px;
   margin: auto;
   width: 60%;
   border: 1.5px solid black;
