@@ -89,6 +89,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                     }
                                     $conn->close();
                                 ?>
+
+                            <?php
+                              }
+                            } else {
+                              echo "0 results: Error";
+                            }
+                            ?>
       echo '<div class="alert alert-success" role="alert">New Order received.</div>';
       break;
 
@@ -100,13 +107,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $stmtEdit->execute();
       echo '<div class="alert alert-success" role="alert">Order edited.</div>';
       break;
-                  
-      case 'Delete':
-        $sqlDelete = "Delete From product where productID=?";
-        $stmtDelete = $conn->prepare($sqlDelete);
-        $stmtDelete->bind_param("i", $_POST['cid']);
-        $stmtDelete->execute();
-      echo '<div class="alert alert-success" role="alert">Order deleted.</div>';
+ 
   }
 }
 ?>
