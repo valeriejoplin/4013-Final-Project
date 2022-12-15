@@ -29,7 +29,10 @@
  height: 375px;
 width: 800px;
 	}
-
+.card{
+	width:300px;
+	height300px;
+	}
 .promo{
 	text-align:center;
 	border:1px solid black;
