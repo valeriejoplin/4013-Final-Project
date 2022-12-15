@@ -101,7 +101,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                            <label for="editproduct<?=$row["productID"]?>Name" class="form-label">Long Description</label>
                           <input type="text" class="form-control" id="editCourse<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="plongdesc">
                         <label for="editproduct<?=$row["productID"]?>Name" class="form-label">Quantity avalible</label>
-                          <input type="text" class="form-control" id="editCourse<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="pqty"> 
+                          <input type="text" class="form-control" id="editCourse<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="pqty">
+                        <label for="editproduct<?=$row["productID"]?>Name" class="form-label">Item</label>
+                          <input type="text" class="form-control" id="editCourse<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="pitem"> 
+                        <label for="editproduct<?=$row["productID"]?>Name" class="form-label">Brand</label>
+                          <input type="text" class="form-control" id="editCourse<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="pbrand">
+                         <label for="editproduct<?=$row["productID"]?>Name" class="form-label">Category</label>
+                          <input type="text" class="form-control" id="editCourse<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="pcategory"> 
                           <div id="editproduct<?=$row["productID"]?>Help" class="form-text">Enter the product information.</div>
                         </div>
                 <input type="hidden" name="saveType" value="Add">
