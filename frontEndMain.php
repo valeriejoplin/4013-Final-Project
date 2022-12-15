@@ -286,9 +286,23 @@ input[type=submit]{
             <h1> Featured products 2 at a time in a coursel that rotates 3 times to show top 6 products. Could also make this the last sold products, or even last sold prodcuts that are in stock<h1> 
         </div>
     </div>
-
-     <?php require_once("frontendfooter.php"); ?>
-
+<footer>
+            <div class="icons">
+                <img class="footericon" src="assets/send-mail.svg" />
+                <img class="footericon" src="assets/phone.svg" />
+                <img class="footericon" src="assets/message-text.svg" />
+                <a class="footericon" href="https://www.facebook.com/" target="_blank">
+                    <img src="assets/facebook.svg" />
+                </a>
+                <a class="footericon" href="https://www.twitter.com/" target="_blank">
+                    <img src="assets/twitter.svg" />
+                </a>
+                <a class="footericon" href="https://www.instagram.com/" target="_blank">
+                    <img src="assets/instagram.svg" />
+                </a>
+            </div>
+            <p style="font-family:courier;">VAST FASHION<p>
+        </footer>
 
 </body>
 
