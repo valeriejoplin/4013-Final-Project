@@ -135,7 +135,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                 $conn->close();
                                 ?>
                     </select>
-                </div> 
                         <label for="editproduct<?=$row["productID"]?>Name" class="form-label">Category</label>
                           <input type="text" class="form-control" id="editCourse<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="pcategory"> 
                           <div id="editproduct<?=$row["productID"]?>Help" class="form-text">Enter the product information.</div>
