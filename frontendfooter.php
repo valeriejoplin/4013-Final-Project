@@ -9,10 +9,6 @@ footer {
     clear: both;
 }
 
-.footericon {
-    margin-left: 10px;
-    text-decoration: none;
-}
 .icons{
                font-size: 15px;
            text-decoration:none;
