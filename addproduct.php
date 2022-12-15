@@ -77,7 +77,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                               while($row = $result->fetch_assoc()) {
                             ?>
                               <h1>Product #<?=$row["productID"]?><h1>
-
+			
+				<h1>Item: $_POST['pitem']</h1>
                                      
 
                             <?php
@@ -86,14 +87,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                               echo "0 results: Error";
                             }
                             ?>
-        //Item          
-        //Need to query to get product ID of new product added. Then do insert statement to add querried productId and value (itemID) from drop down
-        $sqlProductID = "select productID from product Order by orderID desc Limit 1"
-        //Brand
-        //Need to query to get product ID of new product added. Then do insert statement to add querried productId and value (itemID) from drop down
-                         
-        //Category
-        //Need to query to get product ID of new product added. Then do insert statement to add querried productId and value (itemID) from drop down
 <?php
       echo '<div class="alert alert-success" role="alert">New Product added.</div>';
       break;
