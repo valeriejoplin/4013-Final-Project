@@ -313,10 +313,7 @@ input[type=submit]{
             <a href="./frontEndProduct.php?id=<?=$row["productID"]?>">
             <img src="assets/<?=$row["img"]?>.png" />
             </a>
-
 </div>
-        </div>
-
     </div>
       <?php require_once("frontendfooter.php"); ?>
 </body>
