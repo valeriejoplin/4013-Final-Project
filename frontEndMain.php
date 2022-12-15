@@ -286,29 +286,8 @@ input[type=submit]{
         </div>
         <div class="featured">
             <h1> Featured products: Comming Soon<h1> 
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-            <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js">
-            <!-- Slider main container -->
-<div class="swiper">
-  <!-- Additional required wrapper -->
-  <div class="swiper-wrapper">
-    <!-- Slides -->
-    <div class="swiper-slide">Slide 1</div>
-    <div class="swiper-slide">Slide 2</div>
-    <div class="swiper-slide">Slide 3</div>
-    ...
-  </div>
-  <!-- If we need pagination -->
-  <div class="swiper-pagination"></div>
+            
 
-  <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-
-  <!-- If we need scrollbar -->
-  <div class="swiper-scrollbar"></div>
-</div>
-</script>
         </div>
     </div>
       <?php require_once("frontendfooter.php"); ?>
