@@ -28,7 +28,7 @@
             border: 1.5px solid black;
            background-color: #F9E9D8;
          }
-        .Val{
+        .members{
             height:400px;
         }
 
@@ -54,27 +54,27 @@
   <div class="cards">
       <div class="card">
             <h1>Valerie Joplin</h1>
-            <img src="ValeriePhoto.jpg" class="Val">
+            <img src="ValeriePhoto.jpg" class="members">
             <h3>MIS</h3>
             <h4>Class of 2023</h4>
       </div>
       <div class="card">
             <h1>Andrew Soltis</h1>
-            <img src="AndrewPhoto.jpeg" class="Val">
+            <img src="AndrewPhoto.jpeg" class="members">
             <h3>MIS & MIT</h3>
             <h4>Class of 2024</h4>
       </div>
       <div class="card">
             <h1>Sana Yari Hajatalou</h1>
-            <img src="1629837912471.jpeg" class="Val">
+            <img src="1629837912471.jpeg" class="members">
             <h3>MIS & MIT</h3>
             <h4>Class of 2023</h4>
       </div>
       <div class="card">
             <h1>Trevor Riley</h1>
-            <img src="TrevorPhoto.jpg" class="Val">
+            <img src="TrevorPhoto.jpg" class="members">
             <h3>MIS</h3>
-            <h4>Class of 2022!</h4>
+            <h4>Class of 2022</h4>
       </div>
       <script>
         w3.slideshow(".card", 1800);
