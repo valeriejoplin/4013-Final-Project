@@ -285,9 +285,9 @@ input[type=submit]{
         <div class="featured">
             <h1> Featured products 2 at a time in a coursel that rotates 3 times to show top 6 products. Could also make this the last sold products, or even last sold prodcuts that are in stock<h1> 
         </div>
-		         <?php require_once("frontendfooter.php"); ?>
-
     </div>
+      <?php require_once("frontendfooter.php"); ?>
+
 </body>
 
 
