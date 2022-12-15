@@ -76,9 +76,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                               // output data of each row
                               while($row = $result->fetch_assoc()) {
 				      
-				      echo "<h1>Item: $_POST['pitem']</h1>";
+				      $itemID = $_POST['pitem'];
                             ?>
                               <h1>Product #<?=$row["productID"]?><h1>
+				      <h1> $itemID</h1>
 			
                                      
 
