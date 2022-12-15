@@ -249,7 +249,7 @@ input[type=submit]{
             <button id="close">&times;</button>
             <h2>Happy Holidays!</h2>
             <h4> Want to save 15%? </h4>
-            <p> Save BEFORE the Holidays and use code DECEMBER15 at checkout.</p>
+            <p> Save BEFORE the Holidays and use code <span style="background-color:#00FEFE">DECEMBER15</span> at checkout.</p>
 		<h9> Valid through 01/01/2023 </h9>
 
         </div>
