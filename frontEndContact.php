@@ -30,13 +30,15 @@
            text-align:center;
            background-color: #F9E9D8;
            font-family:"Times New Roman", Times, serif;
+           padding: 15px;
+
        }
 
        .comments{
            margin: auto;
            width: 50%;
            border: 1px solid black;
-           padding: 20px;
+           padding: 10px;
            text-align:center;
            background-color: #F9E9D8;
            font-family:"Times New Roman", Times, serif;
