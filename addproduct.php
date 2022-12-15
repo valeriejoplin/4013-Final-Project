@@ -12,6 +12,7 @@
   font-family: "Times New Roman", Times, serif;
            }  
 .head{
+        width:100%;
           font-family: "Times New Roman", Times, serif;
         text-align:center;
         background-color:#A5DFFA;
