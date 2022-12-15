@@ -136,7 +136,46 @@ if ($result->num_rows > 0) {
     <td><?=$row["name"]?></td>
     <td><?=$row["Name"]?></td>
     <td><?=$row["Address"]?></td>
-
+          
+  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editorder<?=$row["orderID"]?>">
+                Edit
+              </button>
+              <div class="modal fade" id="editorder<?=$row["orderID"]?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editorder<?=$row["orderID"]?>Label" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="editorder<?=$row["orderID"]?>Label">Edit Order</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form method="post" action="">  
+                        <div class="mb-3">
+                           <label for="orderList" class="form-label">Order</label>
+                        
+                          <label for="editorder<?=$row["orderID"]?>Name" class="form-label">Order Number</label>
+                          <input type="text" class="form-control" id="editorder<?=$row["orderID"]?>Name" aria-describedby="editorder<?=$row["orderID"]?>Help" name="oID" value="<?=$row['orderID']?>">
+                          <label for="editorder<?=$row["orderID"]?>Name" class="form-label">Product ID</label>
+                          <input type="text" class="form-control" id="editorder<?=$row["orderID"]?>Name" aria-describedby="editorder<?=$row["orderID"]?>Help" name="pID" value="<?=$row['productID']?>">
+                          <label for="editorder<?=$row["orderID"]?>Name" class="form-label">Price</label>
+                          <input type="text" class="form-control" id="editorder<?=$row["orderID"]?>Name" aria-describedby="editorder<?=$row["orderID"]?>Help" name="pprice" value="<?=$row['price']?>">
+                          <label for="editorder<?=$row["orderID"]?>Name" class="form-label">Quantity Purchased</label>
+                          <input type="text" class="form-control" id="editorder<?=$row["orderID"]?>Name" aria-describedby="editorder<?=$row["orderID"]?>Help" name="oquantity" value="<?=$row['quantity']?>">
+                           <label for="editorder<?=$row["orderID"]?>Name" class="form-label">Product Name</label>
+                          <input type="text" class="form-control" id="editorder<?=$row["orderID"]?>Name" aria-describedby="editorder<?=$row["orderID"]?>Help" name="pname" value="<?=$row['name']?>">
+                        <label for="editorder<?=$row["orderID"]?>Name" class="form-label">Quantity avalible</label>
+                          <input type="text" class="form-control" id="editorder<?=$row["orderID"]?>Name" aria-describedby="editorder<?=$row["orderID"]?>Help" name="oname" value="<?=$row['Name']?>">
+                        <label for="editorder<?=$row["orderID"]?>Name" class="form-label">Buyer</label>
+                          <input type="text" class="form-control" id="editorder<?=$row["orderID"]?>Name" aria-describedby="editorder<?=$row["orderID"]?>Help" name="oaddress" value="<?=$row['Address']?>">
+                        <label for="editorder<?=$row["orderID"]?>Name" class="form-label">Address</label>
+                        </div>
+                        <input type="hidden" name="saveType" value="Edit">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
   </tr>
 <?php
   }
