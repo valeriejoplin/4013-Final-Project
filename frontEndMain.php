@@ -33,7 +33,6 @@ width: 800px;
 .cards img{
 	width:300px;
 	height:300px;
-	text-align: center;
 	}
 .promo{
 	text-align:center;
@@ -312,7 +311,7 @@ input[type=submit]{
                             if ($result->num_rows > 0) {
                               while($row = $result->fetch_assoc()) {
                             ?>
-            <h1> Featured products: Comming Soon<h1> 
+            <h1> Featured products<h1> 
       <div class="cards">
 	    <h3><?=$row["name"]?></h3>
             <a href="./frontEndProduct.php?id=<?=$row["productID"]?>">
@@ -338,7 +337,7 @@ input[type=submit]{
                               die("Connection failed: " . $conn->connect_error);
                             }
 
-                            $sql = "SELECT * FROM product where productID=2";
+                            $sql = "SELECT * FROM product where productID=4";
                             $result = $conn->query($sql);
 
                             if ($result->num_rows > 0) {
@@ -369,7 +368,7 @@ input[type=submit]{
                               die("Connection failed: " . $conn->connect_error);
                             }
 
-                            $sql = "SELECT * FROM product where productID=5";
+                            $sql = "SELECT * FROM product where productID=10";
                             $result = $conn->query($sql);
 
                             if ($result->num_rows > 0) {
