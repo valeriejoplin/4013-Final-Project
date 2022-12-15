@@ -36,7 +36,7 @@
            margin: auto;
            width: 50%;
            border: 1px solid black;
-           padding: 10px;
+           padding: 20px;
            text-align:center;
            background-color: #F9E9D8;
            font-family:"Times New Roman", Times, serif;
@@ -44,10 +44,6 @@
        }
        .body{
            background-color:F8FEFE;
-       }
-       img{
-           top:40px;
-       }
     </style>
 <body class ="body">
 
