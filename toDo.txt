@@ -26,3 +26,4 @@ Extra things to do: Found no matter how much we do find something else we could 
     - Also need to record price history for purchases
 7) Center Contact Information on Contact Page
 8) Coupon field on checkout page actually applies a discount
+9) Padding of signup field on front end home page
