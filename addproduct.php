@@ -142,7 +142,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                     if ($conn->connect_error) {
                                     die("Connection failed: " . $conn->connect_error);
                                     }
-                                    $sql = "INSERT INTO productBrand (productID, categoryID)
+                                    $sql = "INSERT INTO productCategory (productID, categoryID)
                                             VALUES ('$product', '$categoryID')";
                                     if ($conn->query($sql) === TRUE) {
 
