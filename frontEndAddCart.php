@@ -162,11 +162,19 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
         <div class="card-body">
         <div class="totals" style="font-size: 12px;">
             <p> Subtotal: $<?=$subtotal?></p>
-            <p> Tax: $<?=$tax?></p>
+            <p class="tax"> Tax: $<?=$tax?></p>
             <p style="font-size: 16px;"> Total: $<?=$total?></p>
         </div>
         <input id="main_search_input" type="text" placeholder="Coupon"/>
-		<button id="search_button">Apply</button>
+		<button onclick="discountFunction()" id="search_button">Apply</button>
+		<script>
+	function discountFunction() {
+		$discount = $subtotal * 0.15; 
+		$newtotal = $subtotal - $discount;
+	<p style="font-size: 16px;"> New Total: $<?=$newtotal?></p>
+
+}
+</script>
         </div>
 <div class="buttons">
 <button  class="cartButton" id="openFormButton" <?php if (empty($_SESSION['cart'])) { echo 'disabled'; } ?>>Check Out</button>
