@@ -376,6 +376,9 @@ input[type=submit]{
             <img src="assets/<?=$row["img"]?>.png" />
             </a>
 </div>
+		 <script>
+                    w3.slideshow(".cards", 500);
+                </script>
 		    <?php
                               }
                             } else {
@@ -383,9 +386,6 @@ input[type=submit]{
                             }
                             $conn->close();
                             ?>
-		 <script>
-                    w3.slideshow(".cards", 1800);
-                </script>
     </div>
       <?php require_once("frontendfooter.php"); ?>
 </body>
