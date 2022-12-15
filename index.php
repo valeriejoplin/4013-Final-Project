@@ -49,6 +49,9 @@
      position:relative;
      left:300px;
  }
+ .button{
+     font-weight:bold;
+     }
 </style>
 <body class="body">
     <div class="container">
