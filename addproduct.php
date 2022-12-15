@@ -55,11 +55,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmtAdd->bind_param("sissi", $_POST['pname'], $_POST['pprice'], $_POST['pshortdesc'], $_POST['plongdesc'],$_POST['pqty']);
         $stmtAdd->execute();
         //Item          
+        //Need to query to get product ID of new product added. Then do insert statement to add querried productId and value (itemID) from drop down
                   
         //Brand
-                  
-                  
+        //Need to query to get product ID of new product added. Then do insert statement to add querried productId and value (itemID) from drop down
+                         
         //Category
+        //Need to query to get product ID of new product added. Then do insert statement to add querried productId and value (itemID) from drop down
+
       echo '<div class="alert alert-success" role="alert">New Product added.</div>';
       break;
 
@@ -95,9 +98,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               <form method="post" action="">
                 <div class="mb-3">
                   <label for="productList" class="form-label">Product</label>
-                        
-                          <label for="editproduct<?=$row["productID"]?>Name" class="form-label">ID</label>
-                          <input type="text" class="form-control" id="editproduct<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="pID">
                           <label for="editproduct<?=$row["productID"]?>Name" class="form-label">Name</label>
                           <input type="text" class="form-control" id="editCourse<?=$row["productID"]?>Name" aria-describedby="editproduct<?=$row["productID"]?>Help" name="pname">
                           <label for="editproduct<?=$row["productID"]?>Name" class="form-label">Price</label>
