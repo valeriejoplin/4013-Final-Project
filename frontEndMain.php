@@ -301,13 +301,25 @@ input[type=submit]{
                               die("Connection failed: " . $conn->connect_error);
                             }
 
-                            $sql = "SELECT * FROM product where productID=2,8,10";
+                            $sql = "SELECT * FROM product where productID=8";
                             $result = $conn->query($sql);
 
                             if ($result->num_rows > 0) {
                               while($row = $result->fetch_assoc()) {
                             ?>
             <h1> Featured products: Comming Soon<h1> 
+      <div class="card">
+	    <h1><?=$row["name"]?></h1>
+            <a href="./frontEndProduct.php?id=<?=$row["productID"]?>">
+            <img src="assets/<?=$row["img"]?>.png" />
+            </a>
+</div>
+      <div class="card">
+	    <h1><?=$row["name"]?></h1>
+            <a href="./frontEndProduct.php?id=<?=$row["productID"]?>">
+            <img src="assets/<?=$row["img"]?>.png" />
+            </a>
+</div>
       <div class="card">
 	    <h1><?=$row["name"]?></h1>
             <a href="./frontEndProduct.php?id=<?=$row["productID"]?>">
