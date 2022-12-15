@@ -13,8 +13,10 @@
   </style>
 <body>
         <div class="associative">
-        <h2>Item </h2>
+            <div class="tableHeader">
+                <h2>Item </h2>
                 <button class="addbtn">add</button>
+           </div>
 <table class="table table-striped">
   <thead>
     <tr>
