@@ -8,9 +8,6 @@
     - Add item/brand/category to be edited with product details (associative tables)
     - Drop downs would be easiest
 4) Add CRUD for Item/Brand/Category
-5) Clean Up ProductDetails page
-    - Remove customer reviews if we arent adding database
-    - Remove blue highlighting on text
 
 
 ****************************************************************************************
