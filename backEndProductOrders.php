@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
       case 'Edit':
-      $sqlEdit = "update product set name=?, price=?, shortDesc=?,longDesc=?,qtyavailable=? where productID=?";
+      $sqlEdit = "update orderProduct set orderID=?, quantity=? update product set productID=?,price=?,name=? update orders set Name=?,Address=? where orderProductID=?";
       $stmtEdit = $conn->prepare($sqlEdit);
       $stmtEdit->bind_param("iiiisss", $_POST['oID'], $_POST['pID'], $_POST['pprice'], $_POST['oquantity'], $_POST['pname'],$_POST['oname'], $_POST['oaddress']);
       $stmtEdit->execute();
@@ -66,25 +66,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="mb-3">
                   <label for="orderList" class="form-label">Order</label>
                         
-                          <label for="editorder<?=$row["orderID"]?>Name" class="form-label">Order Number</label>
-                          <input type="text" class="form-control" id="editorder<?=$row["orderID"]?>Name" aria-describedby="editorder<?=$row["orderID"]?>Help" name="oID">
-                          <label for="editorder<?=$row["orderID"]?>Name" class="form-label">Product ID</label>
-                          <input type="text" class="form-control" id="editorder<?=$row["orderID"]?>Name" aria-describedby="editorder<?=$row["orderID"]?>Help" name="pID">
-                          <label for="editorder<?=$row["orderID"]?>Name" class="form-label">Price</label>
-                          <input type="text" class="form-control" id="editorder<?=$row["orderID"]?>Name" aria-describedby="editorder<?=$row["orderID"]?>Help" name="pprice"> 
-                          <label for="editorder<?=$row["orderID"]?>Name" class="form-label">Quantity Purchased</label>
-                          <input type="text" class="form-control" id="editorder<?=$row["orderID"]?>Name" aria-describedby="editorder<?=$row["orderID"]?>Help" name="oquantity">  
-                           <label for="editorder<?=$row["orderID"]?>Name" class="form-label">Product Name</label>
-                          <input type="text" class="form-control" id="editorder<?=$row["orderID"]?>Name" aria-describedby="editorder<?=$row["orderID"]?>Help" name="pname">
-                        <label for="editorder<?=$row["orderID"]?>Name" class="form-label">Quantity avalible</label>
-                          <input type="text" class="form-control" id="editorder<?=$row["orderID"]?>Name" aria-describedby="editorder<?=$row["orderID"]?>Help" name="oname">
-                        <label for="editorder<?=$row["orderID"]?>Name" class="form-label">Buyer</label>
-                          <input type="text" class="form-control" id="editorder<?=$row["orderID"]?>Name" aria-describedby="editorder<?=$row["orderID"]?>Help" name="oaddress"> 
-                        <label for="editorder<?=$row["orderID"]?>Name" class="form-label">Address</label>
+                          <label for="editorder<?=$row["orderProductID"]?>Name" class="form-label">Order Number</label>
+                          <input type="text" class="form-control" id="editorder<?=$row["orderProductID"]?>Name" aria-describedby="editorder<?=$row["orderProductID"]?>Help" name="oID">
+                          <label for="editorder<?=$row["orderProductID"]?>Name" class="form-label">Product ID</label>
+                          <input type="text" class="form-control" id="editorder<?=$row["orderProductID"]?>Name" aria-describedby="editorder<?=$row["orderProductID"]?>Help" name="pID">
+                          <label for="editorder<?=$row["orderProductID"]?>Name" class="form-label">Price</label>
+                          <input type="text" class="form-control" id="editorder<?=$row["orderProductID"]?>Name" aria-describedby="editorder<?=$row["orderProductID"]?>Help" name="pprice"> 
+                          <label for="editorder<?=$row["orderProductID"]?>Name" class="form-label">Quantity Purchased</label>
+                          <input type="text" class="form-control" id="editorder<?=$row["orderProductID"]?>Name" aria-describedby="editorder<?=$row["orderProductID"]?>Help" name="oquantity">  
+                           <label for="editorder<?=$row["orderProductID"]?>Name" class="form-label">Product Name</label>
+                          <input type="text" class="form-control" id="editorder<?=$row["orderProductID"]?>Name" aria-describedby="editorder<?=$row["orderProductID"]?>Help" name="pname">
+                        <label for="editorder<?=$row["orderProductID"]?>Name" class="form-label">Quantity avalible</label>
+                          <input type="text" class="form-control" id="editorder<?=$row["orderProductID"]?>Name" aria-describedby="editorder<?=$row["orderProductID"]?>Help" name="oname">
+                        <label for="editorder<?=$row["orderProductID"]?>Name" class="form-label">Buyer</label>
+                          <input type="text" class="form-control" id="editorder<?=$row["orderProductID"]?>Name" aria-describedby="editorder<?=$row["orderProductID"]?>Help" name="oaddress"> 
+                        <label for="editorder<?=$row["orderProductID"]?>Name" class="form-label">Address</label>
                                        
   
                 </div> 
-                          <div id="editorder<?=$row["orderID"]?>Help" class="form-text">Enter the order information.</div>
+                          <div id="editorder<?=$row["orderProductID"]?>Help" class="form-text">Enter the order information.</div>
                         </div>
                 <input type="hidden" name="saveType" value="Add">
                 <button type="submit" class="btn btn-primary">Submit</button>
