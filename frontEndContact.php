@@ -28,7 +28,7 @@
            border: 1px solid black;
            width: 60%;
            text-align:center;
-           background-color: #E4FAFA;
+           background-color: #F9E9D8;
            font-family:"Times New Roman", Times, serif;
        }
 
@@ -38,7 +38,7 @@
            border: 1px solid black;
            padding: 10px;
            text-align:center;
-           background-color: #E4FAFA;
+           background-color: #F9E9D8;
            font-family:"Times New Roman", Times, serif;
  
        }
