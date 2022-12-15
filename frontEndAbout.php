@@ -47,7 +47,7 @@
              font-size: 16px;
          }
          p{
-             font-size: 12px;
+             font-size: 14px;
          }
             
 
