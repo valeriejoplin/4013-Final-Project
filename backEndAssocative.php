@@ -18,11 +18,9 @@
   <thead>
     <tr>
       <th>ID</th>
-      <th>Name</th>
-      <th>Address</th>
-      <th>City</th>
-      <th>State</th>
-      <th>Zip</th>
+      <th>Item</th>
+      <th>Edit</th>
+      <th>Delete</th>
     </tr>
   </thead>
   <tbody>
@@ -38,7 +36,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT * from orders ORDER by orderID";
+$sql = "SELECT * from item";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -46,12 +44,10 @@ if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
 ?>
   <tr class ="rows">
-    <td><?=$row["orderID"]?></td>  
-    <td><?=$row["Name"]?></td>  
-    <td><?=$row["Address"]?></td>
-    <td><?=$row["City"]?></td>
-    <td><?=$row["State"]?></td>
-    <td><?=$row["Zip"]?></td>
+    <td><?=$row["itemID"]?></td>  
+    <td><?=$row["name"]?></td>  
+    <tr><td><button class="editbtn">edit</button></td></tr>
+    <tr><td><button class="deletebtn">delete</button></td></tr>
   </tr>
 <?php
   }
