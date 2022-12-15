@@ -301,7 +301,7 @@ input[type=submit]{
                               die("Connection failed: " . $conn->connect_error);
                             }
 
-                            $sql = "SELECT * FROM product where productID=8, 10, 12";
+                            $sql = "SELECT * FROM product where productID=8";
                             $result = $conn->query($sql);
 
                             if ($result->num_rows > 0) {
@@ -313,13 +313,49 @@ input[type=submit]{
             <a href="./frontEndProduct.php?id=<?=$row["productID"]?>">
             <img src="assets/<?=$row["img"]?>.png" />
             </a>
-</div>
+		    </div>
+ <?php
+                        $servername = "165.227.18.177";
+                        $username = "asoltiso_project";
+                        $password = "Project1243";
+                        $dbname = "asoltiso_project";   
+						
+
+                            $conn = new mysqli($servername, $username, $password, $dbname);
+                            if ($conn->connect_error) {
+                              die("Connection failed: " . $conn->connect_error);
+                            }
+
+                            $sql = "SELECT * FROM product where productID=2";
+                            $result = $conn->query($sql);
+
+                            if ($result->num_rows > 0) {
+                              while($row = $result->fetch_assoc()) {
+                            ?>
       <div class="card">
 	    <h1><?=$row["name"]?></h1>
             <a href="./frontEndProduct.php?id=<?=$row["productID"]?>">
             <img src="assets/<?=$row["img"]?>.png" />
             </a>
 </div>
+ <?php
+                        $servername = "165.227.18.177";
+                        $username = "asoltiso_project";
+                        $password = "Project1243";
+                        $dbname = "asoltiso_project";   
+						
+
+                            $conn = new mysqli($servername, $username, $password, $dbname);
+                            if ($conn->connect_error) {
+                              die("Connection failed: " . $conn->connect_error);
+                            }
+
+                            $sql = "SELECT * FROM product where productID=5";
+                            $result = $conn->query($sql);
+
+                            if ($result->num_rows > 0) {
+                              while($row = $result->fetch_assoc()) {
+                            ?>
       <div class="card">
 	    <h1><?=$row["name"]?></h1>
             <a href="./frontEndProduct.php?id=<?=$row["productID"]?>">
