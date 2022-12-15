@@ -3,9 +3,26 @@
     - Done with join statements
 2) Another Javascript Library
     - A graphic would be ideal
-    - To visualize product sales - X axis products, and Y axis amount purchased
+    - To visualize product sales (X axis products, and Y axis amount purchased)
 3) Back End Product Page
     - Add item/brand/category to be edited with product details (associative tables)
     - Drop downs would be easiest
 4) Add CRUD for Item/Brand/Category
-    
+5) Clean Up ProductDetails page
+    - Remove customer reviews if we arent adding database
+    - Remove blue highlighting on text
+
+
+****************************************************************************************
+
+Extra things to do: Found no matter how much we do find something else we could do.
+
+1) Back End Place in containers to give padding on sides of webpage
+2) Front end home page featured products
+3) Buy now resubmits on page reload (creates duplicate order)
+4) More detailed information show after check out (ie add a reciept)
+5) Tie back end login to session so that cant use direct link to backend to skip login
+6) Inventory management system (currently purchases do not remove inventory)
+    - Also need to record price history for purchases
+7) Center Contact Information on Contact Page
+8) Coupon field on checkout page actually applies a discount
