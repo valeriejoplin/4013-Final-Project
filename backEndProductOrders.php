@@ -26,9 +26,9 @@ if ($conn->connect_error) {
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   switch ($_POST['saveType']) {
     case 'Add':
-        $sqlAdd = "insert into product (productID, name,price,shortDesc,longDesc,qtyavalible) value (?,?, ?,?,?,?)";
+        $sqlAdd = "insert into orderProduct (orderID, quantity) value (?,?) into product (productID,price,name) value (?,?,?) into orders (Name, Address) values (?,?)";
         $stmtAdd = $conn->prepare($sqlAdd);
-        $stmtAdd->bind_param("isissi", $_POST['pID'], $_POST['pname'], $_POST['pprice'], $_POST['pshortdesc'], $_POST['plongdesc'],$_POST['pqty']);
+        $stmtAdd->bind_param("iiiisss", $_POST['oID'], $_POST['pID'], $_POST['pprice'], $_POST['oquantity'], $_POST['pname'],$_POST['oname'], $_POST['oaddress']);
         $stmtAdd->execute();   
       echo '<div class="alert alert-success" role="alert">New Order received.</div>';
       break;
@@ -37,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       case 'Edit':
       $sqlEdit = "update product set name=?, price=?, shortDesc=?,longDesc=?,qtyavailable=? where productID=?";
       $stmtEdit = $conn->prepare($sqlEdit);
-      $stmtEdit->bind_param("sissi", $_POST['pID'],$_POST['pname'], $_POST['pprice'], $_POST['pshortdesc'], $_POST['plongdesc'],$_POST['pqty']);
+      $stmtEdit->bind_param("iiiisss", $_POST['oID'], $_POST['pID'], $_POST['pprice'], $_POST['oquantity'], $_POST['pname'],$_POST['oname'], $_POST['oaddress']);
       $stmtEdit->execute();
       echo '<div class="alert alert-success" role="alert">Order edited.</div>';
       break;
