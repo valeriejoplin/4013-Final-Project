@@ -15,9 +15,6 @@
 
 <body>
      <style>
-         p{
-             font-size: 12px;
-         }
        .logo{
            width:100px;
            height:100px;
@@ -46,10 +43,13 @@
              text-align: center;
              font-family: "Times New Roman", Times, serif;
          }
+         .desc{
+             font-size: 16px;
+         }
         </style>
  <div class="about">
 <h1> About Us </h1>
- <p> VAST fashion was founded in 2022 by four college students who have a passion for web design and fashion. VAST is actually an acronym made up of our designers first names: Valerie, Andrew, Sana, and Trevor. We are all currently studying at Price College of Businesses working towards degrees in Management Information Systems and Management Information Technology.</p>
+ <p class="desc"> VAST fashion was founded in 2022 by four college students who have a passion for web design and fashion. VAST is actually an acronym made up of our designers first names: Valerie, Andrew, Sana, and Trevor. We are all currently studying at Price College of Businesses working towards degrees in Management Information Systems and Management Information Technology.</p>
         </div>
     <div class="table">
 
