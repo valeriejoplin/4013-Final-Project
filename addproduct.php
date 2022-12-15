@@ -219,6 +219,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <th>Price</th>
             <th>Short Description</th>
             <th>Long Description</th>
+            <th> Image</th>
             <th>Quantity Avalible</th>
           </tr>
         </thead>
@@ -237,6 +238,7 @@ if ($result->num_rows > 0) {
             <td>$<?=$row["price"]?></td>
             <td><?=$row["shortDesc"]?></td>
             <td><?=$row["longDesc"]?></td>
+            <td><?=$row["img"]?></td>
             <td><?=$row["qtyAvalible"]?></td>
             <td>         
          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editproduct<?=$row["productID"]?>">
