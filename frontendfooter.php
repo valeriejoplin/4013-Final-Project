@@ -31,5 +31,5 @@ footer {
                     <img src="assets/instagram.svg" />
                 </a>
             </div>
-            <p style="font-family:courier;">VAST FASHION<p>
+            <p class="vastfash" style="font-family:courier;">VAST FASHION<p>
         </footer>
