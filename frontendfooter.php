@@ -12,8 +12,11 @@ footer {
 .footericon {
     margin-left: 10px;
     text-decoration: none;
-    font-size: 15px;
 }
+.icons{
+               font-size: 15px;
+           text-decoration:none;
+           }
 
 
     </style>
