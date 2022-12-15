@@ -29,7 +29,7 @@
  height: 375px;
 width: 800px;
 	}
-.card img{
+.cards img{
 	width:300px;
 	height:300px;
 	}
@@ -308,9 +308,6 @@ input[type=submit]{
                               while($row = $result->fetch_assoc()) {
                             ?>
             <h1> Featured products: Comming Soon<h1> 
-		 <script>
-                    w3.slideshow(".cards", 1800);
-                </script>
       <div class="cards">
 	    <h1><?=$row["name"]?></h1>
             <a href="./frontEndProduct.php?id=<?=$row["productID"]?>">
@@ -386,6 +383,9 @@ input[type=submit]{
                             }
                             $conn->close();
                             ?>
+		 <script>
+                    w3.slideshow(".cards", 1800);
+                </script>
     </div>
       <?php require_once("frontendfooter.php"); ?>
 </body>
