@@ -313,15 +313,7 @@ input[type=submit]{
             <a href="./frontEndProduct.php?id=<?=$row["productID"]?>">
             <img src="assets/<?=$row["img"]?>.png" />
             </a>
-</div>
-      <div class="card">
-	    <h1><?=$row["name"]?></h1>
-            <a href="./frontEndProduct.php?id=<?=$row["productID"]?>">
-            <img src="assets/<?=$row["img"]?>.png" />
-            </a>
-	         <script>
-                    w3.slideshow(".card", 1800);
-                </script>
+
 </div>
         </div>
 
