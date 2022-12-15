@@ -345,16 +345,13 @@ input[type=submit]{
             <a href="./frontEndProduct.php?id=<?=$row["productID"]?>">
             <img src="assets/<?=$row["img"]?>.png" />
             </a>
-</div>
-        </div>
-                <script>
+	         <script>
                     w3.slideshow(".card", 1800);
                 </script>
+</div>
+        </div>
+
     </div>
       <?php require_once("frontendfooter.php"); ?>
-
 </body>
-
-
-
 </html>
