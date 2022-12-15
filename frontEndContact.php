@@ -36,7 +36,7 @@
 
        .comments{
            margin: auto;
-           width: 50%;
+           width: 60%;
            border: 1px solid black;
            padding: 10px;
            text-align:center;
