@@ -29,7 +29,7 @@
  height: 375px;
 width: 800px;
 	}
-.card{
+.card img{
 	width:300px;
 	height300px;
 	}
