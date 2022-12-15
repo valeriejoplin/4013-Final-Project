@@ -169,9 +169,6 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
 		<button onclick="discountFunction()" id="search_button">Apply</button>
 		<script>
 	function discountFunction() {
-		$discount = $subtotal * 0.15; 
-		$newtotal = $subtotal - $discount;
-	<p style="font-size: 16px;"> New Total: $<?=$newtotal?></p>
 
 }
 </script>
