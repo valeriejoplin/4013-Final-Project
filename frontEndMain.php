@@ -308,7 +308,6 @@ input[type=submit]{
                             if ($result->num_rows > 0) {
                               while($row = $result->fetch_assoc()) {
                             ?>
-            <h1> Featured products: Comming Soon<h1> 
       <div class="cards">
 	    <h1><?=$row["name"]?></h1>
             <a href="./frontEndProduct.php?id=<?=$row["productID"]?>">
